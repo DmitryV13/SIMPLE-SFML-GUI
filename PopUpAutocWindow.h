@@ -17,6 +17,7 @@ private:
 	float offset_y;
 public:
     /**
+
        @param screen_width ширина экрана.
        @param screen_height высота экрана.
        @param width_ ширина всплывающего окна.
@@ -26,9 +27,10 @@ public:
     */
 	PopUpAutocWindow(double screen_width, double screen_height, int width_, int height_,
 		TextureManager* t_manager_);
+	~PopUpAutocWindow();
 
     /** Задает заголовок для окна.
-     *
+
        @param name заголовок.
     */
 	void setWindowName(string name);

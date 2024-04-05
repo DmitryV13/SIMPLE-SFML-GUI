@@ -4,7 +4,9 @@
 #include "BUTTON_STATE.h"
 #include "TextureManager.h"
 
+/** Элемент интерфейса - базовая кнопка.
 
+ */
 class Button : public InterfaceItem{
 protected:
 	short button_prstate;
@@ -24,7 +26,33 @@ protected:
 
 public:
 	Button();
+
+    /**
+
+        @param x координата.
+        @param y координата.
+        @param text_size размер шрифта.
+        @param text_ текст кнопки.
+        @param menuColor цвет текста при наведении.
+        @note кнопка будет представлять собой текст белого цвета с прозрачной границей, размеры shape
+        выставятся по размерам текста, цвет shape во всех состояниях будет прозрачным. Цвет текста при
+        активации выставится в такой же цвет, как и при наведении.
+    */
 	Button(float x, float y, short text_size, string text_, Color menuColor);
+
+    /**
+
+        @param x координата.
+        @param y координата.
+        @param width ширина shape.
+        @param height высота shape.
+        @param text_size размер шрифта.
+        @param text_ текст кнопки.
+        @param menuColor цвет текста при наведении.
+        @note кнопка будет представлять собой текст белого цвета с прозрачной границей, текст помещается
+        в центре shape, цвет shape во всех состояниях будет темно-синим. Цвет текста при
+        активации выставится в такой же цвет, как и при наведении.
+    */
 	Button(float x, float y, float width, float height, short text_size, string text_
 		, Color btn_hcolor);
 	Button(float x, float y, float width, float height, short text_size, string text_

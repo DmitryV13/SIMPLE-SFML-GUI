@@ -55,7 +55,6 @@ public:
     */
 	PopUpWindow(double screen_width, double screen_height, int width_, int height_, 
 		int x, string positionY, TextureManager* t_manager_);
-
 	~PopUpWindow();
 
     /** Не обладает реализацией на данный момент.
@@ -106,7 +105,7 @@ public:
        @param name заголовок группы.
        @param name_size размер шрифта.
     */
-	void addGroup(short fill_p_w, short fill_p_h, short index, string name, int name_size);
+    void addGroup(short fill_p_w, short fill_p_h, short index, string name, int name_size);// fill percentage width/height
 
     /** Добавляет группу в окно. Добавление произойдет в конец указанной строки.
 
@@ -116,7 +115,7 @@ public:
         на основе текущего окна.
        @param index индекс строки куда произойдет добавление.
     */
-	void addGroup(short fill_p_w, short fill_p_h, short index);
+    void addGroup(short fill_p_w, short fill_p_h, short index);
 
     /** Добавляет группу в окно. Добавление произойдет в конец указанной строки.
 
