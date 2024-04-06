@@ -44,11 +44,13 @@ public:
 	std::pair<float, float> getMaxELHeight(short index);
 
     /** Возвращает указатель на состояние кнопки по ее идентификатору.
+
        @param btn_id идентификатор кнопки, чьё состояние нам необходимо получить.
     */
 	short* getButtonState(int btn_id);
 
     /** Устанавливает горизонтальное и вертикальное выравнивание элементов 1 уровня в группе.
+
        @param horiz_a горизонтальное выравнивание.
        @param vertic_a вертикальное выравнивание.
        @note строковые переменные выравнивания состоят из трех частей разделенных пробелами("1 2 3").
@@ -64,26 +66,31 @@ public:
 	void setAlignment(string horiz_a, string vertic_a);
 
     /** Устанавливает вертикальное выравнивание элементов 1 уровня в группе.
+
        @param vertic_a вертикальное выравнивание.
     */
 	void setVAlignment(string vertic_a);
 
     /** Устанавливает горизонтальное выравнивание элементов 1 уровня в группе.
+
        @param horiz_a горизонтальное выравнивание.
     */
 	void setHAlignment(string horiz_a);
 
     /** Устанавливает новую координату x для группы. Провоцирует изменение положения всех элементов группы.
+
        @param x новая координата x.
     */
 	void setPositionX(float x) override;
 
     /** Устанавливает новую координату y для группы. Провоцирует изменение положения всех элементов группы.
+
        @param y новая координата y.
     */
 	void setPositionY(float y) override;
 
     /** Устанавливает цвет заливки заднего фона группы. По умолчанию цвет фона прозрачный.
+
         @param color новый цвет фона.
     */
 	void setBColor(Color color);
@@ -97,12 +104,14 @@ public:
 	void changeChildrenPosition(float offset_x, float offset_y) override;
 
     /** Сдвигает группу и ее элементы на заданное смещение.
+
        @param offset_x смещение по x.
        @param offset_y смещение по y.
     */
 	void changePosition(float offset_x, float offset_y) override;
 
     /** Сдвигает группу и ее элементы на заданное смещение по оси y.
+
        @param offset смещение по y.
     */
 	void changePositionY(float offset);

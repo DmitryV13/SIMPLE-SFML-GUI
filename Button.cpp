@@ -91,7 +91,6 @@
 	}
 	
 	Button::~Button(){
-
 	}
 
 	float Button::getHeight(){
@@ -153,7 +152,9 @@
 	}
 
 	void Button::setBackgroundColor(Color shapeColor){
-		shape.setFillColor(shapeColor);
+        shp_idle_color = shapeColor;
+        shp_hover_color = shapeColor;
+        shp_active_color = shapeColor;
 	}
 
 	void Button::resetActiveState(){
@@ -224,9 +225,7 @@
 
 	void Button::render(){
 		RenderTarget* target = GlobalProcessData::getWindow();
+
 		target->draw(shape);
-		//if (btn_image != nullptr) {
-			//target->draw(*btn_image);
-		//}
 		target->draw(text);
 	}
