@@ -7,7 +7,7 @@
 #include "NumberField.h"
 
 /**
- * Базовый класс для группировки элементов
+ * Базовый класс для группировки элементов.
  */
 class Group : public InterfaceItem{
 protected:

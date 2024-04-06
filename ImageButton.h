@@ -3,6 +3,9 @@
 
 using namespace::sf;
 
+/** Элемент интерфейса - кнопка текст-картинка.
+
+ */
 class ImageButton : public Button{
 private:
 	Sprite* btn_image;
