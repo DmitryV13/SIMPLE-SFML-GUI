@@ -12,6 +12,7 @@
 
 using namespace::sf;
 
+
 class InputField: public InterfaceItem, public FormItem {
 protected:
 	Text* label;
