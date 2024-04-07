@@ -1,0 +1,64 @@
+\doxysection{Form.\+h}
+\hypertarget{_form_8h_source}{}\label{_form_8h_source}\index{D:/Applications/SFML\_GUI/Form.h@{D:/Applications/SFML\_GUI/Form.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Group.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}FormItem.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}FORM\_ITEM\_STATE.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CheckboxItem.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ }namespace::sf;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ }std::function;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ }saction\_type\ =\ function<void(std::vector<float>)>*;}
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ }daction\_type\ =\ function<void(std::vector<string>)>*;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_form}{Form}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_group}{Group}}\{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ std::vector<float>\ s\_callback\_params;}
+\DoxyCodeLine{00024\ \ \ \ \ std::vector<string>\ d\_callback\_params;}
+\DoxyCodeLine{00025\ \ \ \ \ saction\_type\ s\_action;}
+\DoxyCodeLine{00026\ \ \ \ \ daction\_type\ d\_action;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ activated;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ action\_done;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ static\_parameters;}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_form_ae5135e6ac9fe667a83cd253c73b9a29a}{Form}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ width\_,\ \textcolor{keywordtype}{float}\ height\_);}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_form}{\string~Form}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_interface_item}{InterfaceItem}}*\ \mbox{\hyperlink{class_form_af5e7d76d8f188b5887d20555fe9ba38a}{getElement}}(\textcolor{keywordtype}{int}\ i,\ \textcolor{keywordtype}{int}\ j);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_form_aff26dffeefa19ae2a5911fd0826c778d}{setStaticParametersType}}(\textcolor{keywordtype}{bool}\ type);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_form_aa11745893c6501bfe1c8e74c4db5b507}{resetFormUsage}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_form_a012695903e497f9e7d95d3152a99771f}{addSFormAction}}(\textcolor{keywordtype}{int}\ params\_amount,\ \textcolor{keywordtype}{void}(T::*\ l\_func)(vector<float>),\ T*\ l\_instance);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_form_ace6766671df60771280d023593e9ec3b}{addDFormAction}}(\textcolor{keywordtype}{int}\ params\_amount,\ \textcolor{keywordtype}{void}(T::*\ l\_func)(vector<string>),\ T*\ l\_instance);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_form_a682ba0f73a7990826272bae8b880fc06}{addDCallbackParam}}(\textcolor{keywordtype}{string}*\ index,\ \textcolor{keywordtype}{string}*\ param);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_form_a35a808cdac903ed9f9a160df6010742c}{addSCallbackParam}}(\textcolor{keywordtype}{float}\ index,\ \textcolor{keywordtype}{float}\ param);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_form_a2397955425255031922038e36fa9f40e}{activateForm}}(\textcolor{keywordtype}{float}\ param1,\ \textcolor{keywordtype}{float}\ param2);}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_form_ac66858b652ceb774c299c7544f91fe6d}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00102\ \};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00105\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_form_a012695903e497f9e7d95d3152a99771f}{Form::addSFormAction}}(\textcolor{keywordtype}{int}\ params\_amount,\ \textcolor{keywordtype}{void}(T::*\ l\_func)(vector<float>),\ T*\ l\_instance)\ \{}
+\DoxyCodeLine{00106\ \ \ \ \ s\_callback\_params.resize(params\_amount);}
+\DoxyCodeLine{00107\ \ \ \ \ *s\_action\ =\ std::bind(l\_func,\ l\_instance,\ std::placeholders::\_1);}
+\DoxyCodeLine{00108\ \}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00111\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_form_ace6766671df60771280d023593e9ec3b}{Form::addDFormAction}}(\textcolor{keywordtype}{int}\ params\_amount,\ \textcolor{keywordtype}{void}(T::*\ l\_func)(vector<string>),\ T*\ l\_instance)\ \{}
+\DoxyCodeLine{00112\ \ \ \ \ d\_callback\_params.resize(params\_amount);}
+\DoxyCodeLine{00113\ \ \ \ \ *d\_action\ =\ std::bind(l\_func,\ l\_instance,\ std::placeholders::\_1);}
+\DoxyCodeLine{00114\ \}}
+
+\end{DoxyCode}

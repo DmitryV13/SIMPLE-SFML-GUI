@@ -1,0 +1,44 @@
+\doxysection{DCallbacks\+Handler.\+h}
+\hypertarget{_d_callbacks_handler_8h_source}{}\label{_d_callbacks_handler_8h_source}\index{D:/Applications/SFML\_GUI/DCallbacksHandler.h@{D:/Applications/SFML\_GUI/DCallbacksHandler.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{keyword}{using\ }namespace::sf;}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{using\ }DCallbackFunctions\ =\ vector\ <std::function<void(\textcolor{keywordtype}{string}*,\ \textcolor{keywordtype}{string}*)>>;}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ }DCallbackContainer\ =\ unordered\_map<}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{short}*,\ DCallbackFunctions>;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ }DCallbacks\ =\ unordered\_map<}
+\DoxyCodeLine{00011\ \ \ \ \ short,\ DCallbackContainer>;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ }DParameters\ =\ unordered\_map<}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{short}*,\ std::pair<string*,\ string*>>;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_d_callbacks_handler}{DCallbacksHandler}}\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ DCallbacks\ w\_callbacks;}
+\DoxyCodeLine{00022\ \ \ \ \ DParameters\ c\_parameters;}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_d_callbacks_handler}{DCallbacksHandler}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_d_callbacks_handler_acdd6d9c1cb609bad7297dbfd5c7ee434}{addCallback}}(\textcolor{keywordtype}{short}*\ b\_state,\ \textcolor{keywordtype}{short}\ a\_state,\ \textcolor{keywordtype}{string}*\ param1,\ \textcolor{keywordtype}{string}*\ param2,\ \textcolor{keywordtype}{void}(T::*\ l\_func)(\textcolor{keywordtype}{string}*,\ \textcolor{keywordtype}{string}*),\ T*\ l\_instance);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_d_callbacks_handler_ae7f1bcce71808d24461026d7a84cb5ac}{update}}();}
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00046\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_d_callbacks_handler_acdd6d9c1cb609bad7297dbfd5c7ee434}{DCallbacksHandler::addCallback}}(\textcolor{keywordtype}{short}*\ c\_state,\ \textcolor{keywordtype}{short}\ a\_state,\ \textcolor{keywordtype}{string}*\ param1,\ \textcolor{keywordtype}{string}*\ param2,\ \textcolor{keywordtype}{void}(T::*\ l\_func)(string*,\ string*),\ T*\ l\_instance)\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ c\_parameters.insert(\{\ c\_state,\ \{param1,\ param2\}\ \});}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{auto}\ itr\ =\ w\_callbacks.emplace(a\_state,\ DCallbackContainer()).first;}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{auto}\ temp\ =\ std::bind(l\_func,\ l\_instance,\ std::placeholders::\_1,\ std::placeholders::\_2);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{bool}\ inserted\ =\ itr-\/>second.emplace(c\_state,\ DCallbackFunctions()).second;}
+\DoxyCodeLine{00051\ \ \ \ \ itr-\/>second.at(c\_state).push\_back(temp);}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordflow}{return}\ inserted;}
+\DoxyCodeLine{00053\ \}}
+\DoxyCodeLine{00054\ }
+
+\end{DoxyCode}

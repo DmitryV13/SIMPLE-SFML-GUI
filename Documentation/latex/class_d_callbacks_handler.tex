@@ -1,0 +1,72 @@
+\doxysection{DCallbacks\+Handler Class Reference}
+\hypertarget{class_d_callbacks_handler}{}\label{class_d_callbacks_handler}\index{DCallbacksHandler@{DCallbacksHandler}}
+
+
+{\ttfamily \#include $<$DCallbacks\+Handler.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\bool \mbox{\hyperlink{class_d_callbacks_handler_acdd6d9c1cb609bad7297dbfd5c7ee434}{add\+Callback}} (short \texorpdfstring{$\ast$}{*}b\+\_\+state, short a\+\_\+state, string \texorpdfstring{$\ast$}{*}param1, string \texorpdfstring{$\ast$}{*}param2, void(T\+::\texorpdfstring{$\ast$}{*}l\+\_\+func)(string \texorpdfstring{$\ast$}{*}, string \texorpdfstring{$\ast$}{*}), T \texorpdfstring{$\ast$}{*}l\+\_\+instance)
+\item 
+void \mbox{\hyperlink{class_d_callbacks_handler_ae7f1bcce71808d24461026d7a84cb5ac}{update}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_d_callbacks_handler_ae2c465b4ce119b79a8cefed494b218aa}\label{class_d_callbacks_handler_ae2c465b4ce119b79a8cefed494b218aa} 
+DCallbacks {\bfseries w\+\_\+callbacks}
+\item 
+\Hypertarget{class_d_callbacks_handler_a341a78b88c07731a5859b98349b8aaca}\label{class_d_callbacks_handler_a341a78b88c07731a5859b98349b8aaca} 
+DParameters {\bfseries c\+\_\+parameters}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс манипулятор динамическими откликами 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_d_callbacks_handler_acdd6d9c1cb609bad7297dbfd5c7ee434}\label{class_d_callbacks_handler_acdd6d9c1cb609bad7297dbfd5c7ee434} 
+\index{DCallbacksHandler@{DCallbacksHandler}!addCallback@{addCallback}}
+\index{addCallback@{addCallback}!DCallbacksHandler@{DCallbacksHandler}}
+\doxysubsubsection{\texorpdfstring{addCallback()}{addCallback()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool DCallbacks\+Handler\+::add\+Callback (\begin{DoxyParamCaption}\item[{short \texorpdfstring{$\ast$}{*}}]{b\+\_\+state,  }\item[{short}]{a\+\_\+state,  }\item[{string \texorpdfstring{$\ast$}{*}}]{param1,  }\item[{string \texorpdfstring{$\ast$}{*}}]{param2,  }\item[{void(T\+::\texorpdfstring{$\ast$}{*})(string \texorpdfstring{$\ast$}{*}, string \texorpdfstring{$\ast$}{*})}]{l\+\_\+func,  }\item[{T \texorpdfstring{$\ast$}{*}}]{l\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Добавление отклика
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & тип данных принимаемого l\+\_\+instance. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em b\+\_\+state} & указатель на состояние, которое будет отслеживаться. \\
+\hline
+{\em a\+\_\+state} & значение активного состояния. \\
+\hline
+{\em param1} & первый параметр типа string\texorpdfstring{$\ast$}{*}, который передастся в метод передаваемого обьекта. \\
+\hline
+{\em param2} & второй параметр типа string\texorpdfstring{$\ast$}{*}, который передастся в метод передаваемого обьекта. \\
+\hline
+{\em l\+\_\+func} & метод обьекта l\+\_\+instance с сигнатурой void l\+\_\+func(string\texorpdfstring{$\ast$}{*}, string\texorpdfstring{$\ast$}{*}). \\
+\hline
+{\em l\+\_\+instance} & обьект, от которого вызовется переданный метод. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+возвращает булевой значение, был ли успешно добавлен отклик. 
+\end{DoxyReturn}
+\Hypertarget{class_d_callbacks_handler_ae7f1bcce71808d24461026d7a84cb5ac}\label{class_d_callbacks_handler_ae7f1bcce71808d24461026d7a84cb5ac} 
+\index{DCallbacksHandler@{DCallbacksHandler}!update@{update}}
+\index{update@{update}!DCallbacksHandler@{DCallbacksHandler}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void DCallbacks\+Handler\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Проверка и обновление состояний, от которых зависит активация откликов. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/DCallbacks\+Handler.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/DCallbacks\+Handler.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,55 @@
+\doxysection{Product\+Card.\+h}
+\hypertarget{_product_card_8h_source}{}\label{_product_card_8h_source}\index{D:/Applications/SFML\_GUI/ProductCard.h@{D:/Applications/SFML\_GUI/ProductCard.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Group.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}InterfaceItem.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}INTERFACE\_ITEM\_TYPE.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}PURCHASE.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Notification.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ }namespace::sf;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_product_card}{ProductCard}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_interface_item}{InterfaceItem}}\{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_group}{Group}}*\ group;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ price;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ amount;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{float}\ p\_coefficient;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}*\ source;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}*\ currency;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{short}\ purchase\_state;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{string}\ h\_alignment;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{string}\ v\_alignment;}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_notification}{Notification}}*\ notification;}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_product_card}{ProductCard}}(\textcolor{keywordtype}{int}\ price,\ \textcolor{keywordtype}{int}\ amount,\ \textcolor{keywordtype}{float}\ p\_coefficient,\ \textcolor{keywordtype}{int}*\ source);}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_product_card}{\string~ProductCard}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ FloatRect\ getLocalBounds()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ \ \ \ \ FloatRect\ getGlobalBounds()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{short}*\ getPurchaseState();}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_group}{Group}}*\ getGroup();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}*\ getPrice();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ setGroup(\mbox{\hyperlink{class_group}{Group}}*\ group\_,\ Color\ color);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ setPositionX(\textcolor{keywordtype}{float}\ x)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ setPositionY(\textcolor{keywordtype}{float}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ setCurrency(\textcolor{keywordtype}{int}*\ curr);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ setAlignment(\textcolor{keywordtype}{string}\ v\_align,\ \textcolor{keywordtype}{string}\ h\_align);}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ addNotification(\textcolor{keywordtype}{short}\ text\_size,\ \textcolor{keywordtype}{string}\ text\_,\ Color\ text\_color);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ addNotification(\textcolor{keywordtype}{short}\ text\_size,\ Color\ text\_color);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ changePosition(\textcolor{keywordtype}{float}\ offset\_x,\ \textcolor{keywordtype}{float}\ offset\_y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ buy(\textcolor{keywordtype}{float}\ param1,\ \textcolor{keywordtype}{float}\ param2);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ update()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ render()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+
+\end{DoxyCode}

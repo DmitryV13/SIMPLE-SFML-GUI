@@ -1,0 +1,256 @@
+\doxysection{Resource\+Info Class Reference}
+\hypertarget{class_resource_info}{}\label{class_resource_info}\index{ResourceInfo@{ResourceInfo}}
+
+
+{\ttfamily \#include $<$Resource\+Info.\+h$>$}
+
+Inheritance diagram for Resource\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_resource_info}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_resource_info_a63f6ae4edb189d7ecbd7566a81d9e2b0}{Resource\+Info}} (float x, float y, int text\+\_\+size, bool image\+\_\+)
+\item 
+\mbox{\hyperlink{class_resource_info_a45afd906cad081e4fc13649483fb007b}{Resource\+Info}} (float x, float y, int text\+\_\+size, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}w\+\_\+object, string name, bool image\+\_\+)
+\item 
+\mbox{\hyperlink{class_resource_info_a83bb1126677312023753ca8225cf89df}{Resource\+Info}} (float x, float y, int \texorpdfstring{$\ast$}{*}resource\+\_\+, int max\+\_\+v, int text\+\_\+size, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index, string name, bool self\+\_\+align\+\_\+)
+\item 
+void \mbox{\hyperlink{class_resource_info_a51d7eca3c761b4146b31fcf9e0bf9197}{add\+Info}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}w\+\_\+object, string name, bool x)
+\item 
+void \mbox{\hyperlink{class_resource_info_adc010eafa85ad11127f558708e82dc9e}{add\+Info}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse_item}{Warehouse\+Item}} \texorpdfstring{$\ast$}{*}w\+\_\+item, bool x)
+\item 
+void \mbox{\hyperlink{class_resource_info_af059e1cec57d969c3a51e5335c2b39b8}{update}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_image_info}{Image\+Info}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_image_info_a927511900b80fd9f1e39f337a8cd102a}{Image\+Info}} (float x, float y, string text\+\_\+, int text\+\_\+size, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index, string name)
+\item 
+\mbox{\hyperlink{class_image_info_a505a4a731ba6f9ceebb95c214be386cd}{Image\+Info}} (float x, float y, int text\+\_\+, int text\+\_\+size, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index, string name)
+\item 
+Float\+Rect \mbox{\hyperlink{class_image_info_acb458d1e769a42ccdcf7c63902e29469}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_image_info_a97f941109d64db9e090ed038da40fe45}{get\+Global\+Bounds}} () override
+\item 
+virtual void \mbox{\hyperlink{class_image_info_a39200822b6f2d7d1df440e415206ad2d}{set\+Position}} (Vector2f new\+\_\+position)
+\item 
+void \mbox{\hyperlink{class_image_info_aa442aac61184371e3473da96c2651202}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_image_info_a5e9b7e6e5681d3b5f0452180f5564bce}{set\+PositionY}} (float y) override
+\item 
+void \mbox{\hyperlink{class_image_info_af0a4a1bfff50079f3ca523d329bf35c8}{set\+Text}} (float text\+\_\+)
+\item 
+void \mbox{\hyperlink{class_image_info_ac3fa71aec68a579ffb8f4e876983023e}{set\+Background\+Color}} (Color color)
+\item 
+void \mbox{\hyperlink{class_image_info_a392238baa6f914db2f4bdcea4ed73057}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_image_info_a92cfc2fcf014a2f3a15a747364788a3a}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\item 
+virtual bool \mbox{\hyperlink{class_interface_item_a85a6055772471551e54b3e6a8f85eb14}{item\+Scroll}} (float delta)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a829762a6d201271ec326ee52f6c27153}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1}{reset\+Active\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_resource_info_a9af1dfe2f61e0d46dd007867139435a9}\label{class_resource_info_a9af1dfe2f61e0d46dd007867139435a9} 
+int \texorpdfstring{$\ast$}{*} {\bfseries resource}
+\item 
+\Hypertarget{class_resource_info_a0337a0b643f89b4aa3d02e8358732448}\label{class_resource_info_a0337a0b643f89b4aa3d02e8358732448} 
+bool {\bfseries image}
+\item 
+\Hypertarget{class_resource_info_aa9ee89ebe3c24a3040af2268bd71a797}\label{class_resource_info_aa9ee89ebe3c24a3040af2268bd71a797} 
+string {\bfseries max}
+\item 
+\Hypertarget{class_resource_info_a096841b19a94d3dc92018df9395e23ea}\label{class_resource_info_a096841b19a94d3dc92018df9395e23ea} 
+string {\bfseries prev}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_image_info}{Image\+Info}}}
+\begin{DoxyCompactItemize}
+\item 
+Rectangle\+Shape {\bfseries shape}
+\item 
+Text {\bfseries text}
+\item 
+Sprite {\bfseries src\+\_\+img}
+\item 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Элемент интерфейса -\/ информационный ресурс. Создан для того, чтобы в реальном времени отображать количество заданного ресурса. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_resource_info_a63f6ae4edb189d7ecbd7566a81d9e2b0}\label{class_resource_info_a63f6ae4edb189d7ecbd7566a81d9e2b0} 
+\index{ResourceInfo@{ResourceInfo}!ResourceInfo@{ResourceInfo}}
+\index{ResourceInfo@{ResourceInfo}!ResourceInfo@{ResourceInfo}}
+\doxysubsubsection{\texorpdfstring{ResourceInfo()}{ResourceInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Resource\+Info\+::\+Resource\+Info (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{text\+\_\+size,  }\item[{bool}]{image\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em text\+\_\+} & текст подписи. \\
+\hline
+{\em text\+\_\+size} & размер шрифта. \\
+\hline
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em index} & индекс строки содержащей данную текстуру. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+текстура масштабируется таким образом, чтобы ее высота была в 2 раза больше высоты текста. 
+\end{DoxyNote}
+\Hypertarget{class_resource_info_a45afd906cad081e4fc13649483fb007b}\label{class_resource_info_a45afd906cad081e4fc13649483fb007b} 
+\index{ResourceInfo@{ResourceInfo}!ResourceInfo@{ResourceInfo}}
+\index{ResourceInfo@{ResourceInfo}!ResourceInfo@{ResourceInfo}}
+\doxysubsubsection{\texorpdfstring{ResourceInfo()}{ResourceInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Resource\+Info\+::\+Resource\+Info (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{text\+\_\+size,  }\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{\mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}}]{w\+\_\+object,  }\item[{string}]{name,  }\item[{bool}]{image\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em text\+\_\+size} & размер шрифта. \\
+\hline
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em w\+\_\+object} & обьект склада информации о сущностях. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+{\em image} & логическое значение присутствия картинки (для правильного отображения всегда выставлять в true). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+текстура масштабируется таким образом, чтобы ее высота была в 2 раза больше высоты текста. 
+\end{DoxyNote}
+\Hypertarget{class_resource_info_a83bb1126677312023753ca8225cf89df}\label{class_resource_info_a83bb1126677312023753ca8225cf89df} 
+\index{ResourceInfo@{ResourceInfo}!ResourceInfo@{ResourceInfo}}
+\index{ResourceInfo@{ResourceInfo}!ResourceInfo@{ResourceInfo}}
+\doxysubsubsection{\texorpdfstring{ResourceInfo()}{ResourceInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Resource\+Info\+::\+Resource\+Info (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{int \texorpdfstring{$\ast$}{*}}]{resource\+\_\+,  }\item[{int}]{max\+\_\+v,  }\item[{int}]{text\+\_\+size,  }\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{int}]{index,  }\item[{string}]{name,  }\item[{bool}]{self\+\_\+align\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em resource\+\_\+} & указатель на ресурс. \\
+\hline
+{\em max\+\_\+v} & максимальное значение ресурса. Если максимальное значение ресурса равно 0, значит ресурс неисчерпаем и следовательно после количества ресурса будет пустая строка, иначе после количества ресурса поставится слэш и добавится максимальное количество. \\
+\hline
+{\em text\+\_\+size} & размер шрифта. \\
+\hline
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em index} & индекс строки содержащей данную текстуру. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+{\em self\+\_\+align\+\_\+} & логическое значение присутствия картинки (для правильного отображения всегда выставлять в true). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+текстура масштабируется таким образом, чтобы ее высота была в 2 раза больше высоты текста. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_resource_info_a51d7eca3c761b4146b31fcf9e0bf9197}\label{class_resource_info_a51d7eca3c761b4146b31fcf9e0bf9197} 
+\index{ResourceInfo@{ResourceInfo}!addInfo@{addInfo}}
+\index{addInfo@{addInfo}!ResourceInfo@{ResourceInfo}}
+\doxysubsubsection{\texorpdfstring{addInfo()}{addInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Resource\+Info\+::add\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{\mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}}]{w\+\_\+object,  }\item[{string}]{name,  }\item[{bool}]{x }\end{DoxyParamCaption})}
+
+Добавляет всю необходимую информацию о ресурсе.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em w\+\_\+object} & обьект склада информации о сущностях. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+{\em x} & логическое значение, задает будет ли отображаться X перед ресурсом. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+текстура масштабируется таким образом, чтобы ее высота была в 2 раза больше высоты текста. 
+\end{DoxyNote}
+\Hypertarget{class_resource_info_adc010eafa85ad11127f558708e82dc9e}\label{class_resource_info_adc010eafa85ad11127f558708e82dc9e} 
+\index{ResourceInfo@{ResourceInfo}!addInfo@{addInfo}}
+\index{addInfo@{addInfo}!ResourceInfo@{ResourceInfo}}
+\doxysubsubsection{\texorpdfstring{addInfo()}{addInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Resource\+Info\+::add\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{\mbox{\hyperlink{class_warehouse_item}{Warehouse\+Item}} \texorpdfstring{$\ast$}{*}}]{w\+\_\+item,  }\item[{bool}]{x }\end{DoxyParamCaption})}
+
+Добавляет всю необходимую информацию о ресурсе.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em w\+\_\+item} & конкретная сущность обьекта склада информации о сущностях. \\
+\hline
+{\em x} & логическое значение, задает будет ли отображаться X перед ресурсом. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+текстура масштабируется таким образом, чтобы ее высота была в 2 раза больше высоты текста. 
+\end{DoxyNote}
+\Hypertarget{class_resource_info_af059e1cec57d969c3a51e5335c2b39b8}\label{class_resource_info_af059e1cec57d969c3a51e5335c2b39b8} 
+\index{ResourceInfo@{ResourceInfo}!update@{update}}
+\index{update@{update}!ResourceInfo@{ResourceInfo}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Resource\+Info\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Обновляет элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_image_info_a03c7a51f567ebefd23fd31991d3b884e}{Image\+Info}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Resource\+Info.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Resource\+Info.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,568 @@
+\doxysection{Group Class Reference}
+\hypertarget{class_group}{}\label{class_group}\index{Group@{Group}}
+
+
+{\ttfamily \#include $<$Group.\+h$>$}
+
+Inheritance diagram for Group\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_group}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_group_a2f160fd37b5dfb2035ed76a2df7ba7d1}{Group}} (float x, float y, float width\+\_\+, float height\+\_\+)
+\item 
+Float\+Rect \mbox{\hyperlink{class_group_af08591648aaa2b9803532a88291b6dc6}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_group_a7db6571bbac42c75dc7263cc431b38f8}{get\+Global\+Bounds}} () override
+\item 
+std\+::pair$<$ float, float $>$ \mbox{\hyperlink{class_group_aba10e205b0c54b0554020dee6b4b987f}{get\+Max\+ELHeight}} (short index)
+\item 
+short \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_group_adad8eda5d8468f856c4e29ed10e6e7cc}{get\+Button\+State}} (int btn\+\_\+id)
+\item 
+void \mbox{\hyperlink{class_group_a6fe15f0453063a39db110e910a3259b1}{set\+Alignment}} (string horiz\+\_\+a, string vertic\+\_\+a)
+\item 
+void \mbox{\hyperlink{class_group_a85c162b3c3ec53b1a7ce96d058319dbc}{set\+VAlignment}} (string vertic\+\_\+a)
+\item 
+void \mbox{\hyperlink{class_group_afbd8acd74d9a1184f3b2de8d1d0b3f33}{set\+HAlignment}} (string horiz\+\_\+a)
+\item 
+void \mbox{\hyperlink{class_group_ad1abcb821fd9e807257586704452e133}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_group_a922efb9d466dd8bf6b769fdb5ea656c0}{set\+PositionY}} (float y) override
+\item 
+void \mbox{\hyperlink{class_group_a2a5eeef86b3b024bd64b188c7ad5b68c}{set\+BColor}} (Color color)
+\item 
+void \mbox{\hyperlink{class_group_ac2c6fd2ff817db058c50b2af04a7b7a0}{normalization}} ()
+\item 
+void \mbox{\hyperlink{class_group_a4739196e4a89954a907298fe8696facf}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_group_a5cf1372d0e88a195cb8d83441c29bdac}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_group_af15d65f3bcff7288942f739465f44b7d}{change\+PositionY}} (float offset)
+\item 
+void \mbox{\hyperlink{class_group_acba89f444c4bb114559cc544a8059011}{create\+Element\+Line}} ()
+\item 
+void \mbox{\hyperlink{class_group_a28ed8f9f77742ba939e01b0917f26199}{clear\+Info}} ()
+\item 
+void \mbox{\hyperlink{class_group_afeda9304f76fa0072815a93e92ab2598}{add\+IElement}} (\mbox{\hyperlink{class_interface_item}{Interface\+Item}} \texorpdfstring{$\ast$}{*}new\+\_\+group, short index)
+\item 
+int \mbox{\hyperlink{class_group_a486cea639c0d7e74acf30839d94c9518}{add\+Group}} (short fill\+\_\+p\+\_\+w, short fill\+\_\+p\+\_\+h, short index)
+\item 
+void \mbox{\hyperlink{class_group_af5be7472e141ca4cf1d6478c4fa82aab}{add\+Group\+Name}} (string text\+\_\+name, int name\+\_\+size)
+\item 
+int \mbox{\hyperlink{class_group_ae4a4ec8902a2653d8cf75766f51be13b}{add\+Button}} (short text\+\_\+size, string btn\+\_\+name, Color btn\+\_\+color, short index\+\_\+g)
+\item 
+int \mbox{\hyperlink{class_group_ac83ce3850a9a7369f4ae2c1cdd8cc613}{add\+Button}} (float width, float height, short text\+\_\+size, string btn\+\_\+name, Color btn\+\_\+hcolor, Color btn\+\_\+icolor, Color shp\+\_\+hcolor, Color shp\+\_\+icolor, bool outline, short index\+\_\+g)
+\item 
+int \mbox{\hyperlink{class_group_a55139f547b3d8978d9dad732353a9808}{add\+Button}} (float width, float height, short text\+\_\+size, string btn\+\_\+name, Color btn\+\_\+hcolor, Color btn\+\_\+icolor, Color shp\+\_\+hcolor, Color shp\+\_\+icolor, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index\+\_\+t, string name, bool outline, short index\+\_\+g)
+\item 
+\mbox{\hyperlink{class_c_rect}{CRect}}$<$ float $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_group_a38a48dfedd9d975cd940d1e88c2aac61}{calculate\+PFNII}} (short fill\+\_\+p\+\_\+w, short fill\+\_\+p\+\_\+h, short index)
+\item 
+void \mbox{\hyperlink{class_group_afa157093ad864b84b01c3e3b24c85566}{reset\+Active\+State}} () override
+\item 
+bool \mbox{\hyperlink{class_group_a12cba9b000f1d217e03c22553f73b303}{item\+Scroll}} (float delta) override
+\item 
+void \mbox{\hyperlink{class_group_a49978fd9cecb7b125407feee525c6d38}{form\+Input}} (Event event)
+\item 
+void \mbox{\hyperlink{class_group_a198d855cd431ba03040fd060816625bd}{update}} () override
+\item 
+void \mbox{\hyperlink{class_group_a3919dca17f850e8d0cd41f207dd4e4f3}{render}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_group_a02c279dc270b8c5cb701f2521f1cfc2a}\label{class_group_a02c279dc270b8c5cb701f2521f1cfc2a} 
+Rectangle\+Shape {\bfseries shape0}
+\item 
+\Hypertarget{class_group_a41159ce1bd064e7dc84b598436d8c93a}\label{class_group_a41159ce1bd064e7dc84b598436d8c93a} 
+Rectangle\+Shape {\bfseries shape1}
+\item 
+\Hypertarget{class_group_a83dc3b3cb7dbdc117c10f4958b4eec9c}\label{class_group_a83dc3b3cb7dbdc117c10f4958b4eec9c} 
+Rectangle\+Shape {\bfseries shape2}
+\item 
+\Hypertarget{class_group_a2d59c83e5364fa273fe3d3a9a7fcd68c}\label{class_group_a2d59c83e5364fa273fe3d3a9a7fcd68c} 
+Rectangle\+Shape {\bfseries background}
+\item 
+\Hypertarget{class_group_acdf1bff38bc12766b1071236b3c4d66c}\label{class_group_acdf1bff38bc12766b1071236b3c4d66c} 
+Text \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{class_group_a47889c242070b5a3ac77fcac97e4df9b}\label{class_group_a47889c242070b5a3ac77fcac97e4df9b} 
+vector$<$ vector$<$ \mbox{\hyperlink{class_interface_item}{Interface\+Item}} \texorpdfstring{$\ast$}{*} $>$ $>$ {\bfseries g\+\_\+elements}
+\item 
+\Hypertarget{class_group_a494ffb4a14f1123817ed942028971de2}\label{class_group_a494ffb4a14f1123817ed942028971de2} 
+float {\bfseries inner\+\_\+width}
+\item 
+\Hypertarget{class_group_a6e31ac037ae160fa66e0330814a9e37e}\label{class_group_a6e31ac037ae160fa66e0330814a9e37e} 
+float {\bfseries inner\+\_\+height}
+\item 
+\Hypertarget{class_group_a80dca8d25a4e26805db71007bbb7a4af}\label{class_group_a80dca8d25a4e26805db71007bbb7a4af} 
+float {\bfseries outer\+\_\+width}
+\item 
+\Hypertarget{class_group_a9f44a22214705f0ad8bb93efb1503fc1}\label{class_group_a9f44a22214705f0ad8bb93efb1503fc1} 
+float {\bfseries outer\+\_\+height}
+\item 
+\Hypertarget{class_group_a48f13108d7e47d134fa39b22382ad593}\label{class_group_a48f13108d7e47d134fa39b22382ad593} 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Базовый класс для группировки элементов. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_group_a2f160fd37b5dfb2035ed76a2df7ba7d1}\label{class_group_a2f160fd37b5dfb2035ed76a2df7ba7d1} 
+\index{Group@{Group}!Group@{Group}}
+\index{Group@{Group}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{Group()}{Group()}}
+{\footnotesize\ttfamily Group\+::\+Group (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width\+\_\+,  }\item[{float}]{height\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em width\+\_\+} & ширина. \\
+\hline
+{\em height\+\_\+} & высота. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_group_ac83ce3850a9a7369f4ae2c1cdd8cc613}\label{class_group_ac83ce3850a9a7369f4ae2c1cdd8cc613} 
+\index{Group@{Group}!addButton@{addButton}}
+\index{addButton@{addButton}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{addButton()}{addButton()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int Group\+::add\+Button (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{short}]{text\+\_\+size,  }\item[{string}]{btn\+\_\+name,  }\item[{Color}]{btn\+\_\+hcolor,  }\item[{Color}]{btn\+\_\+icolor,  }\item[{Color}]{shp\+\_\+hcolor,  }\item[{Color}]{shp\+\_\+icolor,  }\item[{bool}]{outline,  }\item[{short}]{index\+\_\+g }\end{DoxyParamCaption})}
+
+Создает новую текстовую кнопку(как элемент интерфейса) в текущей группе и добавляет в конец указанной строки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & ширина кнопки. \\
+\hline
+{\em height} & высота кнопки. \\
+\hline
+{\em text\+\_\+size} & размер шрифта. \\
+\hline
+{\em btn\+\_\+name} & текст кнопки. \\
+\hline
+{\em btn\+\_\+hcolor} & цвет текста при наведении на кнопку. \\
+\hline
+{\em btn\+\_\+icolor} & цвет текста в неработающем состоянии. \\
+\hline
+{\em shp\+\_\+hcolor} & цвет прямоугольной области при наведении на кнопку. \\
+\hline
+{\em shp\+\_\+icolor} & цвет прямоугольной области в неработающем состоянии. \\
+\hline
+{\em outline} & контур. \\
+\hline
+{\em index\+\_\+g} & индекс строки куда произойдет добавление. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+возвращает идентификатор только что добавленной кнопки. 
+\end{DoxyReturn}
+\Hypertarget{class_group_a55139f547b3d8978d9dad732353a9808}\label{class_group_a55139f547b3d8978d9dad732353a9808} 
+\index{Group@{Group}!addButton@{addButton}}
+\index{addButton@{addButton}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{addButton()}{addButton()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int Group\+::add\+Button (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{short}]{text\+\_\+size,  }\item[{string}]{btn\+\_\+name,  }\item[{Color}]{btn\+\_\+hcolor,  }\item[{Color}]{btn\+\_\+icolor,  }\item[{Color}]{shp\+\_\+hcolor,  }\item[{Color}]{shp\+\_\+icolor,  }\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{int}]{index\+\_\+t,  }\item[{string}]{name,  }\item[{bool}]{outline,  }\item[{short}]{index\+\_\+g }\end{DoxyParamCaption})}
+
+Создает новую анимированную кнопку(как элемент интерфейса) в текущей группе и добавляет в конец указанной строки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & ширина кнопки. \\
+\hline
+{\em height} & высота кнопки. \\
+\hline
+{\em text\+\_\+size} & размер шрифта. \\
+\hline
+{\em btn\+\_\+name} & текст кнопки. \\
+\hline
+{\em btn\+\_\+hcolor} & цвет текста при наведении на кнопку. \\
+\hline
+{\em btn\+\_\+icolor} & цвет текста в неработающем состоянии. \\
+\hline
+{\em shp\+\_\+hcolor} & цвет прямоугольной области при наведении на кнопку. \\
+\hline
+{\em shp\+\_\+icolor} & цвет прямоугольной области в неработающем состоянии. \\
+\hline
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em index\+\_\+t} & индекс строки содержащей данную текстуру. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+{\em outline} & контур. \\
+\hline
+{\em index\+\_\+g} & индекс строки куда произойдет добавление. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+возвращает идентификатор только что добавленной кнопки. 
+\end{DoxyReturn}
+\Hypertarget{class_group_ae4a4ec8902a2653d8cf75766f51be13b}\label{class_group_ae4a4ec8902a2653d8cf75766f51be13b} 
+\index{Group@{Group}!addButton@{addButton}}
+\index{addButton@{addButton}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{addButton()}{addButton()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int Group\+::add\+Button (\begin{DoxyParamCaption}\item[{short}]{text\+\_\+size,  }\item[{string}]{btn\+\_\+name,  }\item[{Color}]{btn\+\_\+color,  }\item[{short}]{index\+\_\+g }\end{DoxyParamCaption})}
+
+Создает новую текстовую кнопку без контура(как элемент интерфейса) в текущей группе и добавляет в конец указанной строки. Размеры прямоугольной области установятся по размерам текста.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+\_\+size} & размер шрифта. \\
+\hline
+{\em btn\+\_\+name} & текст кнопки. \\
+\hline
+{\em btn\+\_\+color} & цвет текста при наведении на кнопку. \\
+\hline
+{\em index\+\_\+g} & индекс строки куда произойдет добавление. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+возвращает идентификатор только что добавленной кнопки. 
+\end{DoxyReturn}
+\Hypertarget{class_group_a486cea639c0d7e74acf30839d94c9518}\label{class_group_a486cea639c0d7e74acf30839d94c9518} 
+\index{Group@{Group}!addGroup@{addGroup}}
+\index{addGroup@{addGroup}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{addGroup()}{addGroup()}}
+{\footnotesize\ttfamily int Group\+::add\+Group (\begin{DoxyParamCaption}\item[{short}]{fill\+\_\+p\+\_\+w,  }\item[{short}]{fill\+\_\+p\+\_\+h,  }\item[{short}]{index }\end{DoxyParamCaption})}
+
+Создает новую группу(как элемент интерфейса) в текущей и добавляет в конец указанной строки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fill\+\_\+p\+\_\+w} & процент заполнения(указывается от 0 до 100), по которому установится ширина новой группы на основе текущей. \\
+\hline
+{\em fill\+\_\+p\+\_\+h} & процент заполнения(указывается от 0 до 100), по которому установится высота новой группы на основе текущей. \\
+\hline
+{\em index} & индекс строки куда произойдет добавление. /return возвращает идентификатор только что добавленной группы. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_group_af5be7472e141ca4cf1d6478c4fa82aab}\label{class_group_af5be7472e141ca4cf1d6478c4fa82aab} 
+\index{Group@{Group}!addGroupName@{addGroupName}}
+\index{addGroupName@{addGroupName}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{addGroupName()}{addGroupName()}}
+{\footnotesize\ttfamily void Group\+::add\+Group\+Name (\begin{DoxyParamCaption}\item[{string}]{text\+\_\+name,  }\item[{int}]{name\+\_\+size }\end{DoxyParamCaption})}
+
+Добавляет имя текущей группе. Используется до добавления в группу элементов интерфейса, так как влияет на ее дальнейшие размеры(уменьшается высота контентной зоны).
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+\_\+name} & заголовок группы. \\
+\hline
+{\em name\+\_\+size} & размер шрифта. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_group_afeda9304f76fa0072815a93e92ab2598}\label{class_group_afeda9304f76fa0072815a93e92ab2598} 
+\index{Group@{Group}!addIElement@{addIElement}}
+\index{addIElement@{addIElement}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{addIElement()}{addIElement()}}
+{\footnotesize\ttfamily void Group\+::add\+IElement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_interface_item}{Interface\+Item}} \texorpdfstring{$\ast$}{*}}]{new\+\_\+group,  }\item[{short}]{index }\end{DoxyParamCaption})}
+
+Добавляет элемент интерфейса в группу. Добавление произойдет в конец указанной строки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+group} & новый элемент интерфейса. \\
+\hline
+{\em index} & индекс строки куда произойдет добавление. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_group_a38a48dfedd9d975cd940d1e88c2aac61}\label{class_group_a38a48dfedd9d975cd940d1e88c2aac61} 
+\index{Group@{Group}!calculatePFNII@{calculatePFNII}}
+\index{calculatePFNII@{calculatePFNII}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{calculatePFNII()}{calculatePFNII()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rect}{CRect}}$<$ float $>$ \texorpdfstring{$\ast$}{*} Group\+::calculate\+PFNII (\begin{DoxyParamCaption}\item[{short}]{fill\+\_\+p\+\_\+w,  }\item[{short}]{fill\+\_\+p\+\_\+h,  }\item[{short}]{index }\end{DoxyParamCaption})}
+
+Расчитывает размеры и позицию для нового элемента интерфейса. Позиция считается со следующего элемента указанной строки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fill\+\_\+p\+\_\+w} & процент заполнения(указывается от 0 до 100) ширины для нового элемента на основе текущей группы. \\
+\hline
+{\em fill\+\_\+p\+\_\+h} & процент заполнения(указывается от 0 до 100) высоты для нового элемента на основе текущей группы. \\
+\hline
+{\em index} & индекс строки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+возвращает CRect$<$float$>$ с посчитанными параметрами. В нем первый параметр -\/ x, второй параметр -\/y, третий параметр -\/ width, четвертый параметр -\/ height. 
+\end{DoxyReturn}
+\Hypertarget{class_group_a4739196e4a89954a907298fe8696facf}\label{class_group_a4739196e4a89954a907298fe8696facf} 
+\index{Group@{Group}!changeChildrenPosition@{changeChildrenPosition}}
+\index{changeChildrenPosition@{changeChildrenPosition}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{changeChildrenPosition()}{changeChildrenPosition()}}
+{\footnotesize\ttfamily void Group\+::change\+Children\+Position (\begin{DoxyParamCaption}\item[{float}]{offset\+\_\+x,  }\item[{float}]{offset\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Системный метод. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_group_a5cf1372d0e88a195cb8d83441c29bdac}\label{class_group_a5cf1372d0e88a195cb8d83441c29bdac} 
+\index{Group@{Group}!changePosition@{changePosition}}
+\index{changePosition@{changePosition}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{changePosition()}{changePosition()}}
+{\footnotesize\ttfamily void Group\+::change\+Position (\begin{DoxyParamCaption}\item[{float}]{offset\+\_\+x,  }\item[{float}]{offset\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сдвигает группу и ее элементы на заданное смещение.
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset\+\_\+x} & смещение по x. \\
+\hline
+{\em offset\+\_\+y} & смещение по y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_group_af15d65f3bcff7288942f739465f44b7d}\label{class_group_af15d65f3bcff7288942f739465f44b7d} 
+\index{Group@{Group}!changePositionY@{changePositionY}}
+\index{changePositionY@{changePositionY}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{changePositionY()}{changePositionY()}}
+{\footnotesize\ttfamily void Group\+::change\+PositionY (\begin{DoxyParamCaption}\item[{float}]{offset }\end{DoxyParamCaption})}
+
+Сдвигает группу и ее элементы на заданное смещение по оси y.
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & смещение по y. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_group_a28ed8f9f77742ba939e01b0917f26199}\label{class_group_a28ed8f9f77742ba939e01b0917f26199} 
+\index{Group@{Group}!clearInfo@{clearInfo}}
+\index{clearInfo@{clearInfo}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{clearInfo()}{clearInfo()}}
+{\footnotesize\ttfamily void Group\+::clear\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Удаляет все содержимое группы. Если до очищения в группе была хоть одна строка с элементами, то после очищения, перед добавлением нового элемента необходимо убедиться ,что строка с нужным индексом создана методом \doxylink{class_group_acba89f444c4bb114559cc544a8059011}{create\+Element\+Line()}. \Hypertarget{class_group_acba89f444c4bb114559cc544a8059011}\label{class_group_acba89f444c4bb114559cc544a8059011} 
+\index{Group@{Group}!createElementLine@{createElementLine}}
+\index{createElementLine@{createElementLine}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{createElementLine()}{createElementLine()}}
+{\footnotesize\ttfamily void Group\+::create\+Element\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Создает новую строку в группе для последующего добавления в нее элементов. Вызов данной функции обязателен перед добавлением элемента интерфейса в новую строку группы. \Hypertarget{class_group_a49978fd9cecb7b125407feee525c6d38}\label{class_group_a49978fd9cecb7b125407feee525c6d38} 
+\index{Group@{Group}!formInput@{formInput}}
+\index{formInput@{formInput}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{formInput()}{formInput()}}
+{\footnotesize\ttfamily void Group\+::form\+Input (\begin{DoxyParamCaption}\item[{Event}]{event }\end{DoxyParamCaption})}
+
+Системный метод. \Hypertarget{class_group_adad8eda5d8468f856c4e29ed10e6e7cc}\label{class_group_adad8eda5d8468f856c4e29ed10e6e7cc} 
+\index{Group@{Group}!getButtonState@{getButtonState}}
+\index{getButtonState@{getButtonState}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getButtonState()}{getButtonState()}}
+{\footnotesize\ttfamily short \texorpdfstring{$\ast$}{*} Group\+::get\+Button\+State (\begin{DoxyParamCaption}\item[{int}]{btn\+\_\+id }\end{DoxyParamCaption})}
+
+Возвращает указатель на состояние кнопки по ее идентификатору.
+
+
+\begin{DoxyParams}{Parameters}
+{\em btn\+\_\+id} & идентификатор кнопки, чьё состояние нам необходимо получить. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_group_a7db6571bbac42c75dc7263cc431b38f8}\label{class_group_a7db6571bbac42c75dc7263cc431b38f8} 
+\index{Group@{Group}!getGlobalBounds@{getGlobalBounds}}
+\index{getGlobalBounds@{getGlobalBounds}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getGlobalBounds()}{getGlobalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Group\+::get\+Global\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_group_af08591648aaa2b9803532a88291b6dc6}\label{class_group_af08591648aaa2b9803532a88291b6dc6} 
+\index{Group@{Group}!getLocalBounds@{getLocalBounds}}
+\index{getLocalBounds@{getLocalBounds}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getLocalBounds()}{getLocalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Group\+::get\+Local\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_group_aba10e205b0c54b0554020dee6b4b987f}\label{class_group_aba10e205b0c54b0554020dee6b4b987f} 
+\index{Group@{Group}!getMaxELHeight@{getMaxELHeight}}
+\index{getMaxELHeight@{getMaxELHeight}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getMaxELHeight()}{getMaxELHeight()}}
+{\footnotesize\ttfamily std\+::pair$<$ float, float $>$ Group\+::get\+Max\+ELHeight (\begin{DoxyParamCaption}\item[{short}]{index }\end{DoxyParamCaption})}
+
+Системный метод. \Hypertarget{class_group_a12cba9b000f1d217e03c22553f73b303}\label{class_group_a12cba9b000f1d217e03c22553f73b303} 
+\index{Group@{Group}!itemScroll@{itemScroll}}
+\index{itemScroll@{itemScroll}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{itemScroll()}{itemScroll()}}
+{\footnotesize\ttfamily bool Group\+::item\+Scroll (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Системный метод. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_group_ac2c6fd2ff817db058c50b2af04a7b7a0}\label{class_group_ac2c6fd2ff817db058c50b2af04a7b7a0} 
+\index{Group@{Group}!normalization@{normalization}}
+\index{normalization@{normalization}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{normalization()}{normalization()}}
+{\footnotesize\ttfamily void Group\+::normalization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Системный метод. \Hypertarget{class_group_a3919dca17f850e8d0cd41f207dd4e4f3}\label{class_group_a3919dca17f850e8d0cd41f207dd4e4f3} 
+\index{Group@{Group}!render@{render}}
+\index{render@{render}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Group\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Отображает группу и все элементы, которые ей принадлежат. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_group_afa157093ad864b84b01c3e3b24c85566}\label{class_group_afa157093ad864b84b01c3e3b24c85566} 
+\index{Group@{Group}!resetActiveState@{resetActiveState}}
+\index{resetActiveState@{resetActiveState}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{resetActiveState()}{resetActiveState()}}
+{\footnotesize\ttfamily void Group\+::reset\+Active\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает состояния всех элементов, принадлежащих группе по умолчанию. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_group_a6fe15f0453063a39db110e910a3259b1}\label{class_group_a6fe15f0453063a39db110e910a3259b1} 
+\index{Group@{Group}!setAlignment@{setAlignment}}
+\index{setAlignment@{setAlignment}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{setAlignment()}{setAlignment()}}
+{\footnotesize\ttfamily void Group\+::set\+Alignment (\begin{DoxyParamCaption}\item[{string}]{horiz\+\_\+a,  }\item[{string}]{vertic\+\_\+a }\end{DoxyParamCaption})}
+
+Устанавливает горизонтальное и вертикальное выравнивание элементов 1 уровня в группе.
+
+
+\begin{DoxyParams}{Parameters}
+{\em horiz\+\_\+a} & горизонтальное выравнивание. \\
+\hline
+{\em vertic\+\_\+a} & вертикальное выравнивание. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+строковые переменные выравнивания состоят из трех частей разделенных пробелами("{}1 2 3"{}). 
+
+параметр 1 -\/ тип выравнивания(left, right, top, bottom, center, space around, space between), присутствие обязательно. 
+
+параметр 2 -\/ начальный отступ(z -\/ без начального отступа, "{}"{} -\/ начальный отступ выбирается автоматически), присутствие необязательно. Для выравнивания типа space around, space between и center неприменим. 
+
+параметр 3 -\/ расстояние между элементами(число, auto), при auto расстояние между элементами, а также начальный отступ выбиратеся как половина ширины/высоты первого элемента. Присутствие обязательно для всех типов выравнивания кроме space around. 
+\end{DoxyNote}
+\Hypertarget{class_group_a2a5eeef86b3b024bd64b188c7ad5b68c}\label{class_group_a2a5eeef86b3b024bd64b188c7ad5b68c} 
+\index{Group@{Group}!setBColor@{setBColor}}
+\index{setBColor@{setBColor}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{setBColor()}{setBColor()}}
+{\footnotesize\ttfamily void Group\+::set\+BColor (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})}
+
+Устанавливает цвет заливки заднего фона группы. По умолчанию цвет фона прозрачный.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & новый цвет фона. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_group_afbd8acd74d9a1184f3b2de8d1d0b3f33}\label{class_group_afbd8acd74d9a1184f3b2de8d1d0b3f33} 
+\index{Group@{Group}!setHAlignment@{setHAlignment}}
+\index{setHAlignment@{setHAlignment}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{setHAlignment()}{setHAlignment()}}
+{\footnotesize\ttfamily void Group\+::set\+HAlignment (\begin{DoxyParamCaption}\item[{string}]{horiz\+\_\+a }\end{DoxyParamCaption})}
+
+Устанавливает горизонтальное выравнивание элементов 1 уровня в группе.
+
+
+\begin{DoxyParams}{Parameters}
+{\em horiz\+\_\+a} & горизонтальное выравнивание. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_group_ad1abcb821fd9e807257586704452e133}\label{class_group_ad1abcb821fd9e807257586704452e133} 
+\index{Group@{Group}!setPositionX@{setPositionX}}
+\index{setPositionX@{setPositionX}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{setPositionX()}{setPositionX()}}
+{\footnotesize\ttfamily void Group\+::set\+PositionX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату x для группы. Провоцирует изменение положения всех элементов группы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & новая координата x. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_group_a922efb9d466dd8bf6b769fdb5ea656c0}\label{class_group_a922efb9d466dd8bf6b769fdb5ea656c0} 
+\index{Group@{Group}!setPositionY@{setPositionY}}
+\index{setPositionY@{setPositionY}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{setPositionY()}{setPositionY()}}
+{\footnotesize\ttfamily void Group\+::set\+PositionY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату y для группы. Провоцирует изменение положения всех элементов группы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & новая координата y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_group_a85c162b3c3ec53b1a7ce96d058319dbc}\label{class_group_a85c162b3c3ec53b1a7ce96d058319dbc} 
+\index{Group@{Group}!setVAlignment@{setVAlignment}}
+\index{setVAlignment@{setVAlignment}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{setVAlignment()}{setVAlignment()}}
+{\footnotesize\ttfamily void Group\+::set\+VAlignment (\begin{DoxyParamCaption}\item[{string}]{vertic\+\_\+a }\end{DoxyParamCaption})}
+
+Устанавливает вертикальное выравнивание элементов 1 уровня в группе.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertic\+\_\+a} & вертикальное выравнивание. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_group_a198d855cd431ba03040fd060816625bd}\label{class_group_a198d855cd431ba03040fd060816625bd} 
+\index{Group@{Group}!update@{update}}
+\index{update@{update}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Group\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Обновляет группу и все элементы, которые ей принадлежат. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Group.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Group.\+cpp\end{DoxyCompactItemize}

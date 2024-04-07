@@ -1,0 +1,207 @@
+\doxysection{Image\+Button Class Reference}
+\hypertarget{class_image_button}{}\label{class_image_button}\index{ImageButton@{ImageButton}}
+
+
+{\ttfamily \#include $<$Image\+Button.\+h$>$}
+
+Inheritance diagram for Image\+Button\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_image_button}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_image_button_a6427c55143bbf05e37717c4ba20c63bd}{Image\+Button}} (float x, float y, float width, float height, short text\+\_\+size, string text\+\_\+, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index, string name\+\_\+, bool outline)
+\item 
+void \mbox{\hyperlink{class_image_button_a688841d2b8bc8928ee11acc3130ff601}{set\+Position}} (Vector2f new\+\_\+position) override
+\item 
+void \mbox{\hyperlink{class_image_button_aa46b37911ac112a3575fce247ef74512}{update\+Position}} () override
+\item 
+void \mbox{\hyperlink{class_image_button_ab47dc16a150c530416469da9a6858cf7}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_button}{Button}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_button_ae9e40a56cad5ed06591f8b2838aa8c2c}{Button}} (float x, float y, short text\+\_\+size, string text\+\_\+, Color menu\+Color)
+\item 
+\mbox{\hyperlink{class_button_af58262e07d50473c72e2129512068e3f}{Button}} (float x, float y, float width, float height, short text\+\_\+size, string text\+\_\+, Color btn\+\_\+hcolor)
+\item 
+\mbox{\hyperlink{class_button_a8ca2c2526084a445a21cd905c8a648e5}{Button}} (float x, float y, float width, float height, short text\+\_\+size, string text\+\_\+, bool outline)
+\item 
+float \mbox{\hyperlink{class_button_aac3d3692c02114802c2174b680e71157}{get\+Height}} ()
+\item 
+float \mbox{\hyperlink{class_button_a893399c00f8d6c82378732dc41498afa}{get\+Width}} ()
+\item 
+float \mbox{\hyperlink{class_button_aa43e8a094f9a67fc0219595e434369d3}{get\+Text\+Height}} ()
+\item 
+float \mbox{\hyperlink{class_button_a84f307b73c8546767045e579cbdfdbb3}{get\+Text\+Width}} ()
+\item 
+short \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_button_a4f5f510ab18e290033e4be30549a3255}{get\+Button\+State}} ()
+\item 
+Float\+Rect \mbox{\hyperlink{class_button_a8c90a84ef48d1a0a1f4c149916992361}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_button_a9ee55d9fe9781ac54cc62d9986d4c83f}{get\+Global\+Bounds}} () override
+\item 
+void \mbox{\hyperlink{class_button_a1e071041c63bb8c1236692284de2b164}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_button_acbcfee6ceb519657a6f78950fb45ffb9}{set\+PositionY}} (float y) override
+\item 
+void \mbox{\hyperlink{class_button_ad8c53101c636aa6877213d1f005249b2}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_button_aeceae37055497a824e83ffa9391a725a}{set\+Colors}} (Color btn\+\_\+hcolor, Color btn\+\_\+icolor, Color shp\+\_\+hcolor, Color shp\+\_\+icolor)
+\item 
+void \mbox{\hyperlink{class_button_a8bd6cf745f563bb2ef4c2ef586656784}{set\+Background\+Color}} (Color shape\+Color)
+\item 
+void \mbox{\hyperlink{class_button_a737de12e117b96409dfab731c61cbb4f}{reset\+Active\+State}} () override
+\item 
+const bool \mbox{\hyperlink{class_button_a0b4af36b349ee2d8154624760dc1fe32}{is\+Pressed}} () const
+\item 
+void \mbox{\hyperlink{class_button_abda97f1ae8e081da3dbd0b77a27cad9d}{update}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\item 
+virtual bool \mbox{\hyperlink{class_interface_item_a85a6055772471551e54b3e6a8f85eb14}{item\+Scroll}} (float delta)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a829762a6d201271ec326ee52f6c27153}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_image_button_a3b1e1e99c15649265d71117f0d03c544}\label{class_image_button_a3b1e1e99c15649265d71117f0d03c544} 
+Sprite \texorpdfstring{$\ast$}{*} {\bfseries btn\+\_\+image}
+\item 
+\Hypertarget{class_image_button_a396f1a294ea83e6a4cae32e2106260c7}\label{class_image_button_a396f1a294ea83e6a4cae32e2106260c7} 
+const string {\bfseries name}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_button}{Button}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries button\+\_\+prstate}
+\item 
+short {\bfseries button\+\_\+cstate}
+\item 
+Rectangle\+Shape {\bfseries shape}
+\item 
+Text {\bfseries text}
+\item 
+Vector2f {\bfseries position}
+\item 
+Color {\bfseries btn\+\_\+idle\+\_\+color}
+\item 
+Color {\bfseries btn\+\_\+hover\+\_\+color}
+\item 
+Color {\bfseries btn\+\_\+active\+\_\+color}
+\item 
+Color {\bfseries shp\+\_\+idle\+\_\+color}
+\item 
+Color {\bfseries shp\+\_\+hover\+\_\+color}
+\item 
+Color {\bfseries shp\+\_\+active\+\_\+color}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Элемент интерфейса -\/ кнопка текст-\/картинка. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_image_button_a6427c55143bbf05e37717c4ba20c63bd}\label{class_image_button_a6427c55143bbf05e37717c4ba20c63bd} 
+\index{ImageButton@{ImageButton}!ImageButton@{ImageButton}}
+\index{ImageButton@{ImageButton}!ImageButton@{ImageButton}}
+\doxysubsubsection{\texorpdfstring{ImageButton()}{ImageButton()}}
+{\footnotesize\ttfamily Image\+Button\+::\+Image\+Button (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{short}]{text\+\_\+size,  }\item[{string}]{text\+\_\+,  }\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{int}]{index,  }\item[{string}]{name\+\_\+,  }\item[{bool}]{outline }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em width} & ширина shape. \\
+\hline
+{\em height} & высота shape. \\
+\hline
+{\em text\+\_\+size} & размер шрифта. \\
+\hline
+{\em text\+\_\+} & текст кнопки. \\
+\hline
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em index} & индекс строки содержащей данную текстуру. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+{\em outline} & значение, отвечающее за отображение границ обьекта shape. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+кнопка будет представлять собой текст с прозрачной границей(черной границей при наведении), текст помещается в правую часть shape, а текстура в левую. Если текст равен "{}"{}, то текстура выровняется по центру прямоугольной области кнопки. Все цвета выставляются с прозрачными значениями. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_image_button_ab47dc16a150c530416469da9a6858cf7}\label{class_image_button_ab47dc16a150c530416469da9a6858cf7} 
+\index{ImageButton@{ImageButton}!render@{render}}
+\index{render@{render}!ImageButton@{ImageButton}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Image\+Button\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Отображает элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_button_ad863b7a68e24791813e1618f49d3d730}{Button}}.
+
+\Hypertarget{class_image_button_a688841d2b8bc8928ee11acc3130ff601}\label{class_image_button_a688841d2b8bc8928ee11acc3130ff601} 
+\index{ImageButton@{ImageButton}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!ImageButton@{ImageButton}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Image\+Button\+::set\+Position (\begin{DoxyParamCaption}\item[{Vector2f}]{new\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую позицию для кнопки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+position} & новая позиция. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_button_a914561ea3656757707b72c3521353c42}{Button}}.
+
+\Hypertarget{class_image_button_aa46b37911ac112a3575fce247ef74512}\label{class_image_button_aa46b37911ac112a3575fce247ef74512} 
+\index{ImageButton@{ImageButton}!updatePosition@{updatePosition}}
+\index{updatePosition@{updatePosition}!ImageButton@{ImageButton}}
+\doxysubsubsection{\texorpdfstring{updatePosition()}{updatePosition()}}
+{\footnotesize\ttfamily void Image\+Button\+::update\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Системный метод. 
+
+Reimplemented from \mbox{\hyperlink{class_button_a468a36ee61fe0b65cbc4c2f86da8b89f}{Button}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Image\+Button.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Image\+Button.\+cpp\end{DoxyCompactItemize}

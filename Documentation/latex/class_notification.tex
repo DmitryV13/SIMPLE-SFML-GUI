@@ -1,0 +1,114 @@
+\doxysection{Notification Class Reference}
+\hypertarget{class_notification}{}\label{class_notification}\index{Notification@{Notification}}
+
+
+{\ttfamily \#include $<$Notification.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_notification_a336db0c770b2ef27e56e06a4fd3cc55d}{Notification}} (float x, float y, float dest\+\_\+x, float dest\+\_\+y, short text\+\_\+size, string text\+\_\+, Color text\+\_\+color)
+\item 
+\mbox{\hyperlink{class_notification_a89548a9e68e60f2456587918d9c14542}{Notification}} (Float\+Rect object\+\_\+cords, short text\+\_\+size, string text\+\_\+, Color text\+\_\+color)
+\item 
+void \mbox{\hyperlink{class_notification_afa4513e3a0950a4e059f2111996ca079}{activation}} (float q)
+\item 
+void \mbox{\hyperlink{class_notification_a151acddb0a93ff0ec0534c8ca4363f32}{update}} ()
+\item 
+void \mbox{\hyperlink{class_notification_a024df3453d2f4c25f82dae6cf4a5f354}{update\+DT}} ()
+\item 
+void \mbox{\hyperlink{class_notification_a9bb40a22c155a399755f8fb372e4c4c1}{render}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_notification_a6f1741d0fd636d192a431c11fee151bb}\label{class_notification_a6f1741d0fd636d192a431c11fee151bb} 
+Text {\bfseries text}
+\item 
+\Hypertarget{class_notification_ad1dc837062563d3ead84c9093b83f43f}\label{class_notification_ad1dc837062563d3ead84c9093b83f43f} 
+bool {\bfseries active}
+\item 
+\Hypertarget{class_notification_a027b92b65b8883c9e8ae9917c892fa72}\label{class_notification_a027b92b65b8883c9e8ae9917c892fa72} 
+Vector2f {\bfseries position}
+\item 
+\Hypertarget{class_notification_aa9405421363cd2e182b0d282b5387fe5}\label{class_notification_aa9405421363cd2e182b0d282b5387fe5} 
+Vector2f {\bfseries norm\+\_\+s}
+\item 
+\Hypertarget{class_notification_ae6c0170e8dc6b72c9d78aa639a353051}\label{class_notification_ae6c0170e8dc6b72c9d78aa639a353051} 
+Clock {\bfseries display\+\_\+time}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Всплывающая надпись 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_notification_a336db0c770b2ef27e56e06a4fd3cc55d}\label{class_notification_a336db0c770b2ef27e56e06a4fd3cc55d} 
+\index{Notification@{Notification}!Notification@{Notification}}
+\index{Notification@{Notification}!Notification@{Notification}}
+\doxysubsubsection{\texorpdfstring{Notification()}{Notification()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Notification\+::\+Notification (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{dest\+\_\+x,  }\item[{float}]{dest\+\_\+y,  }\item[{short}]{text\+\_\+size,  }\item[{string}]{text\+\_\+,  }\item[{Color}]{text\+\_\+color }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата появления по оси x. \\
+\hline
+{\em y} & координата появления по оси y. \\
+\hline
+{\em dest\+\_\+x} & координата назначения при всплывании по оси x. \\
+\hline
+{\em dest\+\_\+y} & координата назначения при всплывании по оси y. \\
+\hline
+{\em text\+\_\+size\+\_\+} & размер шрифта. \\
+\hline
+{\em text\+\_\+} & текст всплывающей надписи. \\
+\hline
+{\em text\+\_\+color\+\_\+} & цвет текста (по умолчанию цвет текста черный). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_notification_a89548a9e68e60f2456587918d9c14542}\label{class_notification_a89548a9e68e60f2456587918d9c14542} 
+\index{Notification@{Notification}!Notification@{Notification}}
+\index{Notification@{Notification}!Notification@{Notification}}
+\doxysubsubsection{\texorpdfstring{Notification()}{Notification()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Notification\+::\+Notification (\begin{DoxyParamCaption}\item[{Float\+Rect}]{object\+\_\+cords,  }\item[{short}]{text\+\_\+size,  }\item[{string}]{text\+\_\+,  }\item[{Color}]{text\+\_\+color }\end{DoxyParamCaption})}
+
+Не используется. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_notification_afa4513e3a0950a4e059f2111996ca079}\label{class_notification_afa4513e3a0950a4e059f2111996ca079} 
+\index{Notification@{Notification}!activation@{activation}}
+\index{activation@{activation}!Notification@{Notification}}
+\doxysubsubsection{\texorpdfstring{activation()}{activation()}}
+{\footnotesize\ttfamily void Notification\+::activation (\begin{DoxyParamCaption}\item[{float}]{q }\end{DoxyParamCaption})}
+
+Активация всплывания.
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & параметр заглушка (не используется). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_notification_a9bb40a22c155a399755f8fb372e4c4c1}\label{class_notification_a9bb40a22c155a399755f8fb372e4c4c1} 
+\index{Notification@{Notification}!render@{render}}
+\index{render@{render}!Notification@{Notification}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Notification\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Отображает элемент. \Hypertarget{class_notification_a151acddb0a93ff0ec0534c8ca4363f32}\label{class_notification_a151acddb0a93ff0ec0534c8ca4363f32} 
+\index{Notification@{Notification}!update@{update}}
+\index{update@{update}!Notification@{Notification}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Notification\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Обновляет элемент. \Hypertarget{class_notification_a024df3453d2f4c25f82dae6cf4a5f354}\label{class_notification_a024df3453d2f4c25f82dae6cf4a5f354} 
+\index{Notification@{Notification}!updateDT@{updateDT}}
+\index{updateDT@{updateDT}!Notification@{Notification}}
+\doxysubsubsection{\texorpdfstring{updateDT()}{updateDT()}}
+{\footnotesize\ttfamily void Notification\+::update\+DT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Системный метод. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Notification.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Notification.\+cpp\end{DoxyCompactItemize}

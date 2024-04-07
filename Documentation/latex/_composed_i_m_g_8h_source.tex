@@ -1,0 +1,45 @@
+\doxysection{Composed\+IMG.\+h}
+\hypertarget{_composed_i_m_g_8h_source}{}\label{_composed_i_m_g_8h_source}\index{D:/Applications/SFML\_GUI/ComposedIMG.h@{D:/Applications/SFML\_GUI/ComposedIMG.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}TextureManager.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{using\ }namespace::sf;}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_composed_i_m_g}{ComposedIMG}}\{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00007\ \ \ \ \ Sprite\ filler;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 6*6px}}
+\DoxyCodeLine{00008\ \ \ \ \ Sprite\ cornerTopLeft;\ \ \ \ \textcolor{comment}{//\ 6*6px}}
+\DoxyCodeLine{00009\ \ \ \ \ Sprite\ cornerTopRight;\ \ \ \textcolor{comment}{//\ 6*6px}}
+\DoxyCodeLine{00010\ \ \ \ \ Sprite\ cornerBottomLeft;\ \textcolor{comment}{//\ 6*6px}}
+\DoxyCodeLine{00011\ \ \ \ \ Sprite\ cornerBottomRight;\textcolor{comment}{//\ 6*6px}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ origin\_size;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ width;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ height;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{float}\ scale;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ Vector2f\ position;}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_composed_i_m_g}{ComposedIMG}}(\textcolor{keywordtype}{int}\ width\_,\ \textcolor{keywordtype}{int}\ height\_,\ \textcolor{keywordtype}{int}\ original\_size,\ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ manager,\ \textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_composed_i_m_g}{ComposedIMG}}(\textcolor{keywordtype}{int}\ width\_,\ \textcolor{keywordtype}{int}\ height\_,\ \textcolor{keywordtype}{int}\ original\_size,\ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ manager}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ ,\ \textcolor{keywordtype}{int}\ index\_0,\ \textcolor{keywordtype}{string}\ name\_0,\ \textcolor{keywordtype}{int}\ index\_1,\ \textcolor{keywordtype}{string}\ name\_1,\ \textcolor{keywordtype}{int}\ index\_2,\ \textcolor{keywordtype}{string}\ name\_2}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ ,\ \textcolor{keywordtype}{int}\ index\_3,\ \textcolor{keywordtype}{string}\ name\_3,\ \textcolor{keywordtype}{int}\ index\_4,\ \textcolor{keywordtype}{string}\ name\_4);}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_composed_i_m_g}{\string~ComposedIMG}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ setPosition(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ setPosition(\textcolor{keywordtype}{string}\ positionX,\ \textcolor{keywordtype}{string}\ positionY,\ \textcolor{keywordtype}{int}\ screen\_width,\ \textcolor{keywordtype}{int}\ screen\_height);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ setPosition(\textcolor{keywordtype}{string}\ positionX,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{int}\ screen\_width,\ \textcolor{keywordtype}{int}\ screen\_height);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ setPosition(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{string}\ positionY,\ \textcolor{keywordtype}{int}\ screen\_width,\ \textcolor{keywordtype}{int}\ screen\_height);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ changePosition(\textcolor{keywordtype}{float}\ offset\_x,\ \textcolor{keywordtype}{float}\ offset\_y);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ setScale(\textcolor{keywordtype}{float}\ scale\_);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ FloatRect\ getLocalBounds();}
+\DoxyCodeLine{00034\ \ \ \ \ FloatRect\ getGlobalBounds();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ update();}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ render();}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+
+\end{DoxyCode}

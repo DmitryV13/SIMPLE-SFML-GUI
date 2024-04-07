@@ -1,0 +1,36 @@
+\doxysection{Checkbox\+Item.\+h}
+\hypertarget{_checkbox_item_8h_source}{}\label{_checkbox_item_8h_source}\index{D:/Applications/SFML\_GUI/CheckboxItem.h@{D:/Applications/SFML\_GUI/CheckboxItem.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}FormItem.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Group.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}FORM\_ITEM\_STATE.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}FORM\_ITEM\_TYPE.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}INTERFACE\_ITEM\_TYPE.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ }namespace::sf;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_checkbox_item}{CheckboxItem}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_group}{Group}},\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_form_item}{FormItem}}\{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ RectangleShape\ shape;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ chosen;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ unpressed;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{string}*\ value;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{string}\ active\_value;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{string}\ idle\_value;}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_checkbox_item_a06e0d5c4baff980cf5b2808e4af5aa9e}{CheckboxItem}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ width\_,\ \textcolor{keywordtype}{float}\ height\_);}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_checkbox_item}{\string~CheckboxItem}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{string}*\ \mbox{\hyperlink{class_checkbox_item_add337f5c42738b23147137b7231e34d4}{getValue}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_checkbox_item_ab90796334a6e811208b257787771708d}{setValue}}(\textcolor{keywordtype}{string}\ val);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_checkbox_item_a5cf85a63c96840141861a2633af8aeab}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_checkbox_item_a8634861ca6c68acbd050d88148af86a5}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+
+\end{DoxyCode}

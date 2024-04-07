@@ -1,0 +1,360 @@
+\doxysection{Basic\+Image Class Reference}
+\hypertarget{class_basic_image}{}\label{class_basic_image}\index{BasicImage@{BasicImage}}
+
+
+{\ttfamily \#include $<$Basic\+Image.\+h$>$}
+
+Inheritance diagram for Basic\+Image\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_basic_image}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_basic_image_a922d73990d59e7224b31aaee13060761}{Basic\+Image}} (float x, float y)
+\item 
+\mbox{\hyperlink{class_basic_image_a56b99da2f633a487a02b7d881ffd0f27}{Basic\+Image}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}w\+\_\+object, string name)
+\item 
+\mbox{\hyperlink{class_basic_image_a952a34cc45b5039433f55e6554b9ac93}{Basic\+Image}} (float width, float height, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}w\+\_\+object, string name)
+\item 
+\mbox{\hyperlink{class_basic_image_a9d951d1963f2963e2b03565a5b8b8d5a}{Basic\+Image}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index, string name, Int\+Rect frame)
+\item 
+\mbox{\hyperlink{class_basic_image_a2d8b739fa101a498a5accda7f57ce3a0}{Basic\+Image}} (float width, float height, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index, string name, Int\+Rect frame)
+\item 
+void \mbox{\hyperlink{class_basic_image_aa6ff3efbbd4b591185352ccb138e541c}{add\+Info}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}w\+\_\+object, string name)
+\item 
+void \mbox{\hyperlink{class_basic_image_a8c4fe8f0906d9e714d56ccffeebf6473}{add\+Info}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse_item}{Warehouse\+Item}} \texorpdfstring{$\ast$}{*}w\+\_\+item)
+\item 
+Float\+Rect \mbox{\hyperlink{class_basic_image_adf78708fae18054238b7d80cfb6ed118}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_basic_image_ae45aefa3ab9727ced606421f447efb1e}{get\+Global\+Bounds}} () override
+\item 
+void \mbox{\hyperlink{class_basic_image_af42b75edc13a6ade4d68855c040d08d8}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_basic_image_ac4a56af71e0ff229cc0a825bc5ab053c}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_basic_image_a6a419d676db36238a585f3dc5c67e4c0}{set\+PositionY}} (float y) override
+\item 
+void \mbox{\hyperlink{class_basic_image_acbff740096a44e4e07df2751b80a1b47}{set\+Position}} (float x, float y)
+\item 
+void \mbox{\hyperlink{class_basic_image_a8c5eaf9a2c39bb3d85ecc82a39e5dd86}{set\+Scale}} (float scale\+\_\+)
+\item 
+void \mbox{\hyperlink{class_basic_image_aa0920b41119c51b678916a2746e47364}{set\+BColor}} (Color color)
+\item 
+void \mbox{\hyperlink{class_basic_image_ad4ff7e93156b4d508ee538971b372ae1}{update}} () override
+\item 
+void \mbox{\hyperlink{class_basic_image_a5310fdebc703b6e758e16a7aaa1398ce}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\item 
+virtual bool \mbox{\hyperlink{class_interface_item_a85a6055772471551e54b3e6a8f85eb14}{item\+Scroll}} (float delta)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a829762a6d201271ec326ee52f6c27153}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1}{reset\+Active\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_basic_image_a70bf20000246687ccbda29d1eb870016}\label{class_basic_image_a70bf20000246687ccbda29d1eb870016} 
+Rectangle\+Shape {\bfseries shape}
+\item 
+\Hypertarget{class_basic_image_ab1fc2c17d17c5e0fd49ae99c92b0ee70}\label{class_basic_image_ab1fc2c17d17c5e0fd49ae99c92b0ee70} 
+Sprite {\bfseries image}
+\item 
+\Hypertarget{class_basic_image_a256a62549dfd7cfa7a99bef5b86dd1db}\label{class_basic_image_a256a62549dfd7cfa7a99bef5b86dd1db} 
+short {\bfseries scale}
+\item 
+\Hypertarget{class_basic_image_aba418cb5fbac8ba8e9b218f528ca0cee}\label{class_basic_image_aba418cb5fbac8ba8e9b218f528ca0cee} 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Представляет собой базовую, неанимированную картинку. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_basic_image_a922d73990d59e7224b31aaee13060761}\label{class_basic_image_a922d73990d59e7224b31aaee13060761} 
+\index{BasicImage@{BasicImage}!BasicImage@{BasicImage}}
+\index{BasicImage@{BasicImage}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{BasicImage()}{BasicImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Basic\+Image\+::\+Basic\+Image (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_basic_image_a56b99da2f633a487a02b7d881ffd0f27}\label{class_basic_image_a56b99da2f633a487a02b7d881ffd0f27} 
+\index{BasicImage@{BasicImage}!BasicImage@{BasicImage}}
+\index{BasicImage@{BasicImage}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{BasicImage()}{BasicImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Basic\+Image\+::\+Basic\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{\mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}}]{w\+\_\+object,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em w\+\_\+object} & обьект склада информации о сущностях. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_basic_image_a952a34cc45b5039433f55e6554b9ac93}\label{class_basic_image_a952a34cc45b5039433f55e6554b9ac93} 
+\index{BasicImage@{BasicImage}!BasicImage@{BasicImage}}
+\index{BasicImage@{BasicImage}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{BasicImage()}{BasicImage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Basic\+Image\+::\+Basic\+Image (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{\mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}}]{w\+\_\+object,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em w\+\_\+object} & обьект склада информации о сущностях. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+{\em width} & ширина, под которую подстроится текстура. \\
+\hline
+{\em height} & высота, под которую подстроится текстура. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_basic_image_a9d951d1963f2963e2b03565a5b8b8d5a}\label{class_basic_image_a9d951d1963f2963e2b03565a5b8b8d5a} 
+\index{BasicImage@{BasicImage}!BasicImage@{BasicImage}}
+\index{BasicImage@{BasicImage}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{BasicImage()}{BasicImage()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Basic\+Image\+::\+Basic\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{int}]{index,  }\item[{string}]{name,  }\item[{Int\+Rect}]{frame }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em index} & индекс строки содержащей данную текстуру. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+{\em frame} & координаты и размеры части текстуры, которая будет отображаться. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_basic_image_a2d8b739fa101a498a5accda7f57ce3a0}\label{class_basic_image_a2d8b739fa101a498a5accda7f57ce3a0} 
+\index{BasicImage@{BasicImage}!BasicImage@{BasicImage}}
+\index{BasicImage@{BasicImage}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{BasicImage()}{BasicImage()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Basic\+Image\+::\+Basic\+Image (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{int}]{index,  }\item[{string}]{name,  }\item[{Int\+Rect}]{frame }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em index} & индекс строки содержащей данную текстуру. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+{\em frame} & координаты и размеры части текстуры, которая будет отображаться. \\
+\hline
+{\em width} & ширина, под которую подстроится текстура. \\
+\hline
+{\em height} & высота, под которую подстроится текстура. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_basic_image_aa6ff3efbbd4b591185352ccb138e541c}\label{class_basic_image_aa6ff3efbbd4b591185352ccb138e541c} 
+\index{BasicImage@{BasicImage}!addInfo@{addInfo}}
+\index{addInfo@{addInfo}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{addInfo()}{addInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Basic\+Image\+::add\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{\mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}}]{w\+\_\+object,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+Установка новой текстуры для обьекта неанимированной картинки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em w\+\_\+object} & обьект склада информации о сущностях. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_basic_image_a8c4fe8f0906d9e714d56ccffeebf6473}\label{class_basic_image_a8c4fe8f0906d9e714d56ccffeebf6473} 
+\index{BasicImage@{BasicImage}!addInfo@{addInfo}}
+\index{addInfo@{addInfo}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{addInfo()}{addInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Basic\+Image\+::add\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{\mbox{\hyperlink{class_warehouse_item}{Warehouse\+Item}} \texorpdfstring{$\ast$}{*}}]{w\+\_\+item }\end{DoxyParamCaption})}
+
+Установка новой текстуры для обьекта неанимированной картинки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em w\+\_\+item} & обьект информации о конкретной сущности. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_basic_image_af42b75edc13a6ade4d68855c040d08d8}\label{class_basic_image_af42b75edc13a6ade4d68855c040d08d8} 
+\index{BasicImage@{BasicImage}!changePosition@{changePosition}}
+\index{changePosition@{changePosition}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{changePosition()}{changePosition()}}
+{\footnotesize\ttfamily void Basic\+Image\+::change\+Position (\begin{DoxyParamCaption}\item[{float}]{offset\+\_\+x,  }\item[{float}]{offset\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сдвигает неанимированную картинку на заданное смещение.
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset\+\_\+x} & смещение по x. \\
+\hline
+{\em offset\+\_\+y} & смещение по y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_basic_image_ae45aefa3ab9727ced606421f447efb1e}\label{class_basic_image_ae45aefa3ab9727ced606421f447efb1e} 
+\index{BasicImage@{BasicImage}!getGlobalBounds@{getGlobalBounds}}
+\index{getGlobalBounds@{getGlobalBounds}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{getGlobalBounds()}{getGlobalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Basic\+Image\+::get\+Global\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_basic_image_adf78708fae18054238b7d80cfb6ed118}\label{class_basic_image_adf78708fae18054238b7d80cfb6ed118} 
+\index{BasicImage@{BasicImage}!getLocalBounds@{getLocalBounds}}
+\index{getLocalBounds@{getLocalBounds}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{getLocalBounds()}{getLocalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Basic\+Image\+::get\+Local\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_basic_image_a5310fdebc703b6e758e16a7aaa1398ce}\label{class_basic_image_a5310fdebc703b6e758e16a7aaa1398ce} 
+\index{BasicImage@{BasicImage}!render@{render}}
+\index{render@{render}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Basic\+Image\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Отображает элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_basic_image_aa0920b41119c51b678916a2746e47364}\label{class_basic_image_aa0920b41119c51b678916a2746e47364} 
+\index{BasicImage@{BasicImage}!setBColor@{setBColor}}
+\index{setBColor@{setBColor}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{setBColor()}{setBColor()}}
+{\footnotesize\ttfamily void Basic\+Image\+::set\+BColor (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})}
+
+Устанавливает цвет заливки заднего фона. По умолчанию цвет фона прозрачный.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & новый цвет фона. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_basic_image_acbff740096a44e4e07df2751b80a1b47}\label{class_basic_image_acbff740096a44e4e07df2751b80a1b47} 
+\index{BasicImage@{BasicImage}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Basic\+Image\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Устанавливает новую позицию неанимированной картинке.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_basic_image_ac4a56af71e0ff229cc0a825bc5ab053c}\label{class_basic_image_ac4a56af71e0ff229cc0a825bc5ab053c} 
+\index{BasicImage@{BasicImage}!setPositionX@{setPositionX}}
+\index{setPositionX@{setPositionX}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{setPositionX()}{setPositionX()}}
+{\footnotesize\ttfamily void Basic\+Image\+::set\+PositionX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату x у позиции.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_basic_image_a6a419d676db36238a585f3dc5c67e4c0}\label{class_basic_image_a6a419d676db36238a585f3dc5c67e4c0} 
+\index{BasicImage@{BasicImage}!setPositionY@{setPositionY}}
+\index{setPositionY@{setPositionY}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{setPositionY()}{setPositionY()}}
+{\footnotesize\ttfamily void Basic\+Image\+::set\+PositionY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату y у позиции.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & координата. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_basic_image_a8c5eaf9a2c39bb3d85ecc82a39e5dd86}\label{class_basic_image_a8c5eaf9a2c39bb3d85ecc82a39e5dd86} 
+\index{BasicImage@{BasicImage}!setScale@{setScale}}
+\index{setScale@{setScale}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{setScale()}{setScale()}}
+{\footnotesize\ttfamily void Basic\+Image\+::set\+Scale (\begin{DoxyParamCaption}\item[{float}]{scale\+\_\+ }\end{DoxyParamCaption})}
+
+Задает новый масштаб неанимированной картинке. Заданный масштаб будет применен как для оси x, так и для оси y.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_basic_image_ad4ff7e93156b4d508ee538971b372ae1}\label{class_basic_image_ad4ff7e93156b4d508ee538971b372ae1} 
+\index{BasicImage@{BasicImage}!update@{update}}
+\index{update@{update}!BasicImage@{BasicImage}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Basic\+Image\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Обновляет элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Basic\+Image.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Basic\+Image.\+cpp\end{DoxyCompactItemize}

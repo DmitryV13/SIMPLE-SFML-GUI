@@ -1,0 +1,22 @@
+\doxysection{Warehouse.\+h}
+\hypertarget{_warehouse_8h_source}{}\label{_warehouse_8h_source}\index{D:/Applications/SFML\_GUI/Warehouse.h@{D:/Applications/SFML\_GUI/Warehouse.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}WarehouseItem.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{using\ }namespace::sf;}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_warehouse}{Warehouse}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00008\ \ \ \ \ unordered\_map<string,\ vector<WarehouseItem*>>\ warehouse;}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_warehouse}{Warehouse}}();}
+\DoxyCodeLine{00011\ \ \ \ \ pair<int*,\ int>\ getItemInfo(\textcolor{keywordtype}{string}\ item\_type,\ \textcolor{keywordtype}{string}\ item\_name);}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_warehouse_item}{WarehouseItem}}*\ getWarehouseItem(\textcolor{keywordtype}{string}\ type,\ \textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_warehouse_item}{WarehouseItem}}*\ getWarehouseItem(\textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00014\ \ \ \ \ vector<WarehouseItem*>\ getWarehouseItems(\textcolor{keywordtype}{string}\ type);}
+\DoxyCodeLine{00015\ \};}
+\DoxyCodeLine{00016\ }
+
+\end{DoxyCode}

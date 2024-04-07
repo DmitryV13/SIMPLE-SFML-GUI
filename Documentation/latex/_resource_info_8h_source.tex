@@ -1,0 +1,34 @@
+\doxysection{Resource\+Info.\+h}
+\hypertarget{_resource_info_8h_source}{}\label{_resource_info_8h_source}\index{D:/Applications/SFML\_GUI/ResourceInfo.h@{D:/Applications/SFML\_GUI/ResourceInfo.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}ImageInfo.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{using\ }namespace::sf;}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_resource_info}{ResourceInfo}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_image_info}{ImageInfo}}\{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}*\ resource;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{bool}\ image;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{string}\ max;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{string}\ prev;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_resource_info}{ResourceInfo}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_resource_info}{ResourceInfo}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{int}\ text\_size,\ \textcolor{keywordtype}{bool}\ image\_);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_resource_info}{ResourceInfo}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{int}\ text\_size,\ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \mbox{\hyperlink{class_warehouse}{Warehouse}}*\ w\_object,\ \textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{bool}\ image\_);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_resource_info}{ResourceInfo}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{int}*\ resource\_,\ \textcolor{keywordtype}{int}\ max\_v,\ \textcolor{keywordtype}{int}\ text\_size,\ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \textcolor{keywordtype}{int}\ index,\ \textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{bool}\ self\_align\_);}
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{class_resource_info}{\string~ResourceInfo}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_resource_info_a51d7eca3c761b4146b31fcf9e0bf9197}{addInfo}}(\mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \mbox{\hyperlink{class_warehouse}{Warehouse}}*\ w\_object,\ \textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{bool}\ x);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_resource_info_a51d7eca3c761b4146b31fcf9e0bf9197}{addInfo}}(\mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \mbox{\hyperlink{class_warehouse_item}{WarehouseItem}}*\ w\_item,\ \textcolor{keywordtype}{bool}\ x);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_resource_info_af059e1cec57d969c3a51e5335c2b39b8}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00084\ \};}
+\DoxyCodeLine{00085\ }
+
+\end{DoxyCode}

@@ -1,0 +1,149 @@
+\doxysection{Interface\+Item Class Reference}
+\hypertarget{class_interface_item}{}\label{class_interface_item}\index{InterfaceItem@{InterfaceItem}}
+Inheritance diagram for Interface\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_interface_item}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_interface_item_afbbed7977f80fd49a22c62a7b8e25d4f}\label{class_interface_item_afbbed7977f80fd49a22c62a7b8e25d4f} 
+virtual Float\+Rect {\bfseries get\+Local\+Bounds} ()
+\item 
+\Hypertarget{class_interface_item_a49cf529e3a70b5b9f516e3f3fdd59f4e}\label{class_interface_item_a49cf529e3a70b5b9f516e3f3fdd59f4e} 
+virtual Float\+Rect {\bfseries get\+Global\+Bounds} ()
+\item 
+\Hypertarget{class_interface_item_a32db78a37b24fcce897a18662c2bd5a3}\label{class_interface_item_a32db78a37b24fcce897a18662c2bd5a3} 
+short \& {\bfseries get\+IIType} ()
+\item 
+\Hypertarget{class_interface_item_a13c026dfc16f2acb28cc7e735f2e1d40}\label{class_interface_item_a13c026dfc16f2acb28cc7e735f2e1d40} 
+const int \& {\bfseries get\+Id} () const
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a35e693f9abc0b40c64af1ab2a8871627}{set\+PositionX}} (float x)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a6b38bb268eb083811cd43e4810a3bba9}{set\+PositionY}} (float y)
+\item 
+\Hypertarget{class_interface_item_a5402831e92cbfd6d915db081a04f1724}\label{class_interface_item_a5402831e92cbfd6d915db081a04f1724} 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\item 
+virtual bool \mbox{\hyperlink{class_interface_item_a85a6055772471551e54b3e6a8f85eb14}{item\+Scroll}} (float delta)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a829762a6d201271ec326ee52f6c27153}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_ad090e444b17466e6ce229a98b70f655f}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1}{reset\+Active\+State}} ()
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a589295eff6e663f41fbe77402e053ef8}{render}} ()
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a58dacff03fea42947f63d5c02711263c}{update}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_interface_item_adfd089fc629ad5e6b2244620b2c8395e}\label{class_interface_item_adfd089fc629ad5e6b2244620b2c8395e} 
+short {\bfseries ii\+\_\+type}
+\item 
+\Hypertarget{class_interface_item_a8951f4dce6d47201687208d8f3ab4b71}\label{class_interface_item_a8951f4dce6d47201687208d8f3ab4b71} 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+\Hypertarget{class_interface_item_a5bf0a361ceb09850eb99658b2d63f20d}\label{class_interface_item_a5bf0a361ceb09850eb99658b2d63f20d} 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+\Hypertarget{class_interface_item_a31682357c76bb039960bd50f559fb742}\label{class_interface_item_a31682357c76bb039960bd50f559fb742} 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+\Hypertarget{class_interface_item_ad10154e1ef019844ed9d091a22c62ac8}\label{class_interface_item_ad10154e1ef019844ed9d091a22c62ac8} 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_interface_item_a829762a6d201271ec326ee52f6c27153}\label{class_interface_item_a829762a6d201271ec326ee52f6c27153} 
+\index{InterfaceItem@{InterfaceItem}!changeChildrenPosition@{changeChildrenPosition}}
+\index{changeChildrenPosition@{changeChildrenPosition}!InterfaceItem@{InterfaceItem}}
+\doxysubsubsection{\texorpdfstring{changeChildrenPosition()}{changeChildrenPosition()}}
+{\footnotesize\ttfamily void Interface\+Item\+::change\+Children\+Position (\begin{DoxyParamCaption}\item[{float}]{offset\+\_\+x,  }\item[{float}]{offset\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_group_a4739196e4a89954a907298fe8696facf}{Group}}.
+
+\Hypertarget{class_interface_item_ad090e444b17466e6ce229a98b70f655f}\label{class_interface_item_ad090e444b17466e6ce229a98b70f655f} 
+\index{InterfaceItem@{InterfaceItem}!changePosition@{changePosition}}
+\index{changePosition@{changePosition}!InterfaceItem@{InterfaceItem}}
+\doxysubsubsection{\texorpdfstring{changePosition()}{changePosition()}}
+{\footnotesize\ttfamily void Interface\+Item\+::change\+Position (\begin{DoxyParamCaption}\item[{float}]{offset\+\_\+x,  }\item[{float}]{offset\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_basic_image_af42b75edc13a6ade4d68855c040d08d8}{Basic\+Image}}, \mbox{\hyperlink{class_button_ad8c53101c636aa6877213d1f005249b2}{Button}}, \mbox{\hyperlink{class_group_a5cf1372d0e88a195cb8d83441c29bdac}{Group}}, \mbox{\hyperlink{class_image_info_a392238baa6f914db2f4bdcea4ed73057}{Image\+Info}}, \mbox{\hyperlink{class_input_field_ac1624d35bc884d5276b792514996e3fb}{Input\+Field}}, \mbox{\hyperlink{class_reviewer_a30d32500912011e74fc75219ccb51f3b}{Reviewer}}, \mbox{\hyperlink{class_scale_parameter_bar_aa133793b10aad267859d1cb322d59d95}{Scale\+Parameter\+Bar}}, \mbox{\hyperlink{class_slider_control_aa6797e1fbdddbd82c0bd7c991e7f33a8}{Slider\+Control}}, \mbox{\hyperlink{class_tab_container_a790800fa4931df90438463dda39492d7}{Tab\+Container}}, and \mbox{\hyperlink{class_textarea_abefe8105cf8514cc0586d4b57e5088f5}{Textarea}}.
+
+\Hypertarget{class_interface_item_a85a6055772471551e54b3e6a8f85eb14}\label{class_interface_item_a85a6055772471551e54b3e6a8f85eb14} 
+\index{InterfaceItem@{InterfaceItem}!itemScroll@{itemScroll}}
+\index{itemScroll@{itemScroll}!InterfaceItem@{InterfaceItem}}
+\doxysubsubsection{\texorpdfstring{itemScroll()}{itemScroll()}}
+{\footnotesize\ttfamily bool Interface\+Item\+::item\+Scroll (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_group_a12cba9b000f1d217e03c22553f73b303}{Group}}, and \mbox{\hyperlink{class_input_field_af9d4af585f0adab2edfb2f5f19c05878}{Input\+Field}}.
+
+\Hypertarget{class_interface_item_a589295eff6e663f41fbe77402e053ef8}\label{class_interface_item_a589295eff6e663f41fbe77402e053ef8} 
+\index{InterfaceItem@{InterfaceItem}!render@{render}}
+\index{render@{render}!InterfaceItem@{InterfaceItem}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Interface\+Item\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_animated_image_aaee7ef464ab5dfb5d815092809628db3}{Animated\+Image}}, \mbox{\hyperlink{class_group_a3919dca17f850e8d0cd41f207dd4e4f3}{Group}}, \mbox{\hyperlink{class_basic_image_a5310fdebc703b6e758e16a7aaa1398ce}{Basic\+Image}}, \mbox{\hyperlink{class_button_ad863b7a68e24791813e1618f49d3d730}{Button}}, \mbox{\hyperlink{class_checkbox_item_a8634861ca6c68acbd050d88148af86a5}{Checkbox\+Item}}, \mbox{\hyperlink{class_image_button_ab47dc16a150c530416469da9a6858cf7}{Image\+Button}}, \mbox{\hyperlink{class_image_info_a92cfc2fcf014a2f3a15a747364788a3a}{Image\+Info}}, \mbox{\hyperlink{class_input_field_a58842f5ea5c8b2f4c70dfe510d717890}{Input\+Field}}, \mbox{\hyperlink{class_reviewer_a8cedc9a02c3016f7878dca341247e49f}{Reviewer}}, \mbox{\hyperlink{class_scale_parameter_bar_a510ef002234ea6cc6501fa6b11d024ee}{Scale\+Parameter\+Bar}}, \mbox{\hyperlink{class_slider_control_ae2f3fd6030ecc8399389965f08d4ee60}{Slider\+Control}}, \mbox{\hyperlink{class_tab_container_a00438db555adcea16eeb1595ccee36d7}{Tab\+Container}}, and \mbox{\hyperlink{class_textarea_a3e2aa226c3c422fd70d9886c29320f0d}{Textarea}}.
+
+\Hypertarget{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1}\label{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1} 
+\index{InterfaceItem@{InterfaceItem}!resetActiveState@{resetActiveState}}
+\index{resetActiveState@{resetActiveState}!InterfaceItem@{InterfaceItem}}
+\doxysubsubsection{\texorpdfstring{resetActiveState()}{resetActiveState()}}
+{\footnotesize\ttfamily void Interface\+Item\+::reset\+Active\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_button_a737de12e117b96409dfab731c61cbb4f}{Button}}, and \mbox{\hyperlink{class_group_afa157093ad864b84b01c3e3b24c85566}{Group}}.
+
+\Hypertarget{class_interface_item_a35e693f9abc0b40c64af1ab2a8871627}\label{class_interface_item_a35e693f9abc0b40c64af1ab2a8871627} 
+\index{InterfaceItem@{InterfaceItem}!setPositionX@{setPositionX}}
+\index{setPositionX@{setPositionX}!InterfaceItem@{InterfaceItem}}
+\doxysubsubsection{\texorpdfstring{setPositionX()}{setPositionX()}}
+{\footnotesize\ttfamily void Interface\+Item\+::set\+PositionX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_basic_image_ac4a56af71e0ff229cc0a825bc5ab053c}{Basic\+Image}}, \mbox{\hyperlink{class_button_a1e071041c63bb8c1236692284de2b164}{Button}}, \mbox{\hyperlink{class_group_ad1abcb821fd9e807257586704452e133}{Group}}, \mbox{\hyperlink{class_image_info_aa442aac61184371e3473da96c2651202}{Image\+Info}}, \mbox{\hyperlink{class_input_field_adace9cbb91ae356a57689447e62153a0}{Input\+Field}}, \mbox{\hyperlink{class_reviewer_ac69665a9c5fd8a45af259ba019ad5598}{Reviewer}}, \mbox{\hyperlink{class_scale_parameter_bar_a7e8d6063c75f28511f3aa64071d842f5}{Scale\+Parameter\+Bar}}, \mbox{\hyperlink{class_slider_control_a688cb976fafd70ce5cfa8b5ad1561c09}{Slider\+Control}}, \mbox{\hyperlink{class_tab_container_abeea484260ad94440f74d4e6fc7df022}{Tab\+Container}}, and \mbox{\hyperlink{class_textarea_ae7bf2ce5c4f233df4a34ec3383cc2dcd}{Textarea}}.
+
+\Hypertarget{class_interface_item_a6b38bb268eb083811cd43e4810a3bba9}\label{class_interface_item_a6b38bb268eb083811cd43e4810a3bba9} 
+\index{InterfaceItem@{InterfaceItem}!setPositionY@{setPositionY}}
+\index{setPositionY@{setPositionY}!InterfaceItem@{InterfaceItem}}
+\doxysubsubsection{\texorpdfstring{setPositionY()}{setPositionY()}}
+{\footnotesize\ttfamily void Interface\+Item\+::set\+PositionY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_basic_image_a6a419d676db36238a585f3dc5c67e4c0}{Basic\+Image}}, \mbox{\hyperlink{class_button_acbcfee6ceb519657a6f78950fb45ffb9}{Button}}, \mbox{\hyperlink{class_group_a922efb9d466dd8bf6b769fdb5ea656c0}{Group}}, \mbox{\hyperlink{class_image_info_a5e9b7e6e5681d3b5f0452180f5564bce}{Image\+Info}}, \mbox{\hyperlink{class_input_field_a507c97d929a89d63fa1bc2403e36220d}{Input\+Field}}, \mbox{\hyperlink{class_reviewer_a3d127470f6b3b684413ca32789d43387}{Reviewer}}, \mbox{\hyperlink{class_scale_parameter_bar_a9d24187509e455f6df735412e3781eeb}{Scale\+Parameter\+Bar}}, \mbox{\hyperlink{class_slider_control_a3095b9fb7e2bd1a0eed9b8c3ad6b02b2}{Slider\+Control}}, \mbox{\hyperlink{class_tab_container_ab5a4398d89d4fcbe6e6e3164613658e2}{Tab\+Container}}, and \mbox{\hyperlink{class_textarea_a284e9ee5f99cfb72736c780c9442b8e5}{Textarea}}.
+
+\Hypertarget{class_interface_item_a58dacff03fea42947f63d5c02711263c}\label{class_interface_item_a58dacff03fea42947f63d5c02711263c} 
+\index{InterfaceItem@{InterfaceItem}!update@{update}}
+\index{update@{update}!InterfaceItem@{InterfaceItem}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Interface\+Item\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_animated_image_a10445c2059f71ffc781862bc5cf60281}{Animated\+Image}}, \mbox{\hyperlink{class_basic_image_ad4ff7e93156b4d508ee538971b372ae1}{Basic\+Image}}, \mbox{\hyperlink{class_button_abda97f1ae8e081da3dbd0b77a27cad9d}{Button}}, \mbox{\hyperlink{class_checkbox_item_a5cf85a63c96840141861a2633af8aeab}{Checkbox\+Item}}, \mbox{\hyperlink{class_form_ac66858b652ceb774c299c7544f91fe6d}{Form}}, \mbox{\hyperlink{class_group_a198d855cd431ba03040fd060816625bd}{Group}}, \mbox{\hyperlink{class_image_info_a03c7a51f567ebefd23fd31991d3b884e}{Image\+Info}}, \mbox{\hyperlink{class_input_field_aabc4beee4b33aae3aed0f5afe8b92672}{Input\+Field}}, \mbox{\hyperlink{class_number_field_a83f6d03d0b08ef1438a6a6f5505229b4}{Number\+Field}}, \mbox{\hyperlink{class_resource_info_af059e1cec57d969c3a51e5335c2b39b8}{Resource\+Info}}, \mbox{\hyperlink{class_reviewer_a71901d7ec38644555bbca19766a4340f}{Reviewer}}, \mbox{\hyperlink{class_scale_parameter_bar_a02a01faf3f3e85c9db562223f867af8e}{Scale\+Parameter\+Bar}}, \mbox{\hyperlink{class_slider_control_a2a20a2ab82c3dea9872fc8ae14129bb8}{Slider\+Control}}, \mbox{\hyperlink{class_tab_container_ae307d7e4c9f4183868caf332b8652201}{Tab\+Container}}, and \mbox{\hyperlink{class_textarea_a5604c98f51e202af856ae7c22a13cf6a}{Textarea}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Interface\+Item.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Interface\+Item.\+cpp\end{DoxyCompactItemize}

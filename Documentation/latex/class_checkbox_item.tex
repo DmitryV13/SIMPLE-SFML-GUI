@@ -1,0 +1,249 @@
+\doxysection{Checkbox\+Item Class Reference}
+\hypertarget{class_checkbox_item}{}\label{class_checkbox_item}\index{CheckboxItem@{CheckboxItem}}
+
+
+{\ttfamily \#include $<$Checkbox\+Item.\+h$>$}
+
+Inheritance diagram for Checkbox\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_checkbox_item}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_checkbox_item_a06e0d5c4baff980cf5b2808e4af5aa9e}{Checkbox\+Item}} (float x, float y, float width\+\_\+, float height\+\_\+)
+\item 
+string \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_checkbox_item_add337f5c42738b23147137b7231e34d4}{get\+Value}} ()
+\item 
+void \mbox{\hyperlink{class_checkbox_item_ab90796334a6e811208b257787771708d}{set\+Value}} (string val)
+\item 
+void \mbox{\hyperlink{class_checkbox_item_a5cf85a63c96840141861a2633af8aeab}{update}} () override
+\item 
+void \mbox{\hyperlink{class_checkbox_item_a8634861ca6c68acbd050d88148af86a5}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_group}{Group}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_group_a2f160fd37b5dfb2035ed76a2df7ba7d1}{Group}} (float x, float y, float width\+\_\+, float height\+\_\+)
+\item 
+Float\+Rect \mbox{\hyperlink{class_group_af08591648aaa2b9803532a88291b6dc6}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_group_a7db6571bbac42c75dc7263cc431b38f8}{get\+Global\+Bounds}} () override
+\item 
+std\+::pair$<$ float, float $>$ \mbox{\hyperlink{class_group_aba10e205b0c54b0554020dee6b4b987f}{get\+Max\+ELHeight}} (short index)
+\item 
+short \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_group_adad8eda5d8468f856c4e29ed10e6e7cc}{get\+Button\+State}} (int btn\+\_\+id)
+\item 
+void \mbox{\hyperlink{class_group_a6fe15f0453063a39db110e910a3259b1}{set\+Alignment}} (string horiz\+\_\+a, string vertic\+\_\+a)
+\item 
+void \mbox{\hyperlink{class_group_a85c162b3c3ec53b1a7ce96d058319dbc}{set\+VAlignment}} (string vertic\+\_\+a)
+\item 
+void \mbox{\hyperlink{class_group_afbd8acd74d9a1184f3b2de8d1d0b3f33}{set\+HAlignment}} (string horiz\+\_\+a)
+\item 
+void \mbox{\hyperlink{class_group_ad1abcb821fd9e807257586704452e133}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_group_a922efb9d466dd8bf6b769fdb5ea656c0}{set\+PositionY}} (float y) override
+\item 
+void \mbox{\hyperlink{class_group_a2a5eeef86b3b024bd64b188c7ad5b68c}{set\+BColor}} (Color color)
+\item 
+void \mbox{\hyperlink{class_group_ac2c6fd2ff817db058c50b2af04a7b7a0}{normalization}} ()
+\item 
+void \mbox{\hyperlink{class_group_a4739196e4a89954a907298fe8696facf}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_group_a5cf1372d0e88a195cb8d83441c29bdac}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_group_af15d65f3bcff7288942f739465f44b7d}{change\+PositionY}} (float offset)
+\item 
+void \mbox{\hyperlink{class_group_acba89f444c4bb114559cc544a8059011}{create\+Element\+Line}} ()
+\item 
+void \mbox{\hyperlink{class_group_a28ed8f9f77742ba939e01b0917f26199}{clear\+Info}} ()
+\item 
+void \mbox{\hyperlink{class_group_afeda9304f76fa0072815a93e92ab2598}{add\+IElement}} (\mbox{\hyperlink{class_interface_item}{Interface\+Item}} \texorpdfstring{$\ast$}{*}new\+\_\+group, short index)
+\item 
+int \mbox{\hyperlink{class_group_a486cea639c0d7e74acf30839d94c9518}{add\+Group}} (short fill\+\_\+p\+\_\+w, short fill\+\_\+p\+\_\+h, short index)
+\item 
+void \mbox{\hyperlink{class_group_af5be7472e141ca4cf1d6478c4fa82aab}{add\+Group\+Name}} (string text\+\_\+name, int name\+\_\+size)
+\item 
+int \mbox{\hyperlink{class_group_ae4a4ec8902a2653d8cf75766f51be13b}{add\+Button}} (short text\+\_\+size, string btn\+\_\+name, Color btn\+\_\+color, short index\+\_\+g)
+\item 
+int \mbox{\hyperlink{class_group_ac83ce3850a9a7369f4ae2c1cdd8cc613}{add\+Button}} (float width, float height, short text\+\_\+size, string btn\+\_\+name, Color btn\+\_\+hcolor, Color btn\+\_\+icolor, Color shp\+\_\+hcolor, Color shp\+\_\+icolor, bool outline, short index\+\_\+g)
+\item 
+int \mbox{\hyperlink{class_group_a55139f547b3d8978d9dad732353a9808}{add\+Button}} (float width, float height, short text\+\_\+size, string btn\+\_\+name, Color btn\+\_\+hcolor, Color btn\+\_\+icolor, Color shp\+\_\+hcolor, Color shp\+\_\+icolor, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index\+\_\+t, string name, bool outline, short index\+\_\+g)
+\item 
+\mbox{\hyperlink{class_c_rect}{CRect}}$<$ float $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_group_a38a48dfedd9d975cd940d1e88c2aac61}{calculate\+PFNII}} (short fill\+\_\+p\+\_\+w, short fill\+\_\+p\+\_\+h, short index)
+\item 
+void \mbox{\hyperlink{class_group_afa157093ad864b84b01c3e3b24c85566}{reset\+Active\+State}} () override
+\item 
+bool \mbox{\hyperlink{class_group_a12cba9b000f1d217e03c22553f73b303}{item\+Scroll}} (float delta) override
+\item 
+void \mbox{\hyperlink{class_group_a49978fd9cecb7b125407feee525c6d38}{form\+Input}} (Event event)
+\item 
+void \mbox{\hyperlink{class_group_a198d855cd431ba03040fd060816625bd}{update}} () override
+\item 
+void \mbox{\hyperlink{class_group_a3919dca17f850e8d0cd41f207dd4e4f3}{render}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_form_item}{Form\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& \mbox{\hyperlink{class_form_item_acb1243479768ad617559405d3af602d7}{get\+FIType}} ()
+\item 
+short \& \mbox{\hyperlink{class_form_item_a44a6be13fae10dab81d02fad25528c53}{get\+FIState}} ()
+\item 
+short \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_form_item_a97593fc49cce2a7e8a93cdeac6e2f7f0}{get\+FIPState}} ()
+\item 
+void \mbox{\hyperlink{class_form_item_a386a7df5c775d81f2a538e9402d3c411}{set\+FIState}} (short state)
+\item 
+virtual void \mbox{\hyperlink{class_form_item_a1f9563b4c63ca2d9929cc69763d2fc86}{form\+EInput}} (Event event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_checkbox_item_a9943169c6d5ef6c26395a7b5de9abf81}\label{class_checkbox_item_a9943169c6d5ef6c26395a7b5de9abf81} 
+Rectangle\+Shape {\bfseries shape}
+\item 
+\Hypertarget{class_checkbox_item_a3789643c1b4558e518766fe742786df7}\label{class_checkbox_item_a3789643c1b4558e518766fe742786df7} 
+bool {\bfseries chosen}
+\item 
+\Hypertarget{class_checkbox_item_a9dc8074aa1e0b543a09d0fa582210e97}\label{class_checkbox_item_a9dc8074aa1e0b543a09d0fa582210e97} 
+bool {\bfseries unpressed}
+\item 
+\Hypertarget{class_checkbox_item_af588c38eb5390d5ff8d52e0b070f6436}\label{class_checkbox_item_af588c38eb5390d5ff8d52e0b070f6436} 
+string \texorpdfstring{$\ast$}{*} {\bfseries value}
+\item 
+\Hypertarget{class_checkbox_item_adae793310dd150f50a5025726a6e636c}\label{class_checkbox_item_adae793310dd150f50a5025726a6e636c} 
+string {\bfseries active\+\_\+value}
+\item 
+\Hypertarget{class_checkbox_item_abf12fb4fac9bf3b130e61e23e9b215a7}\label{class_checkbox_item_abf12fb4fac9bf3b130e61e23e9b215a7} 
+string {\bfseries idle\+\_\+value}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_group}{Group}}}
+\begin{DoxyCompactItemize}
+\item 
+Rectangle\+Shape {\bfseries shape0}
+\item 
+Rectangle\+Shape {\bfseries shape1}
+\item 
+Rectangle\+Shape {\bfseries shape2}
+\item 
+Rectangle\+Shape {\bfseries background}
+\item 
+Text \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+vector$<$ vector$<$ \mbox{\hyperlink{class_interface_item}{Interface\+Item}} \texorpdfstring{$\ast$}{*} $>$ $>$ {\bfseries g\+\_\+elements}
+\item 
+float {\bfseries inner\+\_\+width}
+\item 
+float {\bfseries inner\+\_\+height}
+\item 
+float {\bfseries outer\+\_\+width}
+\item 
+float {\bfseries outer\+\_\+height}
+\item 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_form_item}{Form\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries fi\+\_\+state}
+\item 
+short {\bfseries fi\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Элемент интерфейса, элемент формы -\/ checkbox группа. В данной версии содержание одной checkbox группы в другой checkbox группе допустимо, но неработоспособн, так как нет каскадной обработки события. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_checkbox_item_a06e0d5c4baff980cf5b2808e4af5aa9e}\label{class_checkbox_item_a06e0d5c4baff980cf5b2808e4af5aa9e} 
+\index{CheckboxItem@{CheckboxItem}!CheckboxItem@{CheckboxItem}}
+\index{CheckboxItem@{CheckboxItem}!CheckboxItem@{CheckboxItem}}
+\doxysubsubsection{\texorpdfstring{CheckboxItem()}{CheckboxItem()}}
+{\footnotesize\ttfamily Checkbox\+Item\+::\+Checkbox\+Item (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width\+\_\+,  }\item[{float}]{height\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em width\+\_\+} & ширина. \\
+\hline
+{\em height\+\_\+} & высота. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+неактивированное значение checkbox по умолчанию "{}\+\_\+false\+\_\+"{}, а активированное -\/ "{}\+\_\+true\+\_\+"{}. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_checkbox_item_add337f5c42738b23147137b7231e34d4}\label{class_checkbox_item_add337f5c42738b23147137b7231e34d4} 
+\index{CheckboxItem@{CheckboxItem}!getValue@{getValue}}
+\index{getValue@{getValue}!CheckboxItem@{CheckboxItem}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily string \texorpdfstring{$\ast$}{*} Checkbox\+Item\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возвращает текущее значение checkbox. \Hypertarget{class_checkbox_item_a8634861ca6c68acbd050d88148af86a5}\label{class_checkbox_item_a8634861ca6c68acbd050d88148af86a5} 
+\index{CheckboxItem@{CheckboxItem}!render@{render}}
+\index{render@{render}!CheckboxItem@{CheckboxItem}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Checkbox\+Item\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Отображает элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_checkbox_item_ab90796334a6e811208b257787771708d}\label{class_checkbox_item_ab90796334a6e811208b257787771708d} 
+\index{CheckboxItem@{CheckboxItem}!setValue@{setValue}}
+\index{setValue@{setValue}!CheckboxItem@{CheckboxItem}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily void Checkbox\+Item\+::set\+Value (\begin{DoxyParamCaption}\item[{string}]{val }\end{DoxyParamCaption})}
+
+Устанавливает новое активированное значение checkbox.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & новое акивированное значение. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_checkbox_item_a5cf85a63c96840141861a2633af8aeab}\label{class_checkbox_item_a5cf85a63c96840141861a2633af8aeab} 
+\index{CheckboxItem@{CheckboxItem}!update@{update}}
+\index{update@{update}!CheckboxItem@{CheckboxItem}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Checkbox\+Item\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Обновляет элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Checkbox\+Item.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Checkbox\+Item.\+cpp\end{DoxyCompactItemize}

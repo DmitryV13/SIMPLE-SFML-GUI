@@ -1,0 +1,34 @@
+\doxysection{Pop\+Up\+Autoc\+Window.\+h}
+\hypertarget{_pop_up_autoc_window_8h_source}{}\label{_pop_up_autoc_window_8h_source}\index{D:/Applications/SFML\_GUI/PopUpAutocWindow.h@{D:/Applications/SFML\_GUI/PopUpAutocWindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}PopUpWindow.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pop_up_autoc_window}{PopUpAutocWindow}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_pop_up_window}{PopUpWindow}}\{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_image_button}{ImageButton}}*\ close\_b;}
+\DoxyCodeLine{00010\ \ \ \ \ RectangleShape\ header;}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_textarea}{Textarea}}*\ window\_name;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{bool}\ chosen;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ Vector2f\ mouse\_pressed\_pos;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{float}\ offset\_x;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{float}\ offset\_y;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_pop_up_autoc_window_a157d9048f9945c23d5d846069907ca84}{PopUpAutocWindow}}(\textcolor{keywordtype}{double}\ screen\_width,\ \textcolor{keywordtype}{double}\ screen\_height,\ \textcolor{keywordtype}{int}\ width\_,\ \textcolor{keywordtype}{int}\ height\_,}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager\_);}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_pop_up_autoc_window}{\string~PopUpAutocWindow}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_autoc_window_aa2fe304b8dcfdec1f306aa0008151c97}{setWindowName}}(\textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_autoc_window_a4857f26d2526c0b2c9ec3c0e694e5b43}{dragWindow}}(Vector2f\ mouse\_current\_pos);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_autoc_window_a8b5d476169830b00d61fe339cc61e35d}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_autoc_window_acda7fc0e2e6373c1529a7b571cabc480}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+
+\end{DoxyCode}

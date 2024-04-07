@@ -1,0 +1,203 @@
+\doxysection{Product\+Card Class Reference}
+\hypertarget{class_product_card}{}\label{class_product_card}\index{ProductCard@{ProductCard}}
+
+
+{\ttfamily \#include $<$Product\+Card.\+h$>$}
+
+Inheritance diagram for Product\+Card\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_product_card}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_product_card_a0bd900c9b5c15d8183749bc8fd1f0e4f}\label{class_product_card_a0bd900c9b5c15d8183749bc8fd1f0e4f} 
+{\bfseries Product\+Card} (int price, int amount, float p\+\_\+coefficient, int \texorpdfstring{$\ast$}{*}source)
+\item 
+Float\+Rect \mbox{\hyperlink{class_product_card_af91fbdaa580ea2015028995f9f186cbf}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_product_card_a249da918aaba354709521fc509fdb5ae}{get\+Global\+Bounds}} () override
+\item 
+\Hypertarget{class_product_card_aeb3e5c412828599b92993ed765c197bb}\label{class_product_card_aeb3e5c412828599b92993ed765c197bb} 
+short \texorpdfstring{$\ast$}{*} {\bfseries get\+Purchase\+State} ()
+\item 
+\Hypertarget{class_product_card_a9d4df1cb4f1e69ff92768559fb9688a4}\label{class_product_card_a9d4df1cb4f1e69ff92768559fb9688a4} 
+\mbox{\hyperlink{class_group}{Group}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Group} ()
+\item 
+\Hypertarget{class_product_card_a2ae0e7330bcc0433b444c64efc4a039c}\label{class_product_card_a2ae0e7330bcc0433b444c64efc4a039c} 
+int \texorpdfstring{$\ast$}{*} {\bfseries get\+Price} ()
+\item 
+\Hypertarget{class_product_card_a1866b19e9b7ce85dd8b56ffceb0e28ed}\label{class_product_card_a1866b19e9b7ce85dd8b56ffceb0e28ed} 
+void {\bfseries set\+Group} (\mbox{\hyperlink{class_group}{Group}} \texorpdfstring{$\ast$}{*}group\+\_\+, Color color)
+\item 
+void \mbox{\hyperlink{class_product_card_aa95a4d66baae6274b11690c158c4c264}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_product_card_a72312f737762c7bf5adcbe48608f6f5b}{set\+PositionY}} (float y) override
+\item 
+\Hypertarget{class_product_card_a6ef50db79224a9a958db982f8412e954}\label{class_product_card_a6ef50db79224a9a958db982f8412e954} 
+void {\bfseries set\+Currency} (int \texorpdfstring{$\ast$}{*}curr)
+\item 
+\Hypertarget{class_product_card_a875e564f7abbec6aeb93de04935b8455}\label{class_product_card_a875e564f7abbec6aeb93de04935b8455} 
+void {\bfseries set\+Alignment} (string v\+\_\+align, string h\+\_\+align)
+\item 
+\Hypertarget{class_product_card_a9db88e5b9c17e1ebef330d0b8ed494ad}\label{class_product_card_a9db88e5b9c17e1ebef330d0b8ed494ad} 
+void {\bfseries add\+Notification} (short text\+\_\+size, string text\+\_\+, Color text\+\_\+color)
+\item 
+\Hypertarget{class_product_card_abd679ac2f0bfc394f664d4b16c7d140b}\label{class_product_card_abd679ac2f0bfc394f664d4b16c7d140b} 
+void {\bfseries add\+Notification} (short text\+\_\+size, Color text\+\_\+color)
+\item 
+void \mbox{\hyperlink{class_product_card_afe35c73a21968574e0c66d09f0b7dcf9}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+\Hypertarget{class_product_card_a6250b168e3d3b5711b1b4c851d1e6098}\label{class_product_card_a6250b168e3d3b5711b1b4c851d1e6098} 
+void {\bfseries buy} (float param1, float param2)
+\item 
+void \mbox{\hyperlink{class_product_card_a41f8b501ce7c8dafaf3c93bcc9a994f2}{update}} () override
+\item 
+void \mbox{\hyperlink{class_product_card_a9c72f862bdeb7187247970fb71ecfefb}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\item 
+virtual bool \mbox{\hyperlink{class_interface_item_a85a6055772471551e54b3e6a8f85eb14}{item\+Scroll}} (float delta)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a829762a6d201271ec326ee52f6c27153}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1}{reset\+Active\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_product_card_ab041582d8e5b7b460d5fdf44a2ae5b35}\label{class_product_card_ab041582d8e5b7b460d5fdf44a2ae5b35} 
+\mbox{\hyperlink{class_group}{Group}} \texorpdfstring{$\ast$}{*} {\bfseries group}
+\item 
+\Hypertarget{class_product_card_affda520f7824725f749aed2d0942cf29}\label{class_product_card_affda520f7824725f749aed2d0942cf29} 
+int {\bfseries price}
+\item 
+\Hypertarget{class_product_card_ad06a616d28f3dfd1d31063bdb9f886f0}\label{class_product_card_ad06a616d28f3dfd1d31063bdb9f886f0} 
+int {\bfseries amount}
+\item 
+\Hypertarget{class_product_card_a9cceaf7078181cb5957ca7f54f06b1fc}\label{class_product_card_a9cceaf7078181cb5957ca7f54f06b1fc} 
+float {\bfseries p\+\_\+coefficient}
+\item 
+\Hypertarget{class_product_card_a6e1c58faef5894ff96ebd3ca72fa8aef}\label{class_product_card_a6e1c58faef5894ff96ebd3ca72fa8aef} 
+int \texorpdfstring{$\ast$}{*} {\bfseries source}
+\item 
+\Hypertarget{class_product_card_a6a14c81c8c3401b2e2144332fa371211}\label{class_product_card_a6a14c81c8c3401b2e2144332fa371211} 
+int \texorpdfstring{$\ast$}{*} {\bfseries currency}
+\item 
+\Hypertarget{class_product_card_a71d6b155a2344e342f49c3746896f0fb}\label{class_product_card_a71d6b155a2344e342f49c3746896f0fb} 
+short {\bfseries purchase\+\_\+state}
+\item 
+\Hypertarget{class_product_card_a70a4019d256a9c8260c3b58c9f3e7fd4}\label{class_product_card_a70a4019d256a9c8260c3b58c9f3e7fd4} 
+string {\bfseries h\+\_\+alignment}
+\item 
+\Hypertarget{class_product_card_a90d1b84a80dc7cd2ef334d7395e37322}\label{class_product_card_a90d1b84a80dc7cd2ef334d7395e37322} 
+string {\bfseries v\+\_\+alignment}
+\item 
+\Hypertarget{class_product_card_a04d1fb6734a1404d38bd7033ebeae75d}\label{class_product_card_a04d1fb6734a1404d38bd7033ebeae75d} 
+\mbox{\hyperlink{class_notification}{Notification}} \texorpdfstring{$\ast$}{*} {\bfseries notification}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Составной элемент интерфейса, описание не добавлено, так как прчмого отношения к базовым компонентам GUI этот элемент не имеет, но вы всегда можете посмотреть код и разобраться сами. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_product_card_afe35c73a21968574e0c66d09f0b7dcf9}\label{class_product_card_afe35c73a21968574e0c66d09f0b7dcf9} 
+\index{ProductCard@{ProductCard}!changePosition@{changePosition}}
+\index{changePosition@{changePosition}!ProductCard@{ProductCard}}
+\doxysubsubsection{\texorpdfstring{changePosition()}{changePosition()}}
+{\footnotesize\ttfamily void Product\+Card\+::change\+Position (\begin{DoxyParamCaption}\item[{float}]{offset\+\_\+x,  }\item[{float}]{offset\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_product_card_a249da918aaba354709521fc509fdb5ae}\label{class_product_card_a249da918aaba354709521fc509fdb5ae} 
+\index{ProductCard@{ProductCard}!getGlobalBounds@{getGlobalBounds}}
+\index{getGlobalBounds@{getGlobalBounds}!ProductCard@{ProductCard}}
+\doxysubsubsection{\texorpdfstring{getGlobalBounds()}{getGlobalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Product\+Card\+::get\+Global\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_product_card_af91fbdaa580ea2015028995f9f186cbf}\label{class_product_card_af91fbdaa580ea2015028995f9f186cbf} 
+\index{ProductCard@{ProductCard}!getLocalBounds@{getLocalBounds}}
+\index{getLocalBounds@{getLocalBounds}!ProductCard@{ProductCard}}
+\doxysubsubsection{\texorpdfstring{getLocalBounds()}{getLocalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Product\+Card\+::get\+Local\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_product_card_a9c72f862bdeb7187247970fb71ecfefb}\label{class_product_card_a9c72f862bdeb7187247970fb71ecfefb} 
+\index{ProductCard@{ProductCard}!render@{render}}
+\index{render@{render}!ProductCard@{ProductCard}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Product\+Card\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_product_card_aa95a4d66baae6274b11690c158c4c264}\label{class_product_card_aa95a4d66baae6274b11690c158c4c264} 
+\index{ProductCard@{ProductCard}!setPositionX@{setPositionX}}
+\index{setPositionX@{setPositionX}!ProductCard@{ProductCard}}
+\doxysubsubsection{\texorpdfstring{setPositionX()}{setPositionX()}}
+{\footnotesize\ttfamily void Product\+Card\+::set\+PositionX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_product_card_a72312f737762c7bf5adcbe48608f6f5b}\label{class_product_card_a72312f737762c7bf5adcbe48608f6f5b} 
+\index{ProductCard@{ProductCard}!setPositionY@{setPositionY}}
+\index{setPositionY@{setPositionY}!ProductCard@{ProductCard}}
+\doxysubsubsection{\texorpdfstring{setPositionY()}{setPositionY()}}
+{\footnotesize\ttfamily void Product\+Card\+::set\+PositionY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_product_card_a41f8b501ce7c8dafaf3c93bcc9a994f2}\label{class_product_card_a41f8b501ce7c8dafaf3c93bcc9a994f2} 
+\index{ProductCard@{ProductCard}!update@{update}}
+\index{update@{update}!ProductCard@{ProductCard}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Product\+Card\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Product\+Card.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Product\+Card.\+cpp\end{DoxyCompactItemize}

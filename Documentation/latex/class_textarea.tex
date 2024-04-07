@@ -1,0 +1,476 @@
+\doxysection{Textarea Class Reference}
+\hypertarget{class_textarea}{}\label{class_textarea}\index{Textarea@{Textarea}}
+
+
+{\ttfamily \#include $<$Textarea.\+h$>$}
+
+Inheritance diagram for Textarea\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_textarea}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_textarea_a0da6ce2aa51375bdd9d73b0358fc90fd}{Textarea}} (float x, float y, float width\+\_\+, float height\+\_\+, int text\+\_\+size\+\_\+, Color text\+\_\+color\+\_\+, Color background\+\_\+color\+\_\+, Color border\+\_\+color, short overflow\+\_\+, bool multiline\+\_\+)
+\item 
+\mbox{\hyperlink{class_textarea_ad5d7714be481ae28d246093a2a7a1f06}{Textarea}} (float x, float y, float width\+\_\+, float height\+\_\+, int text\+\_\+size\+\_\+, bool multiline\+\_\+)
+\item 
+Float\+Rect \mbox{\hyperlink{class_textarea_abdf5a131562d7154ab291ca2496b77c2}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_textarea_a4c698330f2f109c9b4385cb7b3f3f8b3}{get\+Global\+Bounds}} () override
+\item 
+std\+::string \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_textarea_adf73152d69531f4dd82537b3f8c7bfa0}{get\+String}} ()
+\item 
+char \mbox{\hyperlink{class_textarea_ade5e0d3bc2fcbfbad05fbca55082b9c1}{get\+Last\+Character}} ()
+\item 
+bool \mbox{\hyperlink{class_textarea_a58aad05a70e2bc0b2812ce644ef62711}{get\+Visibility}} ()
+\item 
+bool \mbox{\hyperlink{class_textarea_aeca97e10216354b982bbcd7508b6c84f}{has\+Cursor}} ()
+\item 
+bool \mbox{\hyperlink{class_textarea_a8f936095d13cadf683eb96ba75d7339d}{content\+Overflows}} ()
+\item 
+void \mbox{\hyperlink{class_textarea_a83ea2290fadcf07a265b5ed955ebe7a0}{set\+Visibility}} (bool visibility\+\_\+)
+\item 
+void \mbox{\hyperlink{class_textarea_af46a883ad723db723f665d9ca14992f7}{set\+Overflow}} (short overflow\+\_\+)
+\item 
+void \mbox{\hyperlink{class_textarea_a013882c30253124e126866c0c54b6188}{set\+Backgroung\+Color}} (Color color)
+\item 
+void \mbox{\hyperlink{class_textarea_ada7df6e4dfdefe85eb996a6835a14168}{set\+Outline\+Color}} (Color color)
+\item 
+void \mbox{\hyperlink{class_textarea_a81904e63c4a63aca4917c03bb0b62e1f}{set\+Text\+Color}} (Color color)
+\item 
+void \mbox{\hyperlink{class_textarea_a245f75b61f407259f23ab42fad03fb8d}{set\+String}} (std\+::string new\+\_\+str)
+\item 
+void \mbox{\hyperlink{class_textarea_ae7bf2ce5c4f233df4a34ec3383cc2dcd}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_textarea_a284e9ee5f99cfb72736c780c9442b8e5}{set\+PositionY}} (float y) override
+\item 
+void \mbox{\hyperlink{class_textarea_abefe8105cf8514cc0586d4b57e5088f5}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_textarea_aec80f5efabbcd01742057cd367f341f0}{add\+Character}} (char ch)
+\item 
+void \mbox{\hyperlink{class_textarea_af971907510d4bf095befd3be5eaaf30b}{add\+Cursor}} (char cursor\+\_\+)
+\item 
+void \mbox{\hyperlink{class_textarea_ab92bb50bdf412565f75f7d7a83ac46de}{remove\+Character}} (int index)
+\item 
+void \mbox{\hyperlink{class_textarea_a12fb64b2faa029e3f2ed6442d656ecd9}{remove\+Last\+Character}} ()
+\item 
+void \mbox{\hyperlink{class_textarea_a2e7dee69d5fa788ea222706112a40fcd}{remove\+Cursor}} ()
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_textarea_a4dc1112032059b439739f121a5eb8578}{split\+String}} (const string \&str, char delimiter)
+\item 
+void \mbox{\hyperlink{class_textarea_ab6b1cdeb04f0e62f966406c7e82ab588}{scroll}} (float delta)
+\item 
+void \mbox{\hyperlink{class_textarea_a7dc5575e82503ffe26fe02b8386cd2b1}{normalization}} ()
+\item 
+void \mbox{\hyperlink{class_textarea_a5604c98f51e202af856ae7c22a13cf6a}{update}} () override
+\item 
+void \mbox{\hyperlink{class_textarea_a3e2aa226c3c422fd70d9886c29320f0d}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\item 
+virtual bool \mbox{\hyperlink{class_interface_item_a85a6055772471551e54b3e6a8f85eb14}{item\+Scroll}} (float delta)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a829762a6d201271ec326ee52f6c27153}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1}{reset\+Active\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_textarea_afc09afcaca8d84d6ff03af72e1cbb87c}\label{class_textarea_afc09afcaca8d84d6ff03af72e1cbb87c} 
+Text \texorpdfstring{$\ast$}{*} {\bfseries text}
+\item 
+\Hypertarget{class_textarea_add1d6471183ccf425320cfaf38447e4b}\label{class_textarea_add1d6471183ccf425320cfaf38447e4b} 
+string \texorpdfstring{$\ast$}{*} {\bfseries text\+\_\+str}
+\item 
+\Hypertarget{class_textarea_ac73d1b2c5392fb1b77893aca35ab6862}\label{class_textarea_ac73d1b2c5392fb1b77893aca35ab6862} 
+char {\bfseries cursor}
+\item 
+\Hypertarget{class_textarea_a23183dca7fbe65265fbc29231fb93406}\label{class_textarea_a23183dca7fbe65265fbc29231fb93406} 
+Rectangle\+Shape {\bfseries background}
+\item 
+\Hypertarget{class_textarea_a858d8cddc134a7363dd9ed48c95e5c76}\label{class_textarea_a858d8cddc134a7363dd9ed48c95e5c76} 
+int {\bfseries text\+\_\+size}
+\item 
+\Hypertarget{class_textarea_abe0e5a00556fbb717d7e6924120c32cf}\label{class_textarea_abe0e5a00556fbb717d7e6924120c32cf} 
+Color {\bfseries text\+\_\+color}
+\item 
+\Hypertarget{class_textarea_af8a5c049f1acac6d29aac5c475809ef4}\label{class_textarea_af8a5c049f1acac6d29aac5c475809ef4} 
+float {\bfseries offset\+\_\+y}
+\item 
+\Hypertarget{class_textarea_a0877efb868d47f4b80ccb16fae83b4c3}\label{class_textarea_a0877efb868d47f4b80ccb16fae83b4c3} 
+short {\bfseries overflow}
+\item 
+\Hypertarget{class_textarea_a1d4dccfcf0dec4ab295590abffa90b1f}\label{class_textarea_a1d4dccfcf0dec4ab295590abffa90b1f} 
+bool {\bfseries multiline}
+\item 
+\Hypertarget{class_textarea_a1f8de4cec52100e9a5f6234229739075}\label{class_textarea_a1f8de4cec52100e9a5f6234229739075} 
+bool {\bfseries visibility}
+\item 
+\Hypertarget{class_textarea_a30c2b35e5aa80f69e3f382b93d44dd2b}\label{class_textarea_a30c2b35e5aa80f69e3f382b93d44dd2b} 
+float {\bfseries width}
+\item 
+\Hypertarget{class_textarea_a1a7ca3ae7fa878fad8fbf1ec483298bb}\label{class_textarea_a1a7ca3ae7fa878fad8fbf1ec483298bb} 
+float {\bfseries height}
+\item 
+\Hypertarget{class_textarea_a34b2ede56e428357afee439194f6b69f}\label{class_textarea_a34b2ede56e428357afee439194f6b69f} 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Элемент интерфейса -\/ текст. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_textarea_a0da6ce2aa51375bdd9d73b0358fc90fd}\label{class_textarea_a0da6ce2aa51375bdd9d73b0358fc90fd} 
+\index{Textarea@{Textarea}!Textarea@{Textarea}}
+\index{Textarea@{Textarea}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{Textarea()}{Textarea()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Textarea\+::\+Textarea (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width\+\_\+,  }\item[{float}]{height\+\_\+,  }\item[{int}]{text\+\_\+size\+\_\+,  }\item[{Color}]{text\+\_\+color\+\_\+,  }\item[{Color}]{background\+\_\+color\+\_\+,  }\item[{Color}]{border\+\_\+color,  }\item[{short}]{overflow\+\_\+,  }\item[{bool}]{multiline\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em width\+\_\+} & ширина. \\
+\hline
+{\em height\+\_\+} & высота. \\
+\hline
+{\em text\+\_\+size\+\_\+} & размер шрифта. \\
+\hline
+{\em text\+\_\+color\+\_\+} & цвет текста (по умолчанию цвет текста черный). \\
+\hline
+{\em background\+\_\+color\+\_\+} & цвет фона текста (по умолчанию белый). \\
+\hline
+{\em border\+\_\+color\+\_\+} & цвет границы фона текста (по умолчанию темно-\/синий). \\
+\hline
+{\em overflow\+\_\+} & устанавливает тип выхода содержимого за пределы текстового элемента (ITEM\+\_\+\+OVERFLOW, по умолчанию HIDDEN). \\
+\hline
+{\em multiline\+\_\+} & устанавливает многострочность текстового элемента. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_textarea_ad5d7714be481ae28d246093a2a7a1f06}\label{class_textarea_ad5d7714be481ae28d246093a2a7a1f06} 
+\index{Textarea@{Textarea}!Textarea@{Textarea}}
+\index{Textarea@{Textarea}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{Textarea()}{Textarea()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Textarea\+::\+Textarea (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width\+\_\+,  }\item[{float}]{height\+\_\+,  }\item[{int}]{text\+\_\+size\+\_\+,  }\item[{bool}]{multiline\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em width\+\_\+} & ширина. \\
+\hline
+{\em height\+\_\+} & высота. \\
+\hline
+{\em text\+\_\+size\+\_\+} & размер шрифта. \\
+\hline
+{\em multiline\+\_\+} & устанавливает многострочность текстового элемента. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_textarea_aec80f5efabbcd01742057cd367f341f0}\label{class_textarea_aec80f5efabbcd01742057cd367f341f0} 
+\index{Textarea@{Textarea}!addCharacter@{addCharacter}}
+\index{addCharacter@{addCharacter}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{addCharacter()}{addCharacter()}}
+{\footnotesize\ttfamily void Textarea\+::add\+Character (\begin{DoxyParamCaption}\item[{char}]{ch }\end{DoxyParamCaption})}
+
+Добавляет символ к тексту.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ch} & символ. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_textarea_af971907510d4bf095befd3be5eaaf30b}\label{class_textarea_af971907510d4bf095befd3be5eaaf30b} 
+\index{Textarea@{Textarea}!addCursor@{addCursor}}
+\index{addCursor@{addCursor}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{addCursor()}{addCursor()}}
+{\footnotesize\ttfamily void Textarea\+::add\+Cursor (\begin{DoxyParamCaption}\item[{char}]{cursor\+\_\+ }\end{DoxyParamCaption})}
+
+Устанавливает символ курсора.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cursor\+\_\+} & новый символ курсора. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_textarea_abefe8105cf8514cc0586d4b57e5088f5}\label{class_textarea_abefe8105cf8514cc0586d4b57e5088f5} 
+\index{Textarea@{Textarea}!changePosition@{changePosition}}
+\index{changePosition@{changePosition}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{changePosition()}{changePosition()}}
+{\footnotesize\ttfamily void Textarea\+::change\+Position (\begin{DoxyParamCaption}\item[{float}]{offset\+\_\+x,  }\item[{float}]{offset\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сдвигает группу и ее элементы на заданное смещение.
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset\+\_\+x} & смещение по x. \\
+\hline
+{\em offset\+\_\+y} & смещение по y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_textarea_a8f936095d13cadf683eb96ba75d7339d}\label{class_textarea_a8f936095d13cadf683eb96ba75d7339d} 
+\index{Textarea@{Textarea}!contentOverflows@{contentOverflows}}
+\index{contentOverflows@{contentOverflows}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{contentOverflows()}{contentOverflows()}}
+{\footnotesize\ttfamily bool Textarea\+::content\+Overflows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возвращает булевое значение, означающее переполнение контента текстового элемента. \Hypertarget{class_textarea_a4c698330f2f109c9b4385cb7b3f3f8b3}\label{class_textarea_a4c698330f2f109c9b4385cb7b3f3f8b3} 
+\index{Textarea@{Textarea}!getGlobalBounds@{getGlobalBounds}}
+\index{getGlobalBounds@{getGlobalBounds}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{getGlobalBounds()}{getGlobalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Textarea\+::get\+Global\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_textarea_ade5e0d3bc2fcbfbad05fbca55082b9c1}\label{class_textarea_ade5e0d3bc2fcbfbad05fbca55082b9c1} 
+\index{Textarea@{Textarea}!getLastCharacter@{getLastCharacter}}
+\index{getLastCharacter@{getLastCharacter}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{getLastCharacter()}{getLastCharacter()}}
+{\footnotesize\ttfamily char Textarea\+::get\+Last\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возвращает последний символ текстового элемента. Если текстовый элемент пустой, возвратится \textquotesingle{} \textquotesingle{}. \Hypertarget{class_textarea_abdf5a131562d7154ab291ca2496b77c2}\label{class_textarea_abdf5a131562d7154ab291ca2496b77c2} 
+\index{Textarea@{Textarea}!getLocalBounds@{getLocalBounds}}
+\index{getLocalBounds@{getLocalBounds}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{getLocalBounds()}{getLocalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Textarea\+::get\+Local\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_textarea_adf73152d69531f4dd82537b3f8c7bfa0}\label{class_textarea_adf73152d69531f4dd82537b3f8c7bfa0} 
+\index{Textarea@{Textarea}!getString@{getString}}
+\index{getString@{getString}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{getString()}{getString()}}
+{\footnotesize\ttfamily std\+::string \texorpdfstring{$\ast$}{*} Textarea\+::get\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возвращает указатель на строку текстового элемента. \Hypertarget{class_textarea_a58aad05a70e2bc0b2812ce644ef62711}\label{class_textarea_a58aad05a70e2bc0b2812ce644ef62711} 
+\index{Textarea@{Textarea}!getVisibility@{getVisibility}}
+\index{getVisibility@{getVisibility}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{getVisibility()}{getVisibility()}}
+{\footnotesize\ttfamily bool Textarea\+::get\+Visibility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возвращает булевое значение, означающее видимость содержимого текстового элемента. \Hypertarget{class_textarea_aeca97e10216354b982bbcd7508b6c84f}\label{class_textarea_aeca97e10216354b982bbcd7508b6c84f} 
+\index{Textarea@{Textarea}!hasCursor@{hasCursor}}
+\index{hasCursor@{hasCursor}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{hasCursor()}{hasCursor()}}
+{\footnotesize\ttfamily bool Textarea\+::has\+Cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возвращает булевое значение, означающее существование курсора текстового элемента. \Hypertarget{class_textarea_a7dc5575e82503ffe26fe02b8386cd2b1}\label{class_textarea_a7dc5575e82503ffe26fe02b8386cd2b1} 
+\index{Textarea@{Textarea}!normalization@{normalization}}
+\index{normalization@{normalization}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{normalization()}{normalization()}}
+{\footnotesize\ttfamily void Textarea\+::normalization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Системный метод. \Hypertarget{class_textarea_ab92bb50bdf412565f75f7d7a83ac46de}\label{class_textarea_ab92bb50bdf412565f75f7d7a83ac46de} 
+\index{Textarea@{Textarea}!removeCharacter@{removeCharacter}}
+\index{removeCharacter@{removeCharacter}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{removeCharacter()}{removeCharacter()}}
+{\footnotesize\ttfamily void Textarea\+::remove\+Character (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Удаляет символ в тексте по заданному индексу.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cursor\+\_\+} & новый символ курсора. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_textarea_a2e7dee69d5fa788ea222706112a40fcd}\label{class_textarea_a2e7dee69d5fa788ea222706112a40fcd} 
+\index{Textarea@{Textarea}!removeCursor@{removeCursor}}
+\index{removeCursor@{removeCursor}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{removeCursor()}{removeCursor()}}
+{\footnotesize\ttfamily void Textarea\+::remove\+Cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Удаляет курсор. \Hypertarget{class_textarea_a12fb64b2faa029e3f2ed6442d656ecd9}\label{class_textarea_a12fb64b2faa029e3f2ed6442d656ecd9} 
+\index{Textarea@{Textarea}!removeLastCharacter@{removeLastCharacter}}
+\index{removeLastCharacter@{removeLastCharacter}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{removeLastCharacter()}{removeLastCharacter()}}
+{\footnotesize\ttfamily void Textarea\+::remove\+Last\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Удаляет последний символ в тексте. \Hypertarget{class_textarea_a3e2aa226c3c422fd70d9886c29320f0d}\label{class_textarea_a3e2aa226c3c422fd70d9886c29320f0d} 
+\index{Textarea@{Textarea}!render@{render}}
+\index{render@{render}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Textarea\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Отображает элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_textarea_ab6b1cdeb04f0e62f966406c7e82ab588}\label{class_textarea_ab6b1cdeb04f0e62f966406c7e82ab588} 
+\index{Textarea@{Textarea}!scroll@{scroll}}
+\index{scroll@{scroll}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{scroll()}{scroll()}}
+{\footnotesize\ttfamily void Textarea\+::scroll (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})}
+
+Системный метод. \Hypertarget{class_textarea_a013882c30253124e126866c0c54b6188}\label{class_textarea_a013882c30253124e126866c0c54b6188} 
+\index{Textarea@{Textarea}!setBackgroungColor@{setBackgroungColor}}
+\index{setBackgroungColor@{setBackgroungColor}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{setBackgroungColor()}{setBackgroungColor()}}
+{\footnotesize\ttfamily void Textarea\+::set\+Backgroung\+Color (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})}
+
+Устанавливает цвет заднего фона текстового элемента.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & новый цвет. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_textarea_ada7df6e4dfdefe85eb996a6835a14168}\label{class_textarea_ada7df6e4dfdefe85eb996a6835a14168} 
+\index{Textarea@{Textarea}!setOutlineColor@{setOutlineColor}}
+\index{setOutlineColor@{setOutlineColor}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{setOutlineColor()}{setOutlineColor()}}
+{\footnotesize\ttfamily void Textarea\+::set\+Outline\+Color (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})}
+
+Устанавливает цвет заднего фона текстового элемента.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & новый цвет. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_textarea_af46a883ad723db723f665d9ca14992f7}\label{class_textarea_af46a883ad723db723f665d9ca14992f7} 
+\index{Textarea@{Textarea}!setOverflow@{setOverflow}}
+\index{setOverflow@{setOverflow}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{setOverflow()}{setOverflow()}}
+{\footnotesize\ttfamily void Textarea\+::set\+Overflow (\begin{DoxyParamCaption}\item[{short}]{overflow\+\_\+ }\end{DoxyParamCaption})}
+
+Устанавливает тип переполнения контента текстового элемента (ITEM\+\_\+\+OVERFLOW).
+
+
+\begin{DoxyParams}{Parameters}
+{\em overflow\+\_\+} & тип переполнения. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_textarea_ae7bf2ce5c4f233df4a34ec3383cc2dcd}\label{class_textarea_ae7bf2ce5c4f233df4a34ec3383cc2dcd} 
+\index{Textarea@{Textarea}!setPositionX@{setPositionX}}
+\index{setPositionX@{setPositionX}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{setPositionX()}{setPositionX()}}
+{\footnotesize\ttfamily void Textarea\+::set\+PositionX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату x для группы. Провоцирует изменение положения всех элементов группы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & новая координата x. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_textarea_a284e9ee5f99cfb72736c780c9442b8e5}\label{class_textarea_a284e9ee5f99cfb72736c780c9442b8e5} 
+\index{Textarea@{Textarea}!setPositionY@{setPositionY}}
+\index{setPositionY@{setPositionY}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{setPositionY()}{setPositionY()}}
+{\footnotesize\ttfamily void Textarea\+::set\+PositionY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату y для группы. Провоцирует изменение положения всех элементов группы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & новая координата y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_textarea_a245f75b61f407259f23ab42fad03fb8d}\label{class_textarea_a245f75b61f407259f23ab42fad03fb8d} 
+\index{Textarea@{Textarea}!setString@{setString}}
+\index{setString@{setString}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{setString()}{setString()}}
+{\footnotesize\ttfamily void Textarea\+::set\+String (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+\_\+str }\end{DoxyParamCaption})}
+
+Устанавливает значение текста.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+str} & новый текст. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_textarea_a81904e63c4a63aca4917c03bb0b62e1f}\label{class_textarea_a81904e63c4a63aca4917c03bb0b62e1f} 
+\index{Textarea@{Textarea}!setTextColor@{setTextColor}}
+\index{setTextColor@{setTextColor}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{setTextColor()}{setTextColor()}}
+{\footnotesize\ttfamily void Textarea\+::set\+Text\+Color (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})}
+
+Устанавливает цвет текста.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & новый цвет. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_textarea_a83ea2290fadcf07a265b5ed955ebe7a0}\label{class_textarea_a83ea2290fadcf07a265b5ed955ebe7a0} 
+\index{Textarea@{Textarea}!setVisibility@{setVisibility}}
+\index{setVisibility@{setVisibility}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{setVisibility()}{setVisibility()}}
+{\footnotesize\ttfamily void Textarea\+::set\+Visibility (\begin{DoxyParamCaption}\item[{bool}]{visibility\+\_\+ }\end{DoxyParamCaption})}
+
+Устанавливает видимость содержимого текстового элемента.
+
+
+\begin{DoxyParams}{Parameters}
+{\em visibility\+\_\+} & новая видимость. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_textarea_a4dc1112032059b439739f121a5eb8578}\label{class_textarea_a4dc1112032059b439739f121a5eb8578} 
+\index{Textarea@{Textarea}!splitString@{splitString}}
+\index{splitString@{splitString}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{splitString()}{splitString()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Textarea\+::split\+String (\begin{DoxyParamCaption}\item[{const string \&}]{str,  }\item[{char}]{delimiter }\end{DoxyParamCaption})}
+
+Системный метод. \Hypertarget{class_textarea_a5604c98f51e202af856ae7c22a13cf6a}\label{class_textarea_a5604c98f51e202af856ae7c22a13cf6a} 
+\index{Textarea@{Textarea}!update@{update}}
+\index{update@{update}!Textarea@{Textarea}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Textarea\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Обновляет элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Textarea.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Textarea.\+cpp\end{DoxyCompactItemize}

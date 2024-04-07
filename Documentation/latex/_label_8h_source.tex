@@ -1,0 +1,32 @@
+\doxysection{Label.\+h}
+\hypertarget{_label_8h_source}{}\label{_label_8h_source}\index{D:/Applications/SFML\_GUI/Label.h@{D:/Applications/SFML\_GUI/Label.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}ComposedIMG.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{using\ }namespace::sf;}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_label}{Label}}\{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{class_composed_i_m_g}{ComposedIMG}}*\ label\_background;}
+\DoxyCodeLine{00009\ \ \ \ \ Text*\ label\_text;}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{int}\ text\_size;}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_label}{Label}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ label\_text\_,\ \ \textcolor{keywordtype}{int}\ text\_size\_,\ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ manager,\ \textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_label}{\string~Label}}();}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ setPosition(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ setPosition(\textcolor{keywordtype}{string}\ positionX,\ \textcolor{keywordtype}{string}\ positionY,\ \textcolor{keywordtype}{int}\ screen\_width,\ \textcolor{keywordtype}{int}\ screen\_height);}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ setPosition(\textcolor{keywordtype}{string}\ positionX,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ screen\_width,\ \textcolor{keywordtype}{int}\ screen\_height);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ setPosition(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{string}\ positionY,\ \textcolor{keywordtype}{int}\ screen\_width,\ \textcolor{keywordtype}{int}\ screen\_height);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ FloatRect\ getLocalBounds();}
+\DoxyCodeLine{00021\ \ \ \ \ FloatRect\ getGlobalBounds();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ update();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ render();}
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+
+\end{DoxyCode}

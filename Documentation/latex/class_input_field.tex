@@ -1,0 +1,383 @@
+\doxysection{Input\+Field Class Reference}
+\hypertarget{class_input_field}{}\label{class_input_field}\index{InputField@{InputField}}
+
+
+{\ttfamily \#include $<$Input\+Field.\+h$>$}
+
+Inheritance diagram for Input\+Field\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_input_field}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_input_field_a014daa0a909cff2e161c428cb6d51016}{Input\+Field}} (float x, float y, float width\+\_\+, float height\+\_\+, const string \&input\+\_\+label\+\_\+, int text\+\_\+size\+\_\+, bool has\+\_\+limit\+\_\+, int limit\+\_\+)
+\item 
+Float\+Rect \mbox{\hyperlink{class_input_field_ab17ffca6a27e80339a545b93c0fcfe6a}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_input_field_a92366d94a4633c12a559ca3851f70a3e}{get\+Global\+Bounds}} () override
+\item 
+string \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_input_field_adf7bc91db9f081a1fdeddd48277a625b}{get\+String}} ()
+\item 
+void \mbox{\hyperlink{class_input_field_aad23710719b2553e8d8f1f25a1a4bddc}{set\+Visibility}} (bool vis)
+\item 
+void \mbox{\hyperlink{class_input_field_a90ad7a0a92dfa0a685b8a0b69cbb9436}{set\+Overflow}} (short overflow)
+\item 
+void \mbox{\hyperlink{class_input_field_adace9cbb91ae356a57689447e62153a0}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_input_field_a507c97d929a89d63fa1bc2403e36220d}{set\+PositionY}} (float y) override
+\item 
+void \mbox{\hyperlink{class_input_field_ac1624d35bc884d5276b792514996e3fb}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_input_field_ac0a1c4ae3be0722bc9ff357b82ffc57c}{change\+Visibility}} (float param1, float param2)
+\item 
+bool \mbox{\hyperlink{class_input_field_af9d4af585f0adab2edfb2f5f19c05878}{item\+Scroll}} (float delta) override
+\item 
+void \mbox{\hyperlink{class_input_field_add7ec31333b103b5f27b0ad58d6dfc8b}{form\+EInput}} (Event event) override
+\item 
+void \mbox{\hyperlink{class_input_field_aabc4beee4b33aae3aed0f5afe8b92672}{update}} () override
+\item 
+void \mbox{\hyperlink{class_input_field_a58842f5ea5c8b2f4c70dfe510d717890}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a829762a6d201271ec326ee52f6c27153}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1}{reset\+Active\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_form_item}{Form\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& \mbox{\hyperlink{class_form_item_acb1243479768ad617559405d3af602d7}{get\+FIType}} ()
+\item 
+short \& \mbox{\hyperlink{class_form_item_a44a6be13fae10dab81d02fad25528c53}{get\+FIState}} ()
+\item 
+short \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_form_item_a97593fc49cce2a7e8a93cdeac6e2f7f0}{get\+FIPState}} ()
+\item 
+void \mbox{\hyperlink{class_form_item_a386a7df5c775d81f2a538e9402d3c411}{set\+FIState}} (short state)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_input_field_a8ab929ea802afb0c9b4ed2cd101b88b4}{input\+Logic}} (int typed\+\_\+char)
+\item 
+void \mbox{\hyperlink{class_input_field_a92bf773923f1bcf4b1a38d2ddf7b0904}{delet\+Last\+Char}} ()
+\item 
+\mbox{\hyperlink{class_input_field_a4810d58236f1e393302eebac1b3edd17}{Input\+Field}} (float x, float y, float width\+\_\+, float height\+\_\+, const string \&input\+\_\+label\+\_\+, int text\+\_\+size\+\_\+, Color text\+\_\+color\+\_\+, bool has\+\_\+limit\+\_\+, int limit\+\_\+, bool multiline)
+\item 
+\mbox{\hyperlink{class_input_field_aeaee881c3ff58a6bf5f63c0aa9305658}{Input\+Field}} (float x, float y, float width\+\_\+, float height\+\_\+, const string \&input\+\_\+label\+\_\+, int text\+\_\+size\+\_\+)
+\item 
+\mbox{\hyperlink{class_input_field_a5c74fb1e7ed13d10341a6ec86392fa4c}{Input\+Field}} (float x, float y, float width\+\_\+, float height\+\_\+, const string \&input\+\_\+label\+\_\+, int text\+\_\+size\+\_\+, Color text\+\_\+color\+\_\+, bool has\+\_\+limit\+\_\+, int limit\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_input_field_ac5f6526ac2ee202c1b609637455384e3}\label{class_input_field_ac5f6526ac2ee202c1b609637455384e3} 
+Text \texorpdfstring{$\ast$}{*} {\bfseries label}
+\item 
+\Hypertarget{class_input_field_a0065089cff5ba76f677e344284ae91ec}\label{class_input_field_a0065089cff5ba76f677e344284ae91ec} 
+\mbox{\hyperlink{class_textarea}{Textarea}} \texorpdfstring{$\ast$}{*} {\bfseries textarea}
+\item 
+\Hypertarget{class_input_field_a74d28eea774c2c1622a50a105dd8740e}\label{class_input_field_a74d28eea774c2c1622a50a105dd8740e} 
+std\+::ostringstream {\bfseries input\+\_\+stream}
+\item 
+\Hypertarget{class_input_field_a4e264d65ab2f3a7139e47413e0f79944}\label{class_input_field_a4e264d65ab2f3a7139e47413e0f79944} 
+int {\bfseries text\+\_\+size}
+\item 
+\Hypertarget{class_input_field_a5d816a264f333332ed59317e0f833317}\label{class_input_field_a5d816a264f333332ed59317e0f833317} 
+Color {\bfseries text\+\_\+color}
+\item 
+\Hypertarget{class_input_field_a30cc79a1a71aa04a9eed63625d0c240b}\label{class_input_field_a30cc79a1a71aa04a9eed63625d0c240b} 
+bool {\bfseries chosen}
+\item 
+\Hypertarget{class_input_field_abde71379b3c60ac3ceaba5d7d4fcc66f}\label{class_input_field_abde71379b3c60ac3ceaba5d7d4fcc66f} 
+bool {\bfseries unpressed}
+\item 
+\Hypertarget{class_input_field_acd0b1235125fb6abc88fa964bfc32cb2}\label{class_input_field_acd0b1235125fb6abc88fa964bfc32cb2} 
+Rectangle\+Shape {\bfseries shape1}
+\item 
+\Hypertarget{class_input_field_acf867be0488103c4b267630902740341}\label{class_input_field_acf867be0488103c4b267630902740341} 
+bool {\bfseries has\+\_\+limit}
+\item 
+\Hypertarget{class_input_field_a30eef50763be8934cb759d3ed51cf72c}\label{class_input_field_a30eef50763be8934cb759d3ed51cf72c} 
+bool {\bfseries overflow\+\_\+x}
+\item 
+\Hypertarget{class_input_field_a537692d8a14a5407a64497c5e376b057}\label{class_input_field_a537692d8a14a5407a64497c5e376b057} 
+int {\bfseries limit}
+\item 
+\Hypertarget{class_input_field_ae8a2562f35f5250fe8cab1741c7284d1}\label{class_input_field_ae8a2562f35f5250fe8cab1741c7284d1} 
+float {\bfseries width}
+\item 
+\Hypertarget{class_input_field_a49be98267818f44bfdfb82004c5fbddb}\label{class_input_field_a49be98267818f44bfdfb82004c5fbddb} 
+float {\bfseries height}
+\item 
+\Hypertarget{class_input_field_a6f4512f9b6cfab8dc3c35433c7455fce}\label{class_input_field_a6f4512f9b6cfab8dc3c35433c7455fce} 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_form_item}{Form\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries fi\+\_\+state}
+\item 
+short {\bfseries fi\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Элемент интерфейса, элемент формы -\/ однострочное поле ввода. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_input_field_a4810d58236f1e393302eebac1b3edd17}\label{class_input_field_a4810d58236f1e393302eebac1b3edd17} 
+\index{InputField@{InputField}!InputField@{InputField}}
+\index{InputField@{InputField}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{InputField()}{InputField()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Input\+Field\+::\+Input\+Field (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width\+\_\+,  }\item[{float}]{height\+\_\+,  }\item[{const string \&}]{input\+\_\+label\+\_\+,  }\item[{int}]{text\+\_\+size\+\_\+,  }\item[{Color}]{text\+\_\+color\+\_\+,  }\item[{bool}]{has\+\_\+limit\+\_\+,  }\item[{int}]{limit\+\_\+,  }\item[{bool}]{multiline }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Системный конструктор. \Hypertarget{class_input_field_aeaee881c3ff58a6bf5f63c0aa9305658}\label{class_input_field_aeaee881c3ff58a6bf5f63c0aa9305658} 
+\index{InputField@{InputField}!InputField@{InputField}}
+\index{InputField@{InputField}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{InputField()}{InputField()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Input\+Field\+::\+Input\+Field (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width\+\_\+,  }\item[{float}]{height\+\_\+,  }\item[{const string \&}]{input\+\_\+label\+\_\+,  }\item[{int}]{text\+\_\+size\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Системный конструктор. \Hypertarget{class_input_field_a5c74fb1e7ed13d10341a6ec86392fa4c}\label{class_input_field_a5c74fb1e7ed13d10341a6ec86392fa4c} 
+\index{InputField@{InputField}!InputField@{InputField}}
+\index{InputField@{InputField}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{InputField()}{InputField()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Input\+Field\+::\+Input\+Field (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width\+\_\+,  }\item[{float}]{height\+\_\+,  }\item[{const string \&}]{input\+\_\+label\+\_\+,  }\item[{int}]{text\+\_\+size\+\_\+,  }\item[{Color}]{text\+\_\+color\+\_\+,  }\item[{bool}]{has\+\_\+limit\+\_\+,  }\item[{int}]{limit\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Системный конструктор. \Hypertarget{class_input_field_a014daa0a909cff2e161c428cb6d51016}\label{class_input_field_a014daa0a909cff2e161c428cb6d51016} 
+\index{InputField@{InputField}!InputField@{InputField}}
+\index{InputField@{InputField}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{InputField()}{InputField()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Input\+Field\+::\+Input\+Field (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width\+\_\+,  }\item[{float}]{height\+\_\+,  }\item[{const string \&}]{input\+\_\+label\+\_\+,  }\item[{int}]{text\+\_\+size\+\_\+,  }\item[{bool}]{has\+\_\+limit\+\_\+,  }\item[{int}]{limit\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em width\+\_\+} & ширина. \\
+\hline
+{\em height\+\_\+} & высота. \\
+\hline
+{\em input\+\_\+label\+\_\+} & имя поля ввода. \\
+\hline
+{\em text\+\_\+size\+\_\+} & размер шрифта. \\
+\hline
+{\em has\+\_\+limit\+\_\+} & устанавливает/снмает ограничение по введенным символам. \\
+\hline
+{\em limit\+\_\+} & максимальное количество символов. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_input_field_ac1624d35bc884d5276b792514996e3fb}\label{class_input_field_ac1624d35bc884d5276b792514996e3fb} 
+\index{InputField@{InputField}!changePosition@{changePosition}}
+\index{changePosition@{changePosition}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{changePosition()}{changePosition()}}
+{\footnotesize\ttfamily void Input\+Field\+::change\+Position (\begin{DoxyParamCaption}\item[{float}]{offset\+\_\+x,  }\item[{float}]{offset\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сдвигает группу и ее элементы на заданное смещение.
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset\+\_\+x} & смещение по x. \\
+\hline
+{\em offset\+\_\+y} & смещение по y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_input_field_ac0a1c4ae3be0722bc9ff357b82ffc57c}\label{class_input_field_ac0a1c4ae3be0722bc9ff357b82ffc57c} 
+\index{InputField@{InputField}!changeVisibility@{changeVisibility}}
+\index{changeVisibility@{changeVisibility}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{changeVisibility()}{changeVisibility()}}
+{\footnotesize\ttfamily void Input\+Field\+::change\+Visibility (\begin{DoxyParamCaption}\item[{float}]{param1,  }\item[{float}]{param2 }\end{DoxyParamCaption})}
+
+Меняет видимость данных поля ввода.
+
+
+\begin{DoxyParams}{Parameters}
+{\em param1} & параметр заглушка (не используется). \\
+\hline
+{\em param1} & параметр заглушка (не используется). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_input_field_a92bf773923f1bcf4b1a38d2ddf7b0904}\label{class_input_field_a92bf773923f1bcf4b1a38d2ddf7b0904} 
+\index{InputField@{InputField}!deletLastChar@{deletLastChar}}
+\index{deletLastChar@{deletLastChar}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{deletLastChar()}{deletLastChar()}}
+{\footnotesize\ttfamily void Input\+Field\+::delet\+Last\+Char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Системный метод. \Hypertarget{class_input_field_add7ec31333b103b5f27b0ad58d6dfc8b}\label{class_input_field_add7ec31333b103b5f27b0ad58d6dfc8b} 
+\index{InputField@{InputField}!formEInput@{formEInput}}
+\index{formEInput@{formEInput}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{formEInput()}{formEInput()}}
+{\footnotesize\ttfamily void Input\+Field\+::form\+EInput (\begin{DoxyParamCaption}\item[{Event}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Системный метод. 
+
+Reimplemented from \mbox{\hyperlink{class_form_item_a1f9563b4c63ca2d9929cc69763d2fc86}{Form\+Item}}.
+
+\Hypertarget{class_input_field_a92366d94a4633c12a559ca3851f70a3e}\label{class_input_field_a92366d94a4633c12a559ca3851f70a3e} 
+\index{InputField@{InputField}!getGlobalBounds@{getGlobalBounds}}
+\index{getGlobalBounds@{getGlobalBounds}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{getGlobalBounds()}{getGlobalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Input\+Field\+::get\+Global\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_input_field_ab17ffca6a27e80339a545b93c0fcfe6a}\label{class_input_field_ab17ffca6a27e80339a545b93c0fcfe6a} 
+\index{InputField@{InputField}!getLocalBounds@{getLocalBounds}}
+\index{getLocalBounds@{getLocalBounds}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{getLocalBounds()}{getLocalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Input\+Field\+::get\+Local\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_input_field_adf7bc91db9f081a1fdeddd48277a625b}\label{class_input_field_adf7bc91db9f081a1fdeddd48277a625b} 
+\index{InputField@{InputField}!getString@{getString}}
+\index{getString@{getString}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{getString()}{getString()}}
+{\footnotesize\ttfamily string \texorpdfstring{$\ast$}{*} Input\+Field\+::get\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возвращает содержимое поля ввода. \Hypertarget{class_input_field_a8ab929ea802afb0c9b4ed2cd101b88b4}\label{class_input_field_a8ab929ea802afb0c9b4ed2cd101b88b4} 
+\index{InputField@{InputField}!inputLogic@{inputLogic}}
+\index{inputLogic@{inputLogic}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{inputLogic()}{inputLogic()}}
+{\footnotesize\ttfamily void Input\+Field\+::input\+Logic (\begin{DoxyParamCaption}\item[{int}]{typed\+\_\+char }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Системный метод. 
+
+Reimplemented in \mbox{\hyperlink{class_number_field_a8f058e3210ab5a44b84bddfce42e8617}{Number\+Field}}.
+
+\Hypertarget{class_input_field_af9d4af585f0adab2edfb2f5f19c05878}\label{class_input_field_af9d4af585f0adab2edfb2f5f19c05878} 
+\index{InputField@{InputField}!itemScroll@{itemScroll}}
+\index{itemScroll@{itemScroll}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{itemScroll()}{itemScroll()}}
+{\footnotesize\ttfamily bool Input\+Field\+::item\+Scroll (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Системный метод. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_input_field_a58842f5ea5c8b2f4c70dfe510d717890}\label{class_input_field_a58842f5ea5c8b2f4c70dfe510d717890} 
+\index{InputField@{InputField}!render@{render}}
+\index{render@{render}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Input\+Field\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Отображает элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_input_field_a90ad7a0a92dfa0a685b8a0b69cbb9436}\label{class_input_field_a90ad7a0a92dfa0a685b8a0b69cbb9436} 
+\index{InputField@{InputField}!setOverflow@{setOverflow}}
+\index{setOverflow@{setOverflow}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{setOverflow()}{setOverflow()}}
+{\footnotesize\ttfamily void Input\+Field\+::set\+Overflow (\begin{DoxyParamCaption}\item[{short}]{overflow }\end{DoxyParamCaption})}
+
+Не используется.
+
+
+\begin{DoxyParams}{Parameters}
+{\em overflow} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_input_field_adace9cbb91ae356a57689447e62153a0}\label{class_input_field_adace9cbb91ae356a57689447e62153a0} 
+\index{InputField@{InputField}!setPositionX@{setPositionX}}
+\index{setPositionX@{setPositionX}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{setPositionX()}{setPositionX()}}
+{\footnotesize\ttfamily void Input\+Field\+::set\+PositionX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату x для группы. Провоцирует изменение положения всех элементов группы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & новая координата x. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_input_field_a507c97d929a89d63fa1bc2403e36220d}\label{class_input_field_a507c97d929a89d63fa1bc2403e36220d} 
+\index{InputField@{InputField}!setPositionY@{setPositionY}}
+\index{setPositionY@{setPositionY}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{setPositionY()}{setPositionY()}}
+{\footnotesize\ttfamily void Input\+Field\+::set\+PositionY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату y для группы. Провоцирует изменение положения всех элементов группы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & новая координата y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_input_field_aad23710719b2553e8d8f1f25a1a4bddc}\label{class_input_field_aad23710719b2553e8d8f1f25a1a4bddc} 
+\index{InputField@{InputField}!setVisibility@{setVisibility}}
+\index{setVisibility@{setVisibility}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{setVisibility()}{setVisibility()}}
+{\footnotesize\ttfamily void Input\+Field\+::set\+Visibility (\begin{DoxyParamCaption}\item[{bool}]{vis }\end{DoxyParamCaption})}
+
+Задает видимость введенных символов(если видимость установлена в false, то вместо символов пользователь увидит звездочки).
+
+
+\begin{DoxyParams}{Parameters}
+{\em vis} & видимость. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_input_field_aabc4beee4b33aae3aed0f5afe8b92672}\label{class_input_field_aabc4beee4b33aae3aed0f5afe8b92672} 
+\index{InputField@{InputField}!update@{update}}
+\index{update@{update}!InputField@{InputField}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Input\+Field\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Обновляет элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_number_field_a83f6d03d0b08ef1438a6a6f5505229b4}{Number\+Field}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Input\+Field.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Input\+Field.\+cpp\end{DoxyCompactItemize}

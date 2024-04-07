@@ -1,0 +1,240 @@
+\doxysection{Scale\+Parameter\+Bar Class Reference}
+\hypertarget{class_scale_parameter_bar}{}\label{class_scale_parameter_bar}\index{ScaleParameterBar@{ScaleParameterBar}}
+
+
+{\ttfamily \#include $<$Scale\+Parametr\+Bar.\+h$>$}
+
+Inheritance diagram for Scale\+Parameter\+Bar\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scale_parameter_bar}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scale_parameter_bar_a8b45d483cfb1ae48b4af83826162f61b}{Scale\+Parameter\+Bar}} (float x, float y, float width, float height, float \texorpdfstring{$\ast$}{*}resource\+\_\+, float max\+\_\+value\+\_\+, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}w\+\_\+object, string name)
+\item 
+Float\+Rect \mbox{\hyperlink{class_scale_parameter_bar_a9506bbdb946b69c94ce593fe775f0917}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_scale_parameter_bar_aeb77682560764f559215db8dd445b57c}{get\+Global\+Bounds}} () override
+\item 
+void \mbox{\hyperlink{class_scale_parameter_bar_af25035347c4f42a652123099c8fc3d94}{set\+Position}} (Vector2f new\+\_\+position)
+\item 
+void \mbox{\hyperlink{class_scale_parameter_bar_a7e8d6063c75f28511f3aa64071d842f5}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_scale_parameter_bar_a9d24187509e455f6df735412e3781eeb}{set\+PositionY}} (float y) override
+\item 
+void \mbox{\hyperlink{class_scale_parameter_bar_aa133793b10aad267859d1cb322d59d95}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_scale_parameter_bar_a02a01faf3f3e85c9db562223f867af8e}{update}} () override
+\item 
+void \mbox{\hyperlink{class_scale_parameter_bar_a510ef002234ea6cc6501fa6b11d024ee}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\item 
+virtual bool \mbox{\hyperlink{class_interface_item_a85a6055772471551e54b3e6a8f85eb14}{item\+Scroll}} (float delta)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a829762a6d201271ec326ee52f6c27153}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1}{reset\+Active\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_scale_parameter_bar_a37ab3713a8ba29137063f7656728ca9e}\label{class_scale_parameter_bar_a37ab3713a8ba29137063f7656728ca9e} 
+Sprite {\bfseries scale\+\_\+bar}
+\item 
+\Hypertarget{class_scale_parameter_bar_a389bdde2375c9e9dea55bcf17f3c6a1c}\label{class_scale_parameter_bar_a389bdde2375c9e9dea55bcf17f3c6a1c} 
+float \texorpdfstring{$\ast$}{*} {\bfseries resource}
+\item 
+\Hypertarget{class_scale_parameter_bar_a174d789dc9a28f8764556205c83c4b95}\label{class_scale_parameter_bar_a174d789dc9a28f8764556205c83c4b95} 
+float {\bfseries max\+\_\+value}
+\item 
+\Hypertarget{class_scale_parameter_bar_a0fae54aaebca2563f0c17239577db645}\label{class_scale_parameter_bar_a0fae54aaebca2563f0c17239577db645} 
+Int\+Rect {\bfseries front\+\_\+bar}
+\item 
+\Hypertarget{class_scale_parameter_bar_aa914ba27f90166cc86e87d3766115f80}\label{class_scale_parameter_bar_aa914ba27f90166cc86e87d3766115f80} 
+Int\+Rect {\bfseries middle\+\_\+bar}
+\item 
+\Hypertarget{class_scale_parameter_bar_a22e68d965e2fd88f580270f59a5ab725}\label{class_scale_parameter_bar_a22e68d965e2fd88f580270f59a5ab725} 
+Int\+Rect {\bfseries back\+\_\+bar}
+\item 
+\Hypertarget{class_scale_parameter_bar_a736488a64b1f749a0ae95d5e90564482}\label{class_scale_parameter_bar_a736488a64b1f749a0ae95d5e90564482} 
+float {\bfseries offset}
+\item 
+\Hypertarget{class_scale_parameter_bar_ac97961c74b0ad87d86680c39c5480c05}\label{class_scale_parameter_bar_ac97961c74b0ad87d86680c39c5480c05} 
+Rectangle\+Shape {\bfseries shape}
+\item 
+\Hypertarget{class_scale_parameter_bar_a315921113961326fd22b073e7a4612d9}\label{class_scale_parameter_bar_a315921113961326fd22b073e7a4612d9} 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Элемент интерфейса -\/ шкала значения ресурса. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scale_parameter_bar_a8b45d483cfb1ae48b4af83826162f61b}\label{class_scale_parameter_bar_a8b45d483cfb1ae48b4af83826162f61b} 
+\index{ScaleParameterBar@{ScaleParameterBar}!ScaleParameterBar@{ScaleParameterBar}}
+\index{ScaleParameterBar@{ScaleParameterBar}!ScaleParameterBar@{ScaleParameterBar}}
+\doxysubsubsection{\texorpdfstring{ScaleParameterBar()}{ScaleParameterBar()}}
+{\footnotesize\ttfamily Scale\+Parameter\+Bar\+::\+Scale\+Parameter\+Bar (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{float \texorpdfstring{$\ast$}{*}}]{resource\+\_\+,  }\item[{float}]{max\+\_\+value\+\_\+,  }\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{\mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}}]{w\+\_\+object,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em width} & ширина. \\
+\hline
+{\em height} & высота. \\
+\hline
+{\em resource\+\_\+} & указатель на ресурс. \\
+\hline
+{\em max\+\_\+value\+\_\+} & максимальное значение, которое может принимать ресурс. \\
+\hline
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em w\+\_\+object} & обьект склада информации о сущностях. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scale_parameter_bar_aa133793b10aad267859d1cb322d59d95}\label{class_scale_parameter_bar_aa133793b10aad267859d1cb322d59d95} 
+\index{ScaleParameterBar@{ScaleParameterBar}!changePosition@{changePosition}}
+\index{changePosition@{changePosition}!ScaleParameterBar@{ScaleParameterBar}}
+\doxysubsubsection{\texorpdfstring{changePosition()}{changePosition()}}
+{\footnotesize\ttfamily void Scale\+Parameter\+Bar\+::change\+Position (\begin{DoxyParamCaption}\item[{float}]{offset\+\_\+x,  }\item[{float}]{offset\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сдвигает группу и ее элементы на заданное смещение.
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset\+\_\+x} & смещение по x. \\
+\hline
+{\em offset\+\_\+y} & смещение по y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_scale_parameter_bar_aeb77682560764f559215db8dd445b57c}\label{class_scale_parameter_bar_aeb77682560764f559215db8dd445b57c} 
+\index{ScaleParameterBar@{ScaleParameterBar}!getGlobalBounds@{getGlobalBounds}}
+\index{getGlobalBounds@{getGlobalBounds}!ScaleParameterBar@{ScaleParameterBar}}
+\doxysubsubsection{\texorpdfstring{getGlobalBounds()}{getGlobalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Scale\+Parameter\+Bar\+::get\+Global\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_scale_parameter_bar_a9506bbdb946b69c94ce593fe775f0917}\label{class_scale_parameter_bar_a9506bbdb946b69c94ce593fe775f0917} 
+\index{ScaleParameterBar@{ScaleParameterBar}!getLocalBounds@{getLocalBounds}}
+\index{getLocalBounds@{getLocalBounds}!ScaleParameterBar@{ScaleParameterBar}}
+\doxysubsubsection{\texorpdfstring{getLocalBounds()}{getLocalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Scale\+Parameter\+Bar\+::get\+Local\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_scale_parameter_bar_a510ef002234ea6cc6501fa6b11d024ee}\label{class_scale_parameter_bar_a510ef002234ea6cc6501fa6b11d024ee} 
+\index{ScaleParameterBar@{ScaleParameterBar}!render@{render}}
+\index{render@{render}!ScaleParameterBar@{ScaleParameterBar}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Scale\+Parameter\+Bar\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Отображает элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_scale_parameter_bar_af25035347c4f42a652123099c8fc3d94}\label{class_scale_parameter_bar_af25035347c4f42a652123099c8fc3d94} 
+\index{ScaleParameterBar@{ScaleParameterBar}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!ScaleParameterBar@{ScaleParameterBar}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Scale\+Parameter\+Bar\+::set\+Position (\begin{DoxyParamCaption}\item[{Vector2f}]{new\+\_\+position }\end{DoxyParamCaption})}
+
+Устанавливает новую позицию.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+position} & координаты новой позиции. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scale_parameter_bar_a7e8d6063c75f28511f3aa64071d842f5}\label{class_scale_parameter_bar_a7e8d6063c75f28511f3aa64071d842f5} 
+\index{ScaleParameterBar@{ScaleParameterBar}!setPositionX@{setPositionX}}
+\index{setPositionX@{setPositionX}!ScaleParameterBar@{ScaleParameterBar}}
+\doxysubsubsection{\texorpdfstring{setPositionX()}{setPositionX()}}
+{\footnotesize\ttfamily void Scale\+Parameter\+Bar\+::set\+PositionX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату x для группы. Провоцирует изменение положения всех элементов группы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & новая координата x. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_scale_parameter_bar_a9d24187509e455f6df735412e3781eeb}\label{class_scale_parameter_bar_a9d24187509e455f6df735412e3781eeb} 
+\index{ScaleParameterBar@{ScaleParameterBar}!setPositionY@{setPositionY}}
+\index{setPositionY@{setPositionY}!ScaleParameterBar@{ScaleParameterBar}}
+\doxysubsubsection{\texorpdfstring{setPositionY()}{setPositionY()}}
+{\footnotesize\ttfamily void Scale\+Parameter\+Bar\+::set\+PositionY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату y для группы. Провоцирует изменение положения всех элементов группы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & новая координата y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_scale_parameter_bar_a02a01faf3f3e85c9db562223f867af8e}\label{class_scale_parameter_bar_a02a01faf3f3e85c9db562223f867af8e} 
+\index{ScaleParameterBar@{ScaleParameterBar}!update@{update}}
+\index{update@{update}!ScaleParameterBar@{ScaleParameterBar}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Scale\+Parameter\+Bar\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Обновляет элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Scale\+Parametr\+Bar.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Scale\+Parameter\+Bar.\+cpp\end{DoxyCompactItemize}

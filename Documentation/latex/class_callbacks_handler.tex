@@ -1,0 +1,72 @@
+\doxysection{Callbacks\+Handler Class Reference}
+\hypertarget{class_callbacks_handler}{}\label{class_callbacks_handler}\index{CallbacksHandler@{CallbacksHandler}}
+
+
+{\ttfamily \#include $<$Callbacks\+Handler.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\bool \mbox{\hyperlink{class_callbacks_handler_aa463b966f994a4c09551159ed7fbbd77}{add\+Callback}} (short \texorpdfstring{$\ast$}{*}b\+\_\+state, short a\+\_\+state, float param1, float param2, void(T\+::\texorpdfstring{$\ast$}{*}l\+\_\+func)(float, float), T \texorpdfstring{$\ast$}{*}l\+\_\+instance)
+\item 
+void \mbox{\hyperlink{class_callbacks_handler_af18d8e266b5af0b4bd6b9e9411355729}{update}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_callbacks_handler_afebbb9bfe093f010254c803be14eb82b}\label{class_callbacks_handler_afebbb9bfe093f010254c803be14eb82b} 
+Callbacks {\bfseries w\+\_\+callbacks}
+\item 
+\Hypertarget{class_callbacks_handler_ac38b76b89358d972882ae9c1ede56e38}\label{class_callbacks_handler_ac38b76b89358d972882ae9c1ede56e38} 
+Parameters {\bfseries c\+\_\+parameters}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс манипулятор статическими откликами. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_callbacks_handler_aa463b966f994a4c09551159ed7fbbd77}\label{class_callbacks_handler_aa463b966f994a4c09551159ed7fbbd77} 
+\index{CallbacksHandler@{CallbacksHandler}!addCallback@{addCallback}}
+\index{addCallback@{addCallback}!CallbacksHandler@{CallbacksHandler}}
+\doxysubsubsection{\texorpdfstring{addCallback()}{addCallback()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool Callbacks\+Handler\+::add\+Callback (\begin{DoxyParamCaption}\item[{short \texorpdfstring{$\ast$}{*}}]{b\+\_\+state,  }\item[{short}]{a\+\_\+state,  }\item[{float}]{param1,  }\item[{float}]{param2,  }\item[{void(T\+::\texorpdfstring{$\ast$}{*})(float, float)}]{l\+\_\+func,  }\item[{T \texorpdfstring{$\ast$}{*}}]{l\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Добавление отклика
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & тип данных принимаемого l\+\_\+instance. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em b\+\_\+state} & указатель на состояние, которое будет отслеживаться. \\
+\hline
+{\em a\+\_\+state} & значение активного состояния. \\
+\hline
+{\em param1} & первый параметр типа float, который передастся в метод передаваемого обьекта. \\
+\hline
+{\em param2} & второй параметр типа float, который передастся в метод передаваемого обьекта. \\
+\hline
+{\em l\+\_\+func} & метод обьекта l\+\_\+instance с сигнатурой void l\+\_\+func(float, float). \\
+\hline
+{\em l\+\_\+instance} & обьект, от которого вызовется переданный метод. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+возвращает булевой значение, был ли успешно добавлен отклик. 
+\end{DoxyReturn}
+\Hypertarget{class_callbacks_handler_af18d8e266b5af0b4bd6b9e9411355729}\label{class_callbacks_handler_af18d8e266b5af0b4bd6b9e9411355729} 
+\index{CallbacksHandler@{CallbacksHandler}!update@{update}}
+\index{update@{update}!CallbacksHandler@{CallbacksHandler}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Callbacks\+Handler\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Проверка и обновление состояний, от которых зависит активация откликов. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Callbacks\+Handler.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Callbacks\+Handler.\+cpp\end{DoxyCompactItemize}

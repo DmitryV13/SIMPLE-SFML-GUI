@@ -1,0 +1,328 @@
+\doxysection{Form Class Reference}
+\hypertarget{class_form}{}\label{class_form}\index{Form@{Form}}
+
+
+{\ttfamily \#include $<$Form.\+h$>$}
+
+Inheritance diagram for Form\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_form}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_form_ae5135e6ac9fe667a83cd253c73b9a29a}{Form}} (float x, float y, float width\+\_\+, float height\+\_\+)
+\item 
+\mbox{\hyperlink{class_interface_item}{Interface\+Item}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_form_af5e7d76d8f188b5887d20555fe9ba38a}{get\+Element}} (int i, int j)
+\item 
+void \mbox{\hyperlink{class_form_aff26dffeefa19ae2a5911fd0826c778d}{set\+Static\+Parameters\+Type}} (bool type)
+\item 
+void \mbox{\hyperlink{class_form_aa11745893c6501bfe1c8e74c4db5b507}{reset\+Form\+Usage}} ()
+\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{class_form_a012695903e497f9e7d95d3152a99771f}{add\+SForm\+Action}} (int params\+\_\+amount, void(T\+::\texorpdfstring{$\ast$}{*}l\+\_\+func)(vector$<$ float $>$), T \texorpdfstring{$\ast$}{*}l\+\_\+instance)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{class_form_ace6766671df60771280d023593e9ec3b}{add\+DForm\+Action}} (int params\+\_\+amount, void(T\+::\texorpdfstring{$\ast$}{*}l\+\_\+func)(vector$<$ string $>$), T \texorpdfstring{$\ast$}{*}l\+\_\+instance)
+\item 
+void \mbox{\hyperlink{class_form_a682ba0f73a7990826272bae8b880fc06}{add\+DCallback\+Param}} (string \texorpdfstring{$\ast$}{*}index, string \texorpdfstring{$\ast$}{*}param)
+\item 
+void \mbox{\hyperlink{class_form_a35a808cdac903ed9f9a160df6010742c}{add\+SCallback\+Param}} (float index, float param)
+\item 
+void \mbox{\hyperlink{class_form_a2397955425255031922038e36fa9f40e}{activate\+Form}} (float param1, float param2)
+\item 
+void \mbox{\hyperlink{class_form_ac66858b652ceb774c299c7544f91fe6d}{update}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_group}{Group}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_group_a2f160fd37b5dfb2035ed76a2df7ba7d1}{Group}} (float x, float y, float width\+\_\+, float height\+\_\+)
+\item 
+Float\+Rect \mbox{\hyperlink{class_group_af08591648aaa2b9803532a88291b6dc6}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_group_a7db6571bbac42c75dc7263cc431b38f8}{get\+Global\+Bounds}} () override
+\item 
+std\+::pair$<$ float, float $>$ \mbox{\hyperlink{class_group_aba10e205b0c54b0554020dee6b4b987f}{get\+Max\+ELHeight}} (short index)
+\item 
+short \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_group_adad8eda5d8468f856c4e29ed10e6e7cc}{get\+Button\+State}} (int btn\+\_\+id)
+\item 
+void \mbox{\hyperlink{class_group_a6fe15f0453063a39db110e910a3259b1}{set\+Alignment}} (string horiz\+\_\+a, string vertic\+\_\+a)
+\item 
+void \mbox{\hyperlink{class_group_a85c162b3c3ec53b1a7ce96d058319dbc}{set\+VAlignment}} (string vertic\+\_\+a)
+\item 
+void \mbox{\hyperlink{class_group_afbd8acd74d9a1184f3b2de8d1d0b3f33}{set\+HAlignment}} (string horiz\+\_\+a)
+\item 
+void \mbox{\hyperlink{class_group_ad1abcb821fd9e807257586704452e133}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_group_a922efb9d466dd8bf6b769fdb5ea656c0}{set\+PositionY}} (float y) override
+\item 
+void \mbox{\hyperlink{class_group_a2a5eeef86b3b024bd64b188c7ad5b68c}{set\+BColor}} (Color color)
+\item 
+void \mbox{\hyperlink{class_group_ac2c6fd2ff817db058c50b2af04a7b7a0}{normalization}} ()
+\item 
+void \mbox{\hyperlink{class_group_a4739196e4a89954a907298fe8696facf}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_group_a5cf1372d0e88a195cb8d83441c29bdac}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_group_af15d65f3bcff7288942f739465f44b7d}{change\+PositionY}} (float offset)
+\item 
+void \mbox{\hyperlink{class_group_acba89f444c4bb114559cc544a8059011}{create\+Element\+Line}} ()
+\item 
+void \mbox{\hyperlink{class_group_a28ed8f9f77742ba939e01b0917f26199}{clear\+Info}} ()
+\item 
+void \mbox{\hyperlink{class_group_afeda9304f76fa0072815a93e92ab2598}{add\+IElement}} (\mbox{\hyperlink{class_interface_item}{Interface\+Item}} \texorpdfstring{$\ast$}{*}new\+\_\+group, short index)
+\item 
+int \mbox{\hyperlink{class_group_a486cea639c0d7e74acf30839d94c9518}{add\+Group}} (short fill\+\_\+p\+\_\+w, short fill\+\_\+p\+\_\+h, short index)
+\item 
+void \mbox{\hyperlink{class_group_af5be7472e141ca4cf1d6478c4fa82aab}{add\+Group\+Name}} (string text\+\_\+name, int name\+\_\+size)
+\item 
+int \mbox{\hyperlink{class_group_ae4a4ec8902a2653d8cf75766f51be13b}{add\+Button}} (short text\+\_\+size, string btn\+\_\+name, Color btn\+\_\+color, short index\+\_\+g)
+\item 
+int \mbox{\hyperlink{class_group_ac83ce3850a9a7369f4ae2c1cdd8cc613}{add\+Button}} (float width, float height, short text\+\_\+size, string btn\+\_\+name, Color btn\+\_\+hcolor, Color btn\+\_\+icolor, Color shp\+\_\+hcolor, Color shp\+\_\+icolor, bool outline, short index\+\_\+g)
+\item 
+int \mbox{\hyperlink{class_group_a55139f547b3d8978d9dad732353a9808}{add\+Button}} (float width, float height, short text\+\_\+size, string btn\+\_\+name, Color btn\+\_\+hcolor, Color btn\+\_\+icolor, Color shp\+\_\+hcolor, Color shp\+\_\+icolor, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index\+\_\+t, string name, bool outline, short index\+\_\+g)
+\item 
+\mbox{\hyperlink{class_c_rect}{CRect}}$<$ float $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_group_a38a48dfedd9d975cd940d1e88c2aac61}{calculate\+PFNII}} (short fill\+\_\+p\+\_\+w, short fill\+\_\+p\+\_\+h, short index)
+\item 
+void \mbox{\hyperlink{class_group_afa157093ad864b84b01c3e3b24c85566}{reset\+Active\+State}} () override
+\item 
+bool \mbox{\hyperlink{class_group_a12cba9b000f1d217e03c22553f73b303}{item\+Scroll}} (float delta) override
+\item 
+void \mbox{\hyperlink{class_group_a49978fd9cecb7b125407feee525c6d38}{form\+Input}} (Event event)
+\item 
+void \mbox{\hyperlink{class_group_a198d855cd431ba03040fd060816625bd}{update}} () override
+\item 
+void \mbox{\hyperlink{class_group_a3919dca17f850e8d0cd41f207dd4e4f3}{render}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_form_af10246996fd8787f9419fb2ca2428cb1}\label{class_form_af10246996fd8787f9419fb2ca2428cb1} 
+std\+::vector$<$ float $>$ {\bfseries s\+\_\+callback\+\_\+params}
+\item 
+\Hypertarget{class_form_a3ebae05d6b91942b16376d3bd19a3250}\label{class_form_a3ebae05d6b91942b16376d3bd19a3250} 
+std\+::vector$<$ string $>$ {\bfseries d\+\_\+callback\+\_\+params}
+\item 
+\Hypertarget{class_form_a0efbe957a382abf817a695306ba4cc8d}\label{class_form_a0efbe957a382abf817a695306ba4cc8d} 
+saction\+\_\+type {\bfseries s\+\_\+action}
+\item 
+\Hypertarget{class_form_ac6c07c1e50c89e1e1abc197f55966681}\label{class_form_ac6c07c1e50c89e1e1abc197f55966681} 
+daction\+\_\+type {\bfseries d\+\_\+action}
+\item 
+\Hypertarget{class_form_a331b8a750d9aeed37f21a8ca0936fa1f}\label{class_form_a331b8a750d9aeed37f21a8ca0936fa1f} 
+bool {\bfseries activated}
+\item 
+\Hypertarget{class_form_a9d331bf21686c30d3249fd47adc6a18a}\label{class_form_a9d331bf21686c30d3249fd47adc6a18a} 
+bool {\bfseries action\+\_\+done}
+\item 
+\Hypertarget{class_form_aea436e80e8893497db1c125c68a3d728}\label{class_form_aea436e80e8893497db1c125c68a3d728} 
+bool {\bfseries static\+\_\+parameters}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_group}{Group}}}
+\begin{DoxyCompactItemize}
+\item 
+Rectangle\+Shape {\bfseries shape0}
+\item 
+Rectangle\+Shape {\bfseries shape1}
+\item 
+Rectangle\+Shape {\bfseries shape2}
+\item 
+Rectangle\+Shape {\bfseries background}
+\item 
+Text \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+vector$<$ vector$<$ \mbox{\hyperlink{class_interface_item}{Interface\+Item}} \texorpdfstring{$\ast$}{*} $>$ $>$ {\bfseries g\+\_\+elements}
+\item 
+float {\bfseries inner\+\_\+width}
+\item 
+float {\bfseries inner\+\_\+height}
+\item 
+float {\bfseries outer\+\_\+width}
+\item 
+float {\bfseries outer\+\_\+height}
+\item 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для группировки элементов со смыслом сущности формы. Предназначен для хранения элементов формы (на данный момент) на первом уровне вложенности, и обработки значений всех этих элементов при активаци формы. На уровнях вложенности больше 1 хранить элементы форм можно, но их обработка не будет осуществляться. По умолчанию форма является одноразовой -\/ отправка произойдет только 1 раз, при первом срабатывании события тригера. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_form_ae5135e6ac9fe667a83cd253c73b9a29a}\label{class_form_ae5135e6ac9fe667a83cd253c73b9a29a} 
+\index{Form@{Form}!Form@{Form}}
+\index{Form@{Form}!Form@{Form}}
+\doxysubsubsection{\texorpdfstring{Form()}{Form()}}
+{\footnotesize\ttfamily Form\+::\+Form (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width\+\_\+,  }\item[{float}]{height\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em width\+\_\+} & ширина. \\
+\hline
+{\em height\+\_\+} & высота. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_form_a2397955425255031922038e36fa9f40e}\label{class_form_a2397955425255031922038e36fa9f40e} 
+\index{Form@{Form}!activateForm@{activateForm}}
+\index{activateForm@{activateForm}!Form@{Form}}
+\doxysubsubsection{\texorpdfstring{activateForm()}{activateForm()}}
+{\footnotesize\ttfamily void Form\+::activate\+Form (\begin{DoxyParamCaption}\item[{float}]{param1,  }\item[{float}]{param2 }\end{DoxyParamCaption})}
+
+Активирует форму.
+
+
+\begin{DoxyParams}{Parameters}
+{\em param1} & параметр заглушка (не используется). \\
+\hline
+{\em param2} & параметр заглушка (не используется). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_form_a682ba0f73a7990826272bae8b880fc06}\label{class_form_a682ba0f73a7990826272bae8b880fc06} 
+\index{Form@{Form}!addDCallbackParam@{addDCallbackParam}}
+\index{addDCallbackParam@{addDCallbackParam}!Form@{Form}}
+\doxysubsubsection{\texorpdfstring{addDCallbackParam()}{addDCallbackParam()}}
+{\footnotesize\ttfamily void Form\+::add\+DCallback\+Param (\begin{DoxyParamCaption}\item[{string \texorpdfstring{$\ast$}{*}}]{index,  }\item[{string \texorpdfstring{$\ast$}{*}}]{param }\end{DoxyParamCaption})}
+
+Добавляет в вектор динамических параметров значение параметра по индексу.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & индекс параметра в векторе. \\
+\hline
+{\em param} & значение параметра. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_form_ace6766671df60771280d023593e9ec3b}\label{class_form_ace6766671df60771280d023593e9ec3b} 
+\index{Form@{Form}!addDFormAction@{addDFormAction}}
+\index{addDFormAction@{addDFormAction}!Form@{Form}}
+\doxysubsubsection{\texorpdfstring{addDFormAction()}{addDFormAction()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void Form\+::add\+DForm\+Action (\begin{DoxyParamCaption}\item[{int}]{params\+\_\+amount,  }\item[{void(T\+::\texorpdfstring{$\ast$}{*})(vector$<$ string $>$)}]{l\+\_\+func,  }\item[{T \texorpdfstring{$\ast$}{*}}]{l\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Добавляет событие отклика для динамических параметров.
+
+
+\begin{DoxyParams}{Parameters}
+{\em params\+\_\+amount} & количество параметров, которые будет содержать вектор для функции отклика. \\
+\hline
+{\em l\+\_\+func} & функция отклика, имеет сигнатуру void l\+\_\+func(vector$<$float$>$). \\
+\hline
+{\em l\+\_\+instance} & обьект, от которого будет вызываться функция отклика. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_form_a35a808cdac903ed9f9a160df6010742c}\label{class_form_a35a808cdac903ed9f9a160df6010742c} 
+\index{Form@{Form}!addSCallbackParam@{addSCallbackParam}}
+\index{addSCallbackParam@{addSCallbackParam}!Form@{Form}}
+\doxysubsubsection{\texorpdfstring{addSCallbackParam()}{addSCallbackParam()}}
+{\footnotesize\ttfamily void Form\+::add\+SCallback\+Param (\begin{DoxyParamCaption}\item[{float}]{index,  }\item[{float}]{param }\end{DoxyParamCaption})}
+
+Добавляет в вектор статических параметров значение параметра по индексу.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & индекс параметра в векторе. \\
+\hline
+{\em param} & значение параметра. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_form_a012695903e497f9e7d95d3152a99771f}\label{class_form_a012695903e497f9e7d95d3152a99771f} 
+\index{Form@{Form}!addSFormAction@{addSFormAction}}
+\index{addSFormAction@{addSFormAction}!Form@{Form}}
+\doxysubsubsection{\texorpdfstring{addSFormAction()}{addSFormAction()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void Form\+::add\+SForm\+Action (\begin{DoxyParamCaption}\item[{int}]{params\+\_\+amount,  }\item[{void(T\+::\texorpdfstring{$\ast$}{*})(vector$<$ float $>$)}]{l\+\_\+func,  }\item[{T \texorpdfstring{$\ast$}{*}}]{l\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Добавляет событие отклика для статических параметров.
+
+
+\begin{DoxyParams}{Parameters}
+{\em params\+\_\+amount} & количество параметров, которые будет содержать вектор для функции отклика. \\
+\hline
+{\em l\+\_\+func} & функция отклика, имеет сигнатуру void l\+\_\+func(vector$<$float$>$). \\
+\hline
+{\em l\+\_\+instance} & обьект, от которого будет вызываться функция отклика. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_form_af5e7d76d8f188b5887d20555fe9ba38a}\label{class_form_af5e7d76d8f188b5887d20555fe9ba38a} 
+\index{Form@{Form}!getElement@{getElement}}
+\index{getElement@{getElement}!Form@{Form}}
+\doxysubsubsection{\texorpdfstring{getElement()}{getElement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_interface_item}{Interface\+Item}} \texorpdfstring{$\ast$}{*} Form\+::get\+Element (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+Возвращает элемент формы по заданным индексам.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & индекс строки. \\
+\hline
+{\em j} & индекс столбца. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_form_aa11745893c6501bfe1c8e74c4db5b507}\label{class_form_aa11745893c6501bfe1c8e74c4db5b507} 
+\index{Form@{Form}!resetFormUsage@{resetFormUsage}}
+\index{resetFormUsage@{resetFormUsage}!Form@{Form}}
+\doxysubsubsection{\texorpdfstring{resetFormUsage()}{resetFormUsage()}}
+{\footnotesize\ttfamily void Form\+::reset\+Form\+Usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Делает допустимым повторную отправку формы. Может использоваться неограниченное количество раз. Если используется для формы, которая еще не была отправлена -\/ ничего не произойдет. \Hypertarget{class_form_aff26dffeefa19ae2a5911fd0826c778d}\label{class_form_aff26dffeefa19ae2a5911fd0826c778d} 
+\index{Form@{Form}!setStaticParametersType@{setStaticParametersType}}
+\index{setStaticParametersType@{setStaticParametersType}!Form@{Form}}
+\doxysubsubsection{\texorpdfstring{setStaticParametersType()}{setStaticParametersType()}}
+{\footnotesize\ttfamily void Form\+::set\+Static\+Parameters\+Type (\begin{DoxyParamCaption}\item[{bool}]{type }\end{DoxyParamCaption})}
+
+Устанавливает, будут ли принимаемые параметры статическими или нет.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & логическое значение статических параметров. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+возможно в дальнейшем данный метод будет удален. 
+\end{DoxyNote}
+\Hypertarget{class_form_ac66858b652ceb774c299c7544f91fe6d}\label{class_form_ac66858b652ceb774c299c7544f91fe6d} 
+\index{Form@{Form}!update@{update}}
+\index{update@{update}!Form@{Form}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Form\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Обновляет форму и все элементы, которые ей принадлежат. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Form.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Form.\+cpp\end{DoxyCompactItemize}

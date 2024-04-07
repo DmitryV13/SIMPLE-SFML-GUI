@@ -1,0 +1,37 @@
+\doxysection{Warehouse\+Item.\+h}
+\hypertarget{_warehouse_item_8h_source}{}\label{_warehouse_item_8h_source}\index{D:/Applications/SFML\_GUI/WarehouseItem.h@{D:/Applications/SFML\_GUI/WarehouseItem.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{keyword}{using\ }namespace::sf;}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_warehouse_item}{WarehouseItem}}\{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keywordtype}{int}\ amount;\textcolor{comment}{//кол-\/во}}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{int}\ max;\textcolor{comment}{//\ =\ 0}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{bool}\ access;\textcolor{comment}{//true}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ t\_index;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{string}\ name;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{string}\ name\_for\_user;}
+\DoxyCodeLine{00014\ \ \ \ \ IntRect\ cords;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ frame\_numbers;\ \textcolor{comment}{//1}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_warehouse_item}{WarehouseItem}}(\textcolor{keywordtype}{string}\ name\_,\ \textcolor{keywordtype}{int}\ amount\_,\ \textcolor{keywordtype}{int}\ max\_,\ \textcolor{keywordtype}{bool}\ access\_);}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_warehouse_item}{WarehouseItem}}(\textcolor{keywordtype}{string}\ name\_,\ \textcolor{keywordtype}{int}\ amount\_,\ \textcolor{keywordtype}{int}\ max\_,\ \textcolor{keywordtype}{bool}\ access\_,\ \textcolor{keywordtype}{int}\ index\_,\ IntRect\ cords\_,\ \textcolor{keywordtype}{int}\ frame\_numbers\_);}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_warehouse_item}{WarehouseItem}}(\textcolor{keywordtype}{string}\ name\_,\ \textcolor{keywordtype}{string}\ name\_for\_user\_,\ \ \textcolor{keywordtype}{int}\ amount\_,\ \textcolor{keywordtype}{int}\ max\_,\ \textcolor{keywordtype}{bool}\ access\_,\ \textcolor{keywordtype}{int}\ index\_,\ IntRect\ cords\_,\ \textcolor{keywordtype}{int}\ frame\_numbers\_);}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_warehouse_item}{\string~WarehouseItem}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ setAccess(\textcolor{keywordtype}{bool}\ new\_access);}
+\DoxyCodeLine{00023\ \ \ \ \ pair<int*,\ int>\ getInfo();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}*\ getAmount();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{string}\ getName();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{string}\ getNameFU();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ isAccessible();}
+\DoxyCodeLine{00028\ \ \ \ \ pair<int,\ string>\ getTMInfo();}
+\DoxyCodeLine{00029\ \ \ \ \ pair<IntRect,\ int>\ getSpriteInfo();}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+
+\end{DoxyCode}

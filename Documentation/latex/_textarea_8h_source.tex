@@ -1,0 +1,89 @@
+\doxysection{Textarea.\+h}
+\hypertarget{_textarea_8h_source}{}\label{_textarea_8h_source}\index{D:/Applications/SFML\_GUI/Textarea.h@{D:/Applications/SFML\_GUI/Textarea.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}InterfaceItem.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}ITEM\_OVERFLOW.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_textarea}{Textarea}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_interface_item}{InterfaceItem}}\{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00010\ \ \ \ \ Text*\ text;}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{string}*\ text\_str;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{char}\ cursor;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ RectangleShape\ background;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ text\_size;}
+\DoxyCodeLine{00017\ \ \ \ \ Color\ text\_color;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{float}\ offset\_y;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{short}\ overflow;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ multiline;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ visibility;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{float}\ width;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{float}\ height;}
+\DoxyCodeLine{00026\ \ \ \ \ Vector2f\ position;}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_textarea_a0da6ce2aa51375bdd9d73b0358fc90fd}{Textarea}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ width\_,\ \textcolor{keywordtype}{float}\ height\_,\ \ \textcolor{keywordtype}{int}\ text\_size\_,\ Color\ text\_color\_,\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ Color\ background\_color\_,\ Color\ border\_color,\ \textcolor{keywordtype}{short}\ overflow\_,\ \textcolor{keywordtype}{bool}\ multiline\_);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_textarea_a0da6ce2aa51375bdd9d73b0358fc90fd}{Textarea}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ width\_,\ \textcolor{keywordtype}{float}\ height\_,\ \textcolor{keywordtype}{int}\ text\_size\_,\ \textcolor{keywordtype}{bool}\ multiline\_);}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_textarea}{\string~Textarea}}();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ FloatRect\ getLocalBounds()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00058\ \ \ \ \ FloatRect\ getGlobalBounds()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00062\ \ \ \ \ std::string*\ \mbox{\hyperlink{class_textarea_adf73152d69531f4dd82537b3f8c7bfa0}{getString}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_textarea_ade5e0d3bc2fcbfbad05fbca55082b9c1}{getLastCharacter}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_textarea_a58aad05a70e2bc0b2812ce644ef62711}{getVisibility}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_textarea_aeca97e10216354b982bbcd7508b6c84f}{hasCursor}}();}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_textarea_a8f936095d13cadf683eb96ba75d7339d}{contentOverflows}}();}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_a83ea2290fadcf07a265b5ed955ebe7a0}{setVisibility}}(\textcolor{keywordtype}{bool}\ visibility\_);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_af46a883ad723db723f665d9ca14992f7}{setOverflow}}(\textcolor{keywordtype}{short}\ overflow\_);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_a013882c30253124e126866c0c54b6188}{setBackgroungColor}}(Color\ color);}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_ada7df6e4dfdefe85eb996a6835a14168}{setOutlineColor}}(Color\ color);}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_a81904e63c4a63aca4917c03bb0b62e1f}{setTextColor}}(Color\ color);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_a245f75b61f407259f23ab42fad03fb8d}{setString}}(std::string\ new\_str);}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_ae7bf2ce5c4f233df4a34ec3383cc2dcd}{setPositionX}}(\textcolor{keywordtype}{float}\ x)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_a284e9ee5f99cfb72736c780c9442b8e5}{setPositionY}}(\textcolor{keywordtype}{float}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_abefe8105cf8514cc0586d4b57e5088f5}{changePosition}}(\textcolor{keywordtype}{float}\ offset\_x,\ \textcolor{keywordtype}{float}\ offset\_y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_aec80f5efabbcd01742057cd367f341f0}{addCharacter}}(\textcolor{keywordtype}{char}\ ch);}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_af971907510d4bf095befd3be5eaaf30b}{addCursor}}(\textcolor{keywordtype}{char}\ cursor\_);}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_ab92bb50bdf412565f75f7d7a83ac46de}{removeCharacter}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_a12fb64b2faa029e3f2ed6442d656ecd9}{removeLastCharacter}}();}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_a2e7dee69d5fa788ea222706112a40fcd}{removeCursor}}();}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00163\ \ \ \ \ vector<string>\ \mbox{\hyperlink{class_textarea_a4dc1112032059b439739f121a5eb8578}{splitString}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ str,\ \textcolor{keywordtype}{char}\ delimiter);}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_ab6b1cdeb04f0e62f966406c7e82ab588}{scroll}}(\textcolor{keywordtype}{float}\ delta);}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_a7dc5575e82503ffe26fe02b8386cd2b1}{normalization}}();}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00176\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_a5604c98f51e202af856ae7c22a13cf6a}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_textarea_a3e2aa226c3c422fd70d9886c29320f0d}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00181\ \};}
+\DoxyCodeLine{00182\ }
+
+\end{DoxyCode}

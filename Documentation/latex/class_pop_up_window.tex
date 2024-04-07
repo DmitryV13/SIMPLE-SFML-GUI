@@ -1,0 +1,436 @@
+\doxysection{Pop\+Up\+Window Class Reference}
+\hypertarget{class_pop_up_window}{}\label{class_pop_up_window}\index{PopUpWindow@{PopUpWindow}}
+
+
+{\ttfamily \#include $<$Pop\+Up\+Window.\+h$>$}
+
+Inheritance diagram for Pop\+Up\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pop_up_window}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pop_up_window_abb7d497fb8041c19fec63717f7fa3a28}{Pop\+Up\+Window}} (double screen\+\_\+width, double screen\+\_\+height, int width\+\_\+, int height\+\_\+, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager\+\_\+)
+\item 
+\mbox{\hyperlink{class_pop_up_window_a9487cf106036fc7e81053dd9ff6bfddb}{Pop\+Up\+Window}} (double screen\+\_\+width, double screen\+\_\+height, int width\+\_\+, int height\+\_\+, string positionX, string positionY, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager\+\_\+)
+\item 
+\mbox{\hyperlink{class_pop_up_window_a9808dde86c0ada7df3adc1ea6ef0846a}{Pop\+Up\+Window}} (double screen\+\_\+width, double screen\+\_\+height, int width\+\_\+, int height\+\_\+, string positionX, int y, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager\+\_\+)
+\item 
+\mbox{\hyperlink{class_pop_up_window_ab680baae719e55953100ab25074dc27d}{Pop\+Up\+Window}} (double screen\+\_\+width, double screen\+\_\+height, int width\+\_\+, int height\+\_\+, int x, string positionY, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager\+\_\+)
+\item 
+void \mbox{\hyperlink{class_pop_up_window_a2272361e388c7d6aa795358eafb83c69}{set\+Background}} ()
+\item 
+void \mbox{\hyperlink{class_pop_up_window_a1f41499432fb2f54d11821aa7e1b9ab2}{set\+Size}} ()
+\item 
+void \mbox{\hyperlink{class_pop_up_window_aae018877d4efe9fd3411d57ed9d63aab}{set\+PUWState}} (float param1, float param2)
+\item 
+short \mbox{\hyperlink{class_pop_up_window_a145374650833505e731f28c08a70975c}{get\+State}} ()
+\item 
+int \mbox{\hyperlink{class_pop_up_window_af5f74c902b42701a023988de1b78f667}{get\+Max\+Groups\+Height}} (short index)
+\item 
+void \mbox{\hyperlink{class_pop_up_window_a6aea461adfbb0eef58b2bf0a9250d0c6}{create\+Group\+Line}} ()
+\item 
+void \mbox{\hyperlink{class_pop_up_window_ae5af2980a7e1d4bd7ed39bca511cdce2}{add\+Label}} (double screen\+\_\+width, double screen\+\_\+height, const string \&label\+\_\+text, int text\+\_\+size, short offset)
+\item 
+void \mbox{\hyperlink{class_pop_up_window_a0f9fbdfd8928142a61254782de1738c1}{add\+Group}} (short fill\+\_\+p\+\_\+w, short fill\+\_\+p\+\_\+h, short index, string name, int name\+\_\+size)
+\item 
+void \mbox{\hyperlink{class_pop_up_window_a8a0c2998174247d678a397988cd24927}{add\+Group}} (short fill\+\_\+p\+\_\+w, short fill\+\_\+p\+\_\+h, short index)
+\item 
+void \mbox{\hyperlink{class_pop_up_window_a096ea37f1416602fb28605ba1479f3b1}{add\+Group}} (\mbox{\hyperlink{class_group}{Group}} \texorpdfstring{$\ast$}{*}new\+\_\+group, short index)
+\item 
+void \mbox{\hyperlink{class_pop_up_window_a2ce35f803702b3d5563c6fb8c4859405}{add\+Group\+Name}} (int i, int j, string name, int name\+\_\+size)
+\item 
+void \mbox{\hyperlink{class_pop_up_window_a25b5e5b1053f7e94c5b22ec964c00ffd}{add\+Background}} (double map\+\_\+width, double map\+\_\+height, Color color)
+\item 
+void \mbox{\hyperlink{class_pop_up_window_a079b588b4578921bf4b5e430fea95efa}{add\+Delimiter}} ()
+\item 
+{\footnotesize template$<$class T $>$ }\\bool \mbox{\hyperlink{class_pop_up_window_aa21abc2f45c2ced82382622a1827f7a6}{add\+Callback}} (short \texorpdfstring{$\ast$}{*}b\+\_\+state, short a\+\_\+state, float param1, float param2, void(T\+::\texorpdfstring{$\ast$}{*}l\+\_\+func)(float, float), T \texorpdfstring{$\ast$}{*}l\+\_\+instance)
+\item 
+{\footnotesize template$<$class T $>$ }\\bool \mbox{\hyperlink{class_pop_up_window_a1ae5f59837b6a6e8877bcc92ba45f7c6}{add\+DCallback}} (short \texorpdfstring{$\ast$}{*}b\+\_\+state, short a\+\_\+state, string \texorpdfstring{$\ast$}{*}param1, string \texorpdfstring{$\ast$}{*}param2, void(T\+::\texorpdfstring{$\ast$}{*}l\+\_\+func)(string \texorpdfstring{$\ast$}{*}, string \texorpdfstring{$\ast$}{*}), T \texorpdfstring{$\ast$}{*}l\+\_\+instance)
+\item 
+\mbox{\hyperlink{class_c_rect}{CRect}}$<$ float $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_pop_up_window_a79a9b48ad83c56b2c711e7d6c39364dc}{calculate\+PFNG}} (short fill\+\_\+p\+\_\+w, short fill\+\_\+p\+\_\+h, short index)
+\item 
+void \mbox{\hyperlink{class_pop_up_window_a78ff0624c8ad348aea8c5c002460e9c7}{form\+Input}} (Event event)
+\item 
+void \mbox{\hyperlink{class_pop_up_window_a44026b0c499e598f7e592a6813e06935}{item\+Scroll}} (float delta)
+\item 
+virtual void \mbox{\hyperlink{class_pop_up_window_ab2c358c7dd8886327dbd7ea38f0c29cb}{update}} ()
+\item 
+void \mbox{\hyperlink{class_pop_up_window_a56205ff3829bf272024fba1ca67c54fc}{update\+Event}} (Event \texorpdfstring{$\ast$}{*}event)
+\item 
+virtual void \mbox{\hyperlink{class_pop_up_window_a0d771c6bfab10a7fb2916220587ad540}{render}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pop_up_window_ab26d783b5ed5e2476bbce5cf744098d2}\label{class_pop_up_window_ab26d783b5ed5e2476bbce5cf744098d2} 
+\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*} {\bfseries manager}
+\item 
+\Hypertarget{class_pop_up_window_aeb9643e7fe9dd3b7b977f39d07604519}\label{class_pop_up_window_aeb9643e7fe9dd3b7b977f39d07604519} 
+\mbox{\hyperlink{class_composed_i_m_g}{Composed\+IMG}} \texorpdfstring{$\ast$}{*} {\bfseries w\+\_\+background}
+\item 
+\Hypertarget{class_pop_up_window_aea47382520e72e60e7e75bff195c6fe9}\label{class_pop_up_window_aea47382520e72e60e7e75bff195c6fe9} 
+Rectangle\+Shape \texorpdfstring{$\ast$}{*} {\bfseries background}
+\item 
+\Hypertarget{class_pop_up_window_a04ec49b78eb5d90c689469c19087272c}\label{class_pop_up_window_a04ec49b78eb5d90c689469c19087272c} 
+\mbox{\hyperlink{class_label}{Label}} \texorpdfstring{$\ast$}{*} {\bfseries label}
+\item 
+\Hypertarget{class_pop_up_window_a2804a91f156d47df6525bbe28cd78647}\label{class_pop_up_window_a2804a91f156d47df6525bbe28cd78647} 
+short {\bfseries puw\+\_\+state}
+\item 
+\Hypertarget{class_pop_up_window_a296c1248ffd06ef1f95150d4d680851f}\label{class_pop_up_window_a296c1248ffd06ef1f95150d4d680851f} 
+\mbox{\hyperlink{class_callbacks_handler}{Callbacks\+Handler}} \texorpdfstring{$\ast$}{*} {\bfseries callbacks\+\_\+handler}
+\item 
+\Hypertarget{class_pop_up_window_ab279feec98c83215f6c79dcbe4b1bc1c}\label{class_pop_up_window_ab279feec98c83215f6c79dcbe4b1bc1c} 
+\mbox{\hyperlink{class_d_callbacks_handler}{DCallbacks\+Handler}} \texorpdfstring{$\ast$}{*} {\bfseries dcallbacks\+\_\+handler}
+\item 
+\Hypertarget{class_pop_up_window_a6ace6816a72227ff07dd88884e74e275}\label{class_pop_up_window_a6ace6816a72227ff07dd88884e74e275} 
+int {\bfseries width}
+\item 
+\Hypertarget{class_pop_up_window_a6e1403b22ab6120aae1c552366c04c78}\label{class_pop_up_window_a6e1403b22ab6120aae1c552366c04c78} 
+int {\bfseries height}
+\item 
+\Hypertarget{class_pop_up_window_a4b888f238997afa7c7ec03f5baf63b21}\label{class_pop_up_window_a4b888f238997afa7c7ec03f5baf63b21} 
+Vector2f {\bfseries position}
+\item 
+\Hypertarget{class_pop_up_window_a03039746d54b5bdf4a3fc28043af9560}\label{class_pop_up_window_a03039746d54b5bdf4a3fc28043af9560} 
+vector$<$ vector$<$ \mbox{\hyperlink{class_group}{Group}} \texorpdfstring{$\ast$}{*} $>$ $>$ {\bfseries groups}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Представляет собой базовое всплывающее окно 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pop_up_window_abb7d497fb8041c19fec63717f7fa3a28}\label{class_pop_up_window_abb7d497fb8041c19fec63717f7fa3a28} 
+\index{PopUpWindow@{PopUpWindow}!PopUpWindow@{PopUpWindow}}
+\index{PopUpWindow@{PopUpWindow}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{PopUpWindow()}{PopUpWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Pop\+Up\+Window\+::\+Pop\+Up\+Window (\begin{DoxyParamCaption}\item[{double}]{screen\+\_\+width,  }\item[{double}]{screen\+\_\+height,  }\item[{int}]{width\+\_\+,  }\item[{int}]{height\+\_\+,  }\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen\+\_\+width} & ширина экрана. \\
+\hline
+{\em screen\+\_\+height} & высота экрана. \\
+\hline
+{\em width\+\_\+} & ширина всплывающего окна. \\
+\hline
+{\em height\+\_\+} & высота всплывающего окна. \\
+\hline
+{\em t\+\_\+manager\+\_\+} & менеджер текстур, из которого берется текстура заднего фона всплывающего окна. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+при дальнейшей разработке, возможно, данный параметр будет удален из конструктора. 
+\end{DoxyNote}
+\Hypertarget{class_pop_up_window_a9487cf106036fc7e81053dd9ff6bfddb}\label{class_pop_up_window_a9487cf106036fc7e81053dd9ff6bfddb} 
+\index{PopUpWindow@{PopUpWindow}!PopUpWindow@{PopUpWindow}}
+\index{PopUpWindow@{PopUpWindow}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{PopUpWindow()}{PopUpWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Pop\+Up\+Window\+::\+Pop\+Up\+Window (\begin{DoxyParamCaption}\item[{double}]{screen\+\_\+width,  }\item[{double}]{screen\+\_\+height,  }\item[{int}]{width\+\_\+,  }\item[{int}]{height\+\_\+,  }\item[{string}]{positionX,  }\item[{string}]{positionY,  }\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager\+\_\+ }\end{DoxyParamCaption})}
+
+Не используется на данный момент. \Hypertarget{class_pop_up_window_a9808dde86c0ada7df3adc1ea6ef0846a}\label{class_pop_up_window_a9808dde86c0ada7df3adc1ea6ef0846a} 
+\index{PopUpWindow@{PopUpWindow}!PopUpWindow@{PopUpWindow}}
+\index{PopUpWindow@{PopUpWindow}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{PopUpWindow()}{PopUpWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Pop\+Up\+Window\+::\+Pop\+Up\+Window (\begin{DoxyParamCaption}\item[{double}]{screen\+\_\+width,  }\item[{double}]{screen\+\_\+height,  }\item[{int}]{width\+\_\+,  }\item[{int}]{height\+\_\+,  }\item[{string}]{positionX,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager\+\_\+ }\end{DoxyParamCaption})}
+
+Не используется на данный момент. \Hypertarget{class_pop_up_window_ab680baae719e55953100ab25074dc27d}\label{class_pop_up_window_ab680baae719e55953100ab25074dc27d} 
+\index{PopUpWindow@{PopUpWindow}!PopUpWindow@{PopUpWindow}}
+\index{PopUpWindow@{PopUpWindow}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{PopUpWindow()}{PopUpWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Pop\+Up\+Window\+::\+Pop\+Up\+Window (\begin{DoxyParamCaption}\item[{double}]{screen\+\_\+width,  }\item[{double}]{screen\+\_\+height,  }\item[{int}]{width\+\_\+,  }\item[{int}]{height\+\_\+,  }\item[{int}]{x,  }\item[{string}]{positionY,  }\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager\+\_\+ }\end{DoxyParamCaption})}
+
+Не используется на данный момент. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pop_up_window_a25b5e5b1053f7e94c5b22ec964c00ffd}\label{class_pop_up_window_a25b5e5b1053f7e94c5b22ec964c00ffd} 
+\index{PopUpWindow@{PopUpWindow}!addBackground@{addBackground}}
+\index{addBackground@{addBackground}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{addBackground()}{addBackground()}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::add\+Background (\begin{DoxyParamCaption}\item[{double}]{map\+\_\+width,  }\item[{double}]{map\+\_\+height,  }\item[{Color}]{color }\end{DoxyParamCaption})}
+
+Задает цвет заднего фона, который отображается пока окно открыто. По умолчанию цвет заднего фона прозрачный. Используется только первый раз при задании фона.
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\+\_\+width} & ширина экрана. \\
+\hline
+{\em map\+\_\+height} & высота экрана. \\
+\hline
+{\em color} & новый цвет. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pop_up_window_aa21abc2f45c2ced82382622a1827f7a6}\label{class_pop_up_window_aa21abc2f45c2ced82382622a1827f7a6} 
+\index{PopUpWindow@{PopUpWindow}!addCallback@{addCallback}}
+\index{addCallback@{addCallback}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{addCallback()}{addCallback()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool Pop\+Up\+Window\+::add\+Callback (\begin{DoxyParamCaption}\item[{short \texorpdfstring{$\ast$}{*}}]{b\+\_\+state,  }\item[{short}]{a\+\_\+state,  }\item[{float}]{param1,  }\item[{float}]{param2,  }\item[{void(T\+::\texorpdfstring{$\ast$}{*})(float, float)}]{l\+\_\+func,  }\item[{T \texorpdfstring{$\ast$}{*}}]{l\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Добавляет статический отклик на событие, выявление и выполнение которого будет происходить при обновлении окна. Сигнатуру передаваемой функции смотреть в описании клсса \doxylink{class_callbacks_handler}{Callbacks\+Handler}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+\_\+state} & состояние, которое будет считываться и которое спровоцирует отклик. \\
+\hline
+{\em a\+\_\+state} & значение активного состояния. \\
+\hline
+{\em param1} & первый статический параметр функции отклика. \\
+\hline
+{\em param2} & второй статический параметр функции отклика. \\
+\hline
+{\em l\+\_\+func} & функция отклика, задается в виде \&Class\+::function. \\
+\hline
+{\em l\+\_\+instance} & указатель на обьект класса. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+булевое значение, указывающее на то, был ли добавлен отклик. 
+\end{DoxyReturn}
+\Hypertarget{class_pop_up_window_a1ae5f59837b6a6e8877bcc92ba45f7c6}\label{class_pop_up_window_a1ae5f59837b6a6e8877bcc92ba45f7c6} 
+\index{PopUpWindow@{PopUpWindow}!addDCallback@{addDCallback}}
+\index{addDCallback@{addDCallback}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{addDCallback()}{addDCallback()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool Pop\+Up\+Window\+::add\+DCallback (\begin{DoxyParamCaption}\item[{short \texorpdfstring{$\ast$}{*}}]{b\+\_\+state,  }\item[{short}]{a\+\_\+state,  }\item[{string \texorpdfstring{$\ast$}{*}}]{param1,  }\item[{string \texorpdfstring{$\ast$}{*}}]{param2,  }\item[{void(T\+::\texorpdfstring{$\ast$}{*})(string \texorpdfstring{$\ast$}{*}, string \texorpdfstring{$\ast$}{*})}]{l\+\_\+func,  }\item[{T \texorpdfstring{$\ast$}{*}}]{l\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Добавляет динамический отклик на событие, выявление и выполнение которого будет происходить при обновлении окна. Сигнатуру передаваемой функции смотреть в описании клсса \doxylink{class_d_callbacks_handler}{DCallbacks\+Handler}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+\_\+state} & состояние, которое будет считываться и которое спровоцирует отклик. \\
+\hline
+{\em a\+\_\+state} & значение активного состояния. \\
+\hline
+{\em param1} & первый динамический параметр функции отклика. \\
+\hline
+{\em param2} & второй динамический параметр функции отклика. \\
+\hline
+{\em l\+\_\+func} & функция отклика, задается в виде \&Class\+::function. \\
+\hline
+{\em l\+\_\+instance} & указатель на обьект класса. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+булевое значение, указывающее на то, был ли добавлен отклик. 
+\end{DoxyReturn}
+\Hypertarget{class_pop_up_window_a079b588b4578921bf4b5e430fea95efa}\label{class_pop_up_window_a079b588b4578921bf4b5e430fea95efa} 
+\index{PopUpWindow@{PopUpWindow}!addDelimiter@{addDelimiter}}
+\index{addDelimiter@{addDelimiter}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{addDelimiter()}{addDelimiter()}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::add\+Delimiter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Не обладает реализацией на данный момент. \Hypertarget{class_pop_up_window_a096ea37f1416602fb28605ba1479f3b1}\label{class_pop_up_window_a096ea37f1416602fb28605ba1479f3b1} 
+\index{PopUpWindow@{PopUpWindow}!addGroup@{addGroup}}
+\index{addGroup@{addGroup}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{addGroup()}{addGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::add\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_group}{Group}} \texorpdfstring{$\ast$}{*}}]{new\+\_\+group,  }\item[{short}]{index }\end{DoxyParamCaption})}
+
+Добавляет группу в окно. Добавление произойдет в конец указанной строки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+group} & новая группа. \\
+\hline
+{\em index} & индекс строки куда произойдет добавление. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pop_up_window_a8a0c2998174247d678a397988cd24927}\label{class_pop_up_window_a8a0c2998174247d678a397988cd24927} 
+\index{PopUpWindow@{PopUpWindow}!addGroup@{addGroup}}
+\index{addGroup@{addGroup}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{addGroup()}{addGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::add\+Group (\begin{DoxyParamCaption}\item[{short}]{fill\+\_\+p\+\_\+w,  }\item[{short}]{fill\+\_\+p\+\_\+h,  }\item[{short}]{index }\end{DoxyParamCaption})}
+
+Добавляет группу в окно. Добавление произойдет в конец указанной строки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fill\+\_\+p\+\_\+w} & процент заполнения(указывается от 0 до 100), по которому установится ширина новой группы на основе текущего окна. \\
+\hline
+{\em fill\+\_\+p\+\_\+h} & процент заполнения(указывается от 0 до 100), по которому установится высота новой группы на основе текущего окна. \\
+\hline
+{\em index} & индекс строки куда произойдет добавление. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pop_up_window_a0f9fbdfd8928142a61254782de1738c1}\label{class_pop_up_window_a0f9fbdfd8928142a61254782de1738c1} 
+\index{PopUpWindow@{PopUpWindow}!addGroup@{addGroup}}
+\index{addGroup@{addGroup}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{addGroup()}{addGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::add\+Group (\begin{DoxyParamCaption}\item[{short}]{fill\+\_\+p\+\_\+w,  }\item[{short}]{fill\+\_\+p\+\_\+h,  }\item[{short}]{index,  }\item[{string}]{name,  }\item[{int}]{name\+\_\+size }\end{DoxyParamCaption})}
+
+Добавляет группу в окно. Добавление произойдет в конец указанной строки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fill\+\_\+p\+\_\+w} & процент заполнения(указывается от 0 до 100), по которому установится ширина новой группы на основе текущего окна. \\
+\hline
+{\em fill\+\_\+p\+\_\+h} & процент заполнения(указывается от 0 до 100), по которому установится высота новой группы на основе текущего окна. \\
+\hline
+{\em index} & индекс строки куда произойдет добавление. \\
+\hline
+{\em name} & заголовок группы. \\
+\hline
+{\em name\+\_\+size} & размер шрифта. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pop_up_window_a2ce35f803702b3d5563c6fb8c4859405}\label{class_pop_up_window_a2ce35f803702b3d5563c6fb8c4859405} 
+\index{PopUpWindow@{PopUpWindow}!addGroupName@{addGroupName}}
+\index{addGroupName@{addGroupName}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{addGroupName()}{addGroupName()}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::add\+Group\+Name (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{string}]{name,  }\item[{int}]{name\+\_\+size }\end{DoxyParamCaption})}
+
+Добавляет имя группе, расположенной по заданным индексам.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & индекс строки. \\
+\hline
+{\em j} & индекс столбца. \\
+\hline
+{\em name} & заголовок группы. \\
+\hline
+{\em name\+\_\+size} & размер шрифта. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pop_up_window_ae5af2980a7e1d4bd7ed39bca511cdce2}\label{class_pop_up_window_ae5af2980a7e1d4bd7ed39bca511cdce2} 
+\index{PopUpWindow@{PopUpWindow}!addLabel@{addLabel}}
+\index{addLabel@{addLabel}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{addLabel()}{addLabel()}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::add\+Label (\begin{DoxyParamCaption}\item[{double}]{screen\+\_\+width,  }\item[{double}]{screen\+\_\+height,  }\item[{const string \&}]{label\+\_\+text,  }\item[{int}]{text\+\_\+size,  }\item[{short}]{offset }\end{DoxyParamCaption})}
+
+Добавляет ярлык для всплывающего окна. Ярлык будет отображаться над всплывающим окном по центру.
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen\+\_\+width} & ширина экрана. \\
+\hline
+{\em screen\+\_\+height} & высота экрана. \\
+\hline
+{\em label\+\_\+text} & текст ярлыка. \\
+\hline
+{\em text\+\_\+size} & размер шрифта. \\
+\hline
+{\em offset} & зазор между ярлыком и всплывающим окном. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pop_up_window_a79a9b48ad83c56b2c711e7d6c39364dc}\label{class_pop_up_window_a79a9b48ad83c56b2c711e7d6c39364dc} 
+\index{PopUpWindow@{PopUpWindow}!calculatePFNG@{calculatePFNG}}
+\index{calculatePFNG@{calculatePFNG}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{calculatePFNG()}{calculatePFNG()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rect}{CRect}}$<$ float $>$ \texorpdfstring{$\ast$}{*} Pop\+Up\+Window\+::calculate\+PFNG (\begin{DoxyParamCaption}\item[{short}]{fill\+\_\+p\+\_\+w,  }\item[{short}]{fill\+\_\+p\+\_\+h,  }\item[{short}]{index }\end{DoxyParamCaption})}
+
+Расчитывает размеры и позицию для новой группы. Позиция считается со следующей группы указанной строки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fill\+\_\+p\+\_\+w} & процент заполнения(указывается от 0 до 100) ширины для новой группы на основе текущей группы. \\
+\hline
+{\em fill\+\_\+p\+\_\+h} & процент заполнения(указывается от 0 до 100) высоты для новой группы на основе текущей группы. \\
+\hline
+{\em index} & индекс строки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+возвращает CRect$<$float$>$ с посчитанными параметрами. В нем первый параметр -\/ x, второй параметр -\/y, третий параметр -\/ width, четвертый параметр -\/ height. 
+\end{DoxyReturn}
+\Hypertarget{class_pop_up_window_a6aea461adfbb0eef58b2bf0a9250d0c6}\label{class_pop_up_window_a6aea461adfbb0eef58b2bf0a9250d0c6} 
+\index{PopUpWindow@{PopUpWindow}!createGroupLine@{createGroupLine}}
+\index{createGroupLine@{createGroupLine}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{createGroupLine()}{createGroupLine()}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::create\+Group\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Создает новую строку в окне для последующего добавления в нее групп. Вызов данной функции обязателен перед добавлением группы в новую строку окна. \Hypertarget{class_pop_up_window_a78ff0624c8ad348aea8c5c002460e9c7}\label{class_pop_up_window_a78ff0624c8ad348aea8c5c002460e9c7} 
+\index{PopUpWindow@{PopUpWindow}!formInput@{formInput}}
+\index{formInput@{formInput}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{formInput()}{formInput()}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::form\+Input (\begin{DoxyParamCaption}\item[{Event}]{event }\end{DoxyParamCaption})}
+
+Системный метод. \Hypertarget{class_pop_up_window_af5f74c902b42701a023988de1b78f667}\label{class_pop_up_window_af5f74c902b42701a023988de1b78f667} 
+\index{PopUpWindow@{PopUpWindow}!getMaxGroupsHeight@{getMaxGroupsHeight}}
+\index{getMaxGroupsHeight@{getMaxGroupsHeight}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{getMaxGroupsHeight()}{getMaxGroupsHeight()}}
+{\footnotesize\ttfamily int Pop\+Up\+Window\+::get\+Max\+Groups\+Height (\begin{DoxyParamCaption}\item[{short}]{index }\end{DoxyParamCaption})}
+
+Системный метод. \Hypertarget{class_pop_up_window_a145374650833505e731f28c08a70975c}\label{class_pop_up_window_a145374650833505e731f28c08a70975c} 
+\index{PopUpWindow@{PopUpWindow}!getState@{getState}}
+\index{getState@{getState}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily short Pop\+Up\+Window\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возвращает состояние текущего окна(\+POP\+\_\+\+UP\+\_\+\+WINDOW\+\_\+\+STATE). \Hypertarget{class_pop_up_window_a44026b0c499e598f7e592a6813e06935}\label{class_pop_up_window_a44026b0c499e598f7e592a6813e06935} 
+\index{PopUpWindow@{PopUpWindow}!itemScroll@{itemScroll}}
+\index{itemScroll@{itemScroll}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{itemScroll()}{itemScroll()}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::item\+Scroll (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})}
+
+Системный метод. \Hypertarget{class_pop_up_window_a0d771c6bfab10a7fb2916220587ad540}\label{class_pop_up_window_a0d771c6bfab10a7fb2916220587ad540} 
+\index{PopUpWindow@{PopUpWindow}!render@{render}}
+\index{render@{render}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Отображает окно и все элементы, которые ему принадлежат. 
+
+Reimplemented in \mbox{\hyperlink{class_pop_up_autoc_window_acda7fc0e2e6373c1529a7b571cabc480}{Pop\+Up\+Autoc\+Window}}.
+
+\Hypertarget{class_pop_up_window_a2272361e388c7d6aa795358eafb83c69}\label{class_pop_up_window_a2272361e388c7d6aa795358eafb83c69} 
+\index{PopUpWindow@{PopUpWindow}!setBackground@{setBackground}}
+\index{setBackground@{setBackground}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{setBackground()}{setBackground()}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::set\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Не обладает реализацией на данный момент. \Hypertarget{class_pop_up_window_aae018877d4efe9fd3411d57ed9d63aab}\label{class_pop_up_window_aae018877d4efe9fd3411d57ed9d63aab} 
+\index{PopUpWindow@{PopUpWindow}!setPUWState@{setPUWState}}
+\index{setPUWState@{setPUWState}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{setPUWState()}{setPUWState()}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::set\+PUWState (\begin{DoxyParamCaption}\item[{float}]{param1,  }\item[{float}]{param2 }\end{DoxyParamCaption})}
+
+Задает состояние текущего окна(\+POP\+\_\+\+UP\+\_\+\+WINDOW\+\_\+\+STATE).
+
+
+\begin{DoxyParams}{Parameters}
+{\em param1} & хранит значение нового состояния. В методе происходит static\+\_\+cast$<$short$>$ этого параметра. \\
+\hline
+{\em param2} & заглушка. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pop_up_window_a1f41499432fb2f54d11821aa7e1b9ab2}\label{class_pop_up_window_a1f41499432fb2f54d11821aa7e1b9ab2} 
+\index{PopUpWindow@{PopUpWindow}!setSize@{setSize}}
+\index{setSize@{setSize}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::set\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Не обладает реализацией на данный момент. \Hypertarget{class_pop_up_window_ab2c358c7dd8886327dbd7ea38f0c29cb}\label{class_pop_up_window_ab2c358c7dd8886327dbd7ea38f0c29cb} 
+\index{PopUpWindow@{PopUpWindow}!update@{update}}
+\index{update@{update}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Обновляет окно и все элементы, которые ему принадлежат. 
+
+Reimplemented in \mbox{\hyperlink{class_pop_up_autoc_window_a8b5d476169830b00d61fe339cc61e35d}{Pop\+Up\+Autoc\+Window}}.
+
+\Hypertarget{class_pop_up_window_a56205ff3829bf272024fba1ca67c54fc}\label{class_pop_up_window_a56205ff3829bf272024fba1ca67c54fc} 
+\index{PopUpWindow@{PopUpWindow}!updateEvent@{updateEvent}}
+\index{updateEvent@{updateEvent}!PopUpWindow@{PopUpWindow}}
+\doxysubsubsection{\texorpdfstring{updateEvent()}{updateEvent()}}
+{\footnotesize\ttfamily void Pop\+Up\+Window\+::update\+Event (\begin{DoxyParamCaption}\item[{Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})}
+
+Обновляет окно и все элементы, которые ему принадлежат, в зависимости от принимаемого события события.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & событие. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Pop\+Up\+Window.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Pop\+Up\+Window.\+cpp\end{DoxyCompactItemize}

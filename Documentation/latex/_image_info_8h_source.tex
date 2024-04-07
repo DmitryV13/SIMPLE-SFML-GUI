@@ -1,0 +1,47 @@
+\doxysection{Image\+Info.\+h}
+\hypertarget{_image_info_8h_source}{}\label{_image_info_8h_source}\index{D:/Applications/SFML\_GUI/ImageInfo.h@{D:/Applications/SFML\_GUI/ImageInfo.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}TextureManager.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Warehouse.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}InterfaceItem.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}INTERFACE\_ITEM\_TYPE.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ }namespace::sf;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_image_info}{ImageInfo}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_interface_item}{InterfaceItem}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00013\ \ \ \ \ RectangleShape\ shape;\textcolor{comment}{//*2}}
+\DoxyCodeLine{00014\ \ \ \ \ Text\ text;}
+\DoxyCodeLine{00015\ \ \ \ \ Sprite\ src\_img;\textcolor{comment}{//*2}}
+\DoxyCodeLine{00016\ \ \ \ \ Vector2f\ position;}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_image_info}{ImageInfo}}();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_image_info}{ImageInfo}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{string}\ text\_,\ \textcolor{keywordtype}{int}\ text\_size,\ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \textcolor{keywordtype}{int}\ index,\ \textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_image_info}{ImageInfo}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{int}\ text\_,\ \textcolor{keywordtype}{int}\ text\_size,\ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \textcolor{keywordtype}{int}\ index,\ \textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ FloatRect\ getLocalBounds()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00047\ \ \ \ \ FloatRect\ getGlobalBounds()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_info_a39200822b6f2d7d1df440e415206ad2d}{setPosition}}(Vector2f\ new\_position);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_info_aa442aac61184371e3473da96c2651202}{setPositionX}}(\textcolor{keywordtype}{float}\ x)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_info_a5e9b7e6e5681d3b5f0452180f5564bce}{setPositionY}}(\textcolor{keywordtype}{float}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_info_af0a4a1bfff50079f3ca523d329bf35c8}{setText}}(\textcolor{keywordtype}{float}\ text\_);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_info_ac3fa71aec68a579ffb8f4e876983023e}{setBackgroundColor}}(Color\ color);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_info_a392238baa6f914db2f4bdcea4ed73057}{changePosition}}(\textcolor{keywordtype}{float}\ offset\_x,\ \textcolor{keywordtype}{float}\ offset\_y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_info_a03c7a51f567ebefd23fd31991d3b884e}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_info_a92cfc2fcf014a2f3a15a747364788a3a}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00093\ \};}
+\DoxyCodeLine{00094\ }
+
+\end{DoxyCode}

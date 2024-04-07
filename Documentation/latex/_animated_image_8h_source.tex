@@ -1,0 +1,32 @@
+\doxysection{Animated\+Image.\+h}
+\hypertarget{_animated_image_8h_source}{}\label{_animated_image_8h_source}\index{D:/Applications/SFML\_GUI/AnimatedImage.h@{D:/Applications/SFML\_GUI/AnimatedImage.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}BasicImage.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{using\ }namespace::sf;}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_animated_image}{AnimatedImage}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_basic_image}{BasicImage}}\{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ \ \ \ \ IntRect\ current\_frame;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{short}\ frames\_number;}
+\DoxyCodeLine{00014\ \ \ \ \ Clock\ animation\_timer;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_animated_image_a4f973fb1cdef167fbaaf678fe88bda06}{AnimatedImage}}(\mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \mbox{\hyperlink{class_warehouse}{Warehouse}}*\ w\_object,\ \textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_animated_image_a4f973fb1cdef167fbaaf678fe88bda06}{AnimatedImage}}(\textcolor{keywordtype}{float}\ width,\ \textcolor{keywordtype}{float}\ height,\ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \mbox{\hyperlink{class_warehouse}{Warehouse}}*\ w\_object,\ \textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_animated_image_a4f973fb1cdef167fbaaf678fe88bda06}{AnimatedImage}}(\mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \textcolor{keywordtype}{int}\ index,\ \textcolor{keywordtype}{string}\ name,\ IntRect\ first\_frame,\ \textcolor{keywordtype}{short}\ frames\_number\_);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_animated_image_a4f973fb1cdef167fbaaf678fe88bda06}{AnimatedImage}}(\textcolor{keywordtype}{float}\ width,\ \textcolor{keywordtype}{float}\ height,\ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \textcolor{keywordtype}{int}\ index,\ \textcolor{keywordtype}{string}\ name,\ IntRect\ first\_frame,\ \textcolor{keywordtype}{short}\ frames\_number\_);}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_animated_image}{\string~AnimatedImage}}();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animated_image_a10445c2059f71ffc781862bc5cf60281}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animated_image_aaee7ef464ab5dfb5d815092809628db3}{render}}();}
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ }
+
+\end{DoxyCode}

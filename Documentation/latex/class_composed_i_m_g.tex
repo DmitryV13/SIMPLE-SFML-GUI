@@ -1,0 +1,80 @@
+\doxysection{Composed\+IMG Class Reference}
+\hypertarget{class_composed_i_m_g}{}\label{class_composed_i_m_g}\index{ComposedIMG@{ComposedIMG}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_composed_i_m_g_a9a4470b29fa9061464b2aae7c42ed37e}\label{class_composed_i_m_g_a9a4470b29fa9061464b2aae7c42ed37e} 
+{\bfseries Composed\+IMG} (int width\+\_\+, int height\+\_\+, int original\+\_\+size, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}manager, int index)
+\item 
+\Hypertarget{class_composed_i_m_g_a612ed6a4d7bc2d591e29835f8238b37f}\label{class_composed_i_m_g_a612ed6a4d7bc2d591e29835f8238b37f} 
+{\bfseries Composed\+IMG} (int width\+\_\+, int height\+\_\+, int original\+\_\+size, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}manager, int index\+\_\+0, string name\+\_\+0, int index\+\_\+1, string name\+\_\+1, int index\+\_\+2, string name\+\_\+2, int index\+\_\+3, string name\+\_\+3, int index\+\_\+4, string name\+\_\+4)
+\item 
+\Hypertarget{class_composed_i_m_g_a94d2a26c86c8d0077698c3f3b9245635}\label{class_composed_i_m_g_a94d2a26c86c8d0077698c3f3b9245635} 
+void {\bfseries set\+Position} (float x, float y)
+\item 
+\Hypertarget{class_composed_i_m_g_a447461333b6b8e14fa191ee46af7a8e7}\label{class_composed_i_m_g_a447461333b6b8e14fa191ee46af7a8e7} 
+void {\bfseries set\+Position} (string positionX, string positionY, int screen\+\_\+width, int screen\+\_\+height)
+\item 
+\Hypertarget{class_composed_i_m_g_ac30883e935f605c1db0cf12ad620ba63}\label{class_composed_i_m_g_ac30883e935f605c1db0cf12ad620ba63} 
+void {\bfseries set\+Position} (string positionX, float y, int screen\+\_\+width, int screen\+\_\+height)
+\item 
+\Hypertarget{class_composed_i_m_g_a7c21a42dfbb405151b128758ff4f85b9}\label{class_composed_i_m_g_a7c21a42dfbb405151b128758ff4f85b9} 
+void {\bfseries set\+Position} (float x, string positionY, int screen\+\_\+width, int screen\+\_\+height)
+\item 
+\Hypertarget{class_composed_i_m_g_ac79af352a86745f804886fbab9f6ae90}\label{class_composed_i_m_g_ac79af352a86745f804886fbab9f6ae90} 
+void {\bfseries change\+Position} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+\Hypertarget{class_composed_i_m_g_a770e8561b623a9af888bec1fe0fc9cff}\label{class_composed_i_m_g_a770e8561b623a9af888bec1fe0fc9cff} 
+void {\bfseries set\+Scale} (float scale\+\_\+)
+\item 
+\Hypertarget{class_composed_i_m_g_a5a2bfb9cb1cc583647043a310af8f3aa}\label{class_composed_i_m_g_a5a2bfb9cb1cc583647043a310af8f3aa} 
+Float\+Rect {\bfseries get\+Local\+Bounds} ()
+\item 
+\Hypertarget{class_composed_i_m_g_a6f6d046439b0c218142e9ac0018ebd98}\label{class_composed_i_m_g_a6f6d046439b0c218142e9ac0018ebd98} 
+Float\+Rect {\bfseries get\+Global\+Bounds} ()
+\item 
+\Hypertarget{class_composed_i_m_g_a8d8727b7dfe1bfbd61576207cf1b381a}\label{class_composed_i_m_g_a8d8727b7dfe1bfbd61576207cf1b381a} 
+void {\bfseries update} ()
+\item 
+\Hypertarget{class_composed_i_m_g_a2a57f588b4950c786a3360d7f7f2d894}\label{class_composed_i_m_g_a2a57f588b4950c786a3360d7f7f2d894} 
+void {\bfseries render} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_composed_i_m_g_a548c980a17aef3f2deeb4847217e66d1}\label{class_composed_i_m_g_a548c980a17aef3f2deeb4847217e66d1} 
+Sprite {\bfseries filler}
+\item 
+\Hypertarget{class_composed_i_m_g_a30bccdddb1375f9b82f000c7b35b0843}\label{class_composed_i_m_g_a30bccdddb1375f9b82f000c7b35b0843} 
+Sprite {\bfseries corner\+Top\+Left}
+\item 
+\Hypertarget{class_composed_i_m_g_a5abab280ef51bec30916871cedb8541e}\label{class_composed_i_m_g_a5abab280ef51bec30916871cedb8541e} 
+Sprite {\bfseries corner\+Top\+Right}
+\item 
+\Hypertarget{class_composed_i_m_g_a8d36cd39124a3e452a1c5061569201a8}\label{class_composed_i_m_g_a8d36cd39124a3e452a1c5061569201a8} 
+Sprite {\bfseries corner\+Bottom\+Left}
+\item 
+\Hypertarget{class_composed_i_m_g_ae9c77afec78f7656ebd28ce9537c62bb}\label{class_composed_i_m_g_ae9c77afec78f7656ebd28ce9537c62bb} 
+Sprite {\bfseries corner\+Bottom\+Right}
+\item 
+\Hypertarget{class_composed_i_m_g_a30f287ad3e06aa4a382028a4ea903cac}\label{class_composed_i_m_g_a30f287ad3e06aa4a382028a4ea903cac} 
+int {\bfseries origin\+\_\+size}
+\item 
+\Hypertarget{class_composed_i_m_g_ab42e9183bd9f675e5765571d4920c98e}\label{class_composed_i_m_g_ab42e9183bd9f675e5765571d4920c98e} 
+int {\bfseries width}
+\item 
+\Hypertarget{class_composed_i_m_g_ab5cf94ff180dda8d2fbea0315da37d77}\label{class_composed_i_m_g_ab5cf94ff180dda8d2fbea0315da37d77} 
+int {\bfseries height}
+\item 
+\Hypertarget{class_composed_i_m_g_ab6ee4fd19a87563db282d1f01be31205}\label{class_composed_i_m_g_ab6ee4fd19a87563db282d1f01be31205} 
+float {\bfseries scale}
+\item 
+\Hypertarget{class_composed_i_m_g_afadb8693412f39ca421ca105cc129faa}\label{class_composed_i_m_g_afadb8693412f39ca421ca105cc129faa} 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Composed\+IMG.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Composed\+IMG.\+cpp\end{DoxyCompactItemize}

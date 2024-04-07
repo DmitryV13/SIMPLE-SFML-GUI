@@ -1,0 +1,227 @@
+\doxysection{Animated\+Image Class Reference}
+\hypertarget{class_animated_image}{}\label{class_animated_image}\index{AnimatedImage@{AnimatedImage}}
+
+
+{\ttfamily \#include $<$Animated\+Image.\+h$>$}
+
+Inheritance diagram for Animated\+Image\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_animated_image}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_animated_image_a4f973fb1cdef167fbaaf678fe88bda06}{Animated\+Image}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}w\+\_\+object, string name)
+\item 
+\mbox{\hyperlink{class_animated_image_a7c1b323765ca591845eb084cda0a9ed1}{Animated\+Image}} (float width, float height, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}w\+\_\+object, string name)
+\item 
+\mbox{\hyperlink{class_animated_image_aadf3d1f619d1372f5542eb2862c9f45d}{Animated\+Image}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index, string name, Int\+Rect first\+\_\+frame, short frames\+\_\+number\+\_\+)
+\item 
+\mbox{\hyperlink{class_animated_image_a0e4bbf0da072146ced3cd4cad3f950e9}{Animated\+Image}} (float width, float height, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index, string name, Int\+Rect first\+\_\+frame, short frames\+\_\+number\+\_\+)
+\item 
+void \mbox{\hyperlink{class_animated_image_a10445c2059f71ffc781862bc5cf60281}{update}} () override
+\item 
+void \mbox{\hyperlink{class_animated_image_aaee7ef464ab5dfb5d815092809628db3}{render}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_basic_image}{Basic\+Image}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_basic_image_a922d73990d59e7224b31aaee13060761}{Basic\+Image}} (float x, float y)
+\item 
+\mbox{\hyperlink{class_basic_image_a56b99da2f633a487a02b7d881ffd0f27}{Basic\+Image}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}w\+\_\+object, string name)
+\item 
+\mbox{\hyperlink{class_basic_image_a952a34cc45b5039433f55e6554b9ac93}{Basic\+Image}} (float width, float height, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}w\+\_\+object, string name)
+\item 
+\mbox{\hyperlink{class_basic_image_a9d951d1963f2963e2b03565a5b8b8d5a}{Basic\+Image}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index, string name, Int\+Rect frame)
+\item 
+\mbox{\hyperlink{class_basic_image_a2d8b739fa101a498a5accda7f57ce3a0}{Basic\+Image}} (float width, float height, \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index, string name, Int\+Rect frame)
+\item 
+void \mbox{\hyperlink{class_basic_image_aa6ff3efbbd4b591185352ccb138e541c}{add\+Info}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}w\+\_\+object, string name)
+\item 
+void \mbox{\hyperlink{class_basic_image_a8c4fe8f0906d9e714d56ccffeebf6473}{add\+Info}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse_item}{Warehouse\+Item}} \texorpdfstring{$\ast$}{*}w\+\_\+item)
+\item 
+Float\+Rect \mbox{\hyperlink{class_basic_image_adf78708fae18054238b7d80cfb6ed118}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_basic_image_ae45aefa3ab9727ced606421f447efb1e}{get\+Global\+Bounds}} () override
+\item 
+void \mbox{\hyperlink{class_basic_image_af42b75edc13a6ade4d68855c040d08d8}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_basic_image_ac4a56af71e0ff229cc0a825bc5ab053c}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_basic_image_a6a419d676db36238a585f3dc5c67e4c0}{set\+PositionY}} (float y) override
+\item 
+void \mbox{\hyperlink{class_basic_image_acbff740096a44e4e07df2751b80a1b47}{set\+Position}} (float x, float y)
+\item 
+void \mbox{\hyperlink{class_basic_image_a8c5eaf9a2c39bb3d85ecc82a39e5dd86}{set\+Scale}} (float scale\+\_\+)
+\item 
+void \mbox{\hyperlink{class_basic_image_aa0920b41119c51b678916a2746e47364}{set\+BColor}} (Color color)
+\item 
+void \mbox{\hyperlink{class_basic_image_ad4ff7e93156b4d508ee538971b372ae1}{update}} () override
+\item 
+void \mbox{\hyperlink{class_basic_image_a5310fdebc703b6e758e16a7aaa1398ce}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\item 
+virtual bool \mbox{\hyperlink{class_interface_item_a85a6055772471551e54b3e6a8f85eb14}{item\+Scroll}} (float delta)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a829762a6d201271ec326ee52f6c27153}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1}{reset\+Active\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_animated_image_a275afe614c851d9ae2b2da43071a515f}\label{class_animated_image_a275afe614c851d9ae2b2da43071a515f} 
+Int\+Rect {\bfseries current\+\_\+frame}
+\item 
+\Hypertarget{class_animated_image_a90997f51baf981edb7e60f7c41ad5cfd}\label{class_animated_image_a90997f51baf981edb7e60f7c41ad5cfd} 
+short {\bfseries frames\+\_\+number}
+\item 
+\Hypertarget{class_animated_image_af87800a5227c9f253d472c6383e7b8d7}\label{class_animated_image_af87800a5227c9f253d472c6383e7b8d7} 
+Clock {\bfseries animation\+\_\+timer}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_basic_image}{Basic\+Image}}}
+\begin{DoxyCompactItemize}
+\item 
+Rectangle\+Shape {\bfseries shape}
+\item 
+Sprite {\bfseries image}
+\item 
+short {\bfseries scale}
+\item 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Представляет собой анимированную картинку. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_animated_image_a4f973fb1cdef167fbaaf678fe88bda06}\label{class_animated_image_a4f973fb1cdef167fbaaf678fe88bda06} 
+\index{AnimatedImage@{AnimatedImage}!AnimatedImage@{AnimatedImage}}
+\index{AnimatedImage@{AnimatedImage}!AnimatedImage@{AnimatedImage}}
+\doxysubsubsection{\texorpdfstring{AnimatedImage()}{AnimatedImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Animated\+Image\+::\+Animated\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{\mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}}]{w\+\_\+object,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em w\+\_\+object} & обьект склада информации о сущностях. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_animated_image_a7c1b323765ca591845eb084cda0a9ed1}\label{class_animated_image_a7c1b323765ca591845eb084cda0a9ed1} 
+\index{AnimatedImage@{AnimatedImage}!AnimatedImage@{AnimatedImage}}
+\index{AnimatedImage@{AnimatedImage}!AnimatedImage@{AnimatedImage}}
+\doxysubsubsection{\texorpdfstring{AnimatedImage()}{AnimatedImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Animated\+Image\+::\+Animated\+Image (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{\mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}}]{w\+\_\+object,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em w\+\_\+object} & обьект склада информации о сущностях. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+{\em width} & ширина, под которую подстроится текстура. \\
+\hline
+{\em height} & высота, под которую подстроится текстура. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_animated_image_aadf3d1f619d1372f5542eb2862c9f45d}\label{class_animated_image_aadf3d1f619d1372f5542eb2862c9f45d} 
+\index{AnimatedImage@{AnimatedImage}!AnimatedImage@{AnimatedImage}}
+\index{AnimatedImage@{AnimatedImage}!AnimatedImage@{AnimatedImage}}
+\doxysubsubsection{\texorpdfstring{AnimatedImage()}{AnimatedImage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Animated\+Image\+::\+Animated\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{int}]{index,  }\item[{string}]{name,  }\item[{Int\+Rect}]{first\+\_\+frame,  }\item[{short}]{frames\+\_\+number\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em index} & индекс строки содержащей данную текстуру. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+{\em first\+\_\+frame} & координаты и размеры части текстуры, которая будет отображаться первой. \\
+\hline
+{\em frames\+\_\+number\+\_\+} & количество кадров в данной текстуре. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_animated_image_a0e4bbf0da072146ced3cd4cad3f950e9}\label{class_animated_image_a0e4bbf0da072146ced3cd4cad3f950e9} 
+\index{AnimatedImage@{AnimatedImage}!AnimatedImage@{AnimatedImage}}
+\index{AnimatedImage@{AnimatedImage}!AnimatedImage@{AnimatedImage}}
+\doxysubsubsection{\texorpdfstring{AnimatedImage()}{AnimatedImage()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Animated\+Image\+::\+Animated\+Image (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{int}]{index,  }\item[{string}]{name,  }\item[{Int\+Rect}]{first\+\_\+frame,  }\item[{short}]{frames\+\_\+number\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em index} & индекс строки содержащей данную текстуру. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+{\em first\+\_\+frame} & координаты и размеры части текстуры, которая будет отображаться первой. \\
+\hline
+{\em frames\+\_\+number\+\_\+} & количество кадров в данной текстуре. \\
+\hline
+{\em width} & ширина, под которую подстроится текстура. \\
+\hline
+{\em height} & высота, под которую подстроится текстура. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_animated_image_aaee7ef464ab5dfb5d815092809628db3}\label{class_animated_image_aaee7ef464ab5dfb5d815092809628db3} 
+\index{AnimatedImage@{AnimatedImage}!render@{render}}
+\index{render@{render}!AnimatedImage@{AnimatedImage}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Animated\+Image\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Отображает элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_animated_image_a10445c2059f71ffc781862bc5cf60281}\label{class_animated_image_a10445c2059f71ffc781862bc5cf60281} 
+\index{AnimatedImage@{AnimatedImage}!update@{update}}
+\index{update@{update}!AnimatedImage@{AnimatedImage}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Animated\+Image\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Обновляет элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Animated\+Image.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Animated\+Image.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,317 @@
+\doxysection{Slider\+Control Class Reference}
+\hypertarget{class_slider_control}{}\label{class_slider_control}\index{SliderControl@{SliderControl}}
+
+
+{\ttfamily \#include $<$Slider\+Control.\+h$>$}
+
+Inheritance diagram for Slider\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_slider_control}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slider_control_ae03299a2b990a649de269417c89a4459}{Slider\+Control}} (float x, float y, float width\+\_\+, float height\+\_\+, const string \&input\+\_\+label\+\_\+)
+\item 
+Float\+Rect \mbox{\hyperlink{class_slider_control_a81a25aabc0176ea3ed225dfe5a3d3db5}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_slider_control_a10cbcc7a1ed30325a6823abbeff8c6de}{get\+Global\+Bounds}} () override
+\item 
+void \mbox{\hyperlink{class_slider_control_ac453b6eeb1e32aede46f9d14aed307da}{set\+Min\+Max\+Type}} (float min\+\_\+, float max\+\_\+)
+\item 
+void \mbox{\hyperlink{class_slider_control_a78cc34639f17b2d0b5767228bbc790f9}{set\+Value\+Type}} (float \texorpdfstring{$\ast$}{*}value\+\_\+, bool is\+Static\+\_\+)
+\item 
+void \mbox{\hyperlink{class_slider_control_a688cb976fafd70ce5cfa8b5ad1561c09}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_slider_control_a3095b9fb7e2bd1a0eed9b8c3ad6b02b2}{set\+PositionY}} (float y) override
+\item 
+void \mbox{\hyperlink{class_slider_control_aa6797e1fbdddbd82c0bd7c991e7f33a8}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+string \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_slider_control_ae7bdb2949d5839c0c76403ac38c98ecf}{get\+Value}} ()
+\item 
+void \mbox{\hyperlink{class_slider_control_a05769c4f35bfcd62e950db214be06bbd}{scroll\+Slider}} (float mouse\+\_\+pos\+\_\+x)
+\item 
+void \mbox{\hyperlink{class_slider_control_ae2f3fd6030ecc8399389965f08d4ee60}{render}} () override
+\item 
+void \mbox{\hyperlink{class_slider_control_a2a20a2ab82c3dea9872fc8ae14129bb8}{update}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\item 
+virtual bool \mbox{\hyperlink{class_interface_item_a85a6055772471551e54b3e6a8f85eb14}{item\+Scroll}} (float delta)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a829762a6d201271ec326ee52f6c27153}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1}{reset\+Active\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_form_item}{Form\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& \mbox{\hyperlink{class_form_item_acb1243479768ad617559405d3af602d7}{get\+FIType}} ()
+\item 
+short \& \mbox{\hyperlink{class_form_item_a44a6be13fae10dab81d02fad25528c53}{get\+FIState}} ()
+\item 
+short \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_form_item_a97593fc49cce2a7e8a93cdeac6e2f7f0}{get\+FIPState}} ()
+\item 
+void \mbox{\hyperlink{class_form_item_a386a7df5c775d81f2a538e9402d3c411}{set\+FIState}} (short state)
+\item 
+virtual void \mbox{\hyperlink{class_form_item_a1f9563b4c63ca2d9929cc69763d2fc86}{form\+EInput}} (Event event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_slider_control_a54ec91e79570894b4217bbf5a54173a0}\label{class_slider_control_a54ec91e79570894b4217bbf5a54173a0} 
+void {\bfseries change\+Value} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_slider_control_a206fb20f1232cdf9767b2ab7d167195a}\label{class_slider_control_a206fb20f1232cdf9767b2ab7d167195a} 
+Text \texorpdfstring{$\ast$}{*} {\bfseries label}
+\item 
+\Hypertarget{class_slider_control_aa15ba10fabda4b82fed51d8fb3019405}\label{class_slider_control_aa15ba10fabda4b82fed51d8fb3019405} 
+string \texorpdfstring{$\ast$}{*} {\bfseries s\+\_\+value}
+\item 
+\Hypertarget{class_slider_control_ae5e1fcb77eb84986d3cc6840b2d7e72e}\label{class_slider_control_ae5e1fcb77eb84986d3cc6840b2d7e72e} 
+float \texorpdfstring{$\ast$}{*} {\bfseries f\+\_\+value}
+\item 
+\Hypertarget{class_slider_control_a502057857447fc5af3d1ecb603ad7dad}\label{class_slider_control_a502057857447fc5af3d1ecb603ad7dad} 
+bool {\bfseries is\+Static}
+\item 
+\Hypertarget{class_slider_control_aea8ce12282ffc5cb9e1a368157e4851c}\label{class_slider_control_aea8ce12282ffc5cb9e1a368157e4851c} 
+Rectangle\+Shape {\bfseries shape1}
+\item 
+\Hypertarget{class_slider_control_ac1db17d01878cd406d32a38950c654d5}\label{class_slider_control_ac1db17d01878cd406d32a38950c654d5} 
+Rectangle\+Shape {\bfseries scale}
+\item 
+\Hypertarget{class_slider_control_a866f7b693efe04b1b59473a1c70764ba}\label{class_slider_control_a866f7b693efe04b1b59473a1c70764ba} 
+Circle\+Shape {\bfseries slider}
+\item 
+\Hypertarget{class_slider_control_a2110d2afdfb23ef056eb8a37b98dde2e}\label{class_slider_control_a2110d2afdfb23ef056eb8a37b98dde2e} 
+float {\bfseries slider\+\_\+offset\+\_\+x}
+\item 
+\Hypertarget{class_slider_control_a46ecbd03d79c4981db5d6d6714f77a6b}\label{class_slider_control_a46ecbd03d79c4981db5d6d6714f77a6b} 
+float {\bfseries mouse\+\_\+pressed\+\_\+pos\+\_\+x}
+\item 
+\Hypertarget{class_slider_control_a5dc35afe1b6ab6489a52c7ee7c378713}\label{class_slider_control_a5dc35afe1b6ab6489a52c7ee7c378713} 
+bool {\bfseries chosen}
+\item 
+\Hypertarget{class_slider_control_aa2043d7ceabf2ee4c10bdb4cb9ce9004}\label{class_slider_control_aa2043d7ceabf2ee4c10bdb4cb9ce9004} 
+float {\bfseries min}
+\item 
+\Hypertarget{class_slider_control_a449d165b9da466cadc61f8f16143504e}\label{class_slider_control_a449d165b9da466cadc61f8f16143504e} 
+float {\bfseries max}
+\item 
+\Hypertarget{class_slider_control_ab3ee541ea1c96c9ac8590019d90fda81}\label{class_slider_control_ab3ee541ea1c96c9ac8590019d90fda81} 
+float {\bfseries width}
+\item 
+\Hypertarget{class_slider_control_aeeba53e2e531e378b38dc9382c29f93c}\label{class_slider_control_aeeba53e2e531e378b38dc9382c29f93c} 
+float {\bfseries height}
+\item 
+\Hypertarget{class_slider_control_abbc652b01032e16837c8f35c74768a57}\label{class_slider_control_abbc652b01032e16837c8f35c74768a57} 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_form_item}{Form\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries fi\+\_\+state}
+\item 
+short {\bfseries fi\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Элемент интерфейса, элемент формы -\/ slider. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_slider_control_ae03299a2b990a649de269417c89a4459}\label{class_slider_control_ae03299a2b990a649de269417c89a4459} 
+\index{SliderControl@{SliderControl}!SliderControl@{SliderControl}}
+\index{SliderControl@{SliderControl}!SliderControl@{SliderControl}}
+\doxysubsubsection{\texorpdfstring{SliderControl()}{SliderControl()}}
+{\footnotesize\ttfamily Slider\+Control\+::\+Slider\+Control (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width\+\_\+,  }\item[{float}]{height\+\_\+,  }\item[{const string \&}]{input\+\_\+label\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em width\+\_\+} & ширина. \\
+\hline
+{\em height\+\_\+} & высота. \\
+\hline
+{\em input\+\_\+label\+\_\+} & slider имя. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_slider_control_aa6797e1fbdddbd82c0bd7c991e7f33a8}\label{class_slider_control_aa6797e1fbdddbd82c0bd7c991e7f33a8} 
+\index{SliderControl@{SliderControl}!changePosition@{changePosition}}
+\index{changePosition@{changePosition}!SliderControl@{SliderControl}}
+\doxysubsubsection{\texorpdfstring{changePosition()}{changePosition()}}
+{\footnotesize\ttfamily void Slider\+Control\+::change\+Position (\begin{DoxyParamCaption}\item[{float}]{offset\+\_\+x,  }\item[{float}]{offset\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сдвигает группу и ее элементы на заданное смещение.
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset\+\_\+x} & смещение по x. \\
+\hline
+{\em offset\+\_\+y} & смещение по y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_slider_control_a10cbcc7a1ed30325a6823abbeff8c6de}\label{class_slider_control_a10cbcc7a1ed30325a6823abbeff8c6de} 
+\index{SliderControl@{SliderControl}!getGlobalBounds@{getGlobalBounds}}
+\index{getGlobalBounds@{getGlobalBounds}!SliderControl@{SliderControl}}
+\doxysubsubsection{\texorpdfstring{getGlobalBounds()}{getGlobalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Slider\+Control\+::get\+Global\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_slider_control_a81a25aabc0176ea3ed225dfe5a3d3db5}\label{class_slider_control_a81a25aabc0176ea3ed225dfe5a3d3db5} 
+\index{SliderControl@{SliderControl}!getLocalBounds@{getLocalBounds}}
+\index{getLocalBounds@{getLocalBounds}!SliderControl@{SliderControl}}
+\doxysubsubsection{\texorpdfstring{getLocalBounds()}{getLocalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Slider\+Control\+::get\+Local\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_slider_control_ae7bdb2949d5839c0c76403ac38c98ecf}\label{class_slider_control_ae7bdb2949d5839c0c76403ac38c98ecf} 
+\index{SliderControl@{SliderControl}!getValue@{getValue}}
+\index{getValue@{getValue}!SliderControl@{SliderControl}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily string \texorpdfstring{$\ast$}{*} Slider\+Control\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возвращает указатель на значение слайдера, если режим статический, иначе -\/ nullptr. \Hypertarget{class_slider_control_ae2f3fd6030ecc8399389965f08d4ee60}\label{class_slider_control_ae2f3fd6030ecc8399389965f08d4ee60} 
+\index{SliderControl@{SliderControl}!render@{render}}
+\index{render@{render}!SliderControl@{SliderControl}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Slider\+Control\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Отображает элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_slider_control_a05769c4f35bfcd62e950db214be06bbd}\label{class_slider_control_a05769c4f35bfcd62e950db214be06bbd} 
+\index{SliderControl@{SliderControl}!scrollSlider@{scrollSlider}}
+\index{scrollSlider@{scrollSlider}!SliderControl@{SliderControl}}
+\doxysubsubsection{\texorpdfstring{scrollSlider()}{scrollSlider()}}
+{\footnotesize\ttfamily void Slider\+Control\+::scroll\+Slider (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+pos\+\_\+x }\end{DoxyParamCaption})}
+
+Системный метод. \Hypertarget{class_slider_control_ac453b6eeb1e32aede46f9d14aed307da}\label{class_slider_control_ac453b6eeb1e32aede46f9d14aed307da} 
+\index{SliderControl@{SliderControl}!setMinMaxType@{setMinMaxType}}
+\index{setMinMaxType@{setMinMaxType}!SliderControl@{SliderControl}}
+\doxysubsubsection{\texorpdfstring{setMinMaxType()}{setMinMaxType()}}
+{\footnotesize\ttfamily void Slider\+Control\+::set\+Min\+Max\+Type (\begin{DoxyParamCaption}\item[{float}]{min\+\_\+,  }\item[{float}]{max\+\_\+ }\end{DoxyParamCaption})}
+
+Установка минимального и максимального значения слайдера.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+\_\+} & минимальное значение. \\
+\hline
+{\em max\+\_\+} & максимальное значение. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+вызов данного метода обязателен и должен быть выполнен до использования слайдера. 
+\end{DoxyNote}
+\Hypertarget{class_slider_control_a688cb976fafd70ce5cfa8b5ad1561c09}\label{class_slider_control_a688cb976fafd70ce5cfa8b5ad1561c09} 
+\index{SliderControl@{SliderControl}!setPositionX@{setPositionX}}
+\index{setPositionX@{setPositionX}!SliderControl@{SliderControl}}
+\doxysubsubsection{\texorpdfstring{setPositionX()}{setPositionX()}}
+{\footnotesize\ttfamily void Slider\+Control\+::set\+PositionX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату x для группы. Провоцирует изменение положения всех элементов группы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & новая координата x. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_slider_control_a3095b9fb7e2bd1a0eed9b8c3ad6b02b2}\label{class_slider_control_a3095b9fb7e2bd1a0eed9b8c3ad6b02b2} 
+\index{SliderControl@{SliderControl}!setPositionY@{setPositionY}}
+\index{setPositionY@{setPositionY}!SliderControl@{SliderControl}}
+\doxysubsubsection{\texorpdfstring{setPositionY()}{setPositionY()}}
+{\footnotesize\ttfamily void Slider\+Control\+::set\+PositionY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату y для группы. Провоцирует изменение положения всех элементов группы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & новая координата y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_slider_control_a78cc34639f17b2d0b5767228bbc790f9}\label{class_slider_control_a78cc34639f17b2d0b5767228bbc790f9} 
+\index{SliderControl@{SliderControl}!setValueType@{setValueType}}
+\index{setValueType@{setValueType}!SliderControl@{SliderControl}}
+\doxysubsubsection{\texorpdfstring{setValueType()}{setValueType()}}
+{\footnotesize\ttfamily void Slider\+Control\+::set\+Value\+Type (\begin{DoxyParamCaption}\item[{float \texorpdfstring{$\ast$}{*}}]{value\+\_\+,  }\item[{bool}]{is\+Static\+\_\+ }\end{DoxyParamCaption})}
+
+Установка значения слайдера.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value\+\_\+} & значение для динамического изменения ресурса. \\
+\hline
+{\em is\+Static\+\_\+} & устанавливает, будет ли работать слайдер в статическом или динамическом режиме. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+динамический режим используется для изменения какого-\/то значения в программе в реальном времени, статический же режим предполагает, что установленное значение слайдера применится только в случае отправки формы. 
+\end{DoxyNote}
+\Hypertarget{class_slider_control_a2a20a2ab82c3dea9872fc8ae14129bb8}\label{class_slider_control_a2a20a2ab82c3dea9872fc8ae14129bb8} 
+\index{SliderControl@{SliderControl}!update@{update}}
+\index{update@{update}!SliderControl@{SliderControl}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Slider\+Control\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Обновляет элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Slider\+Control.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Slider\+Control.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+\doxysection{Pop\+Up\+Window.\+h}
+\hypertarget{_pop_up_window_8h_source}{}\label{_pop_up_window_8h_source}\index{D:/Applications/SFML\_GUI/PopUpWindow.h@{D:/Applications/SFML\_GUI/PopUpWindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Button.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Reviewer.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}ComposedIMG.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Label.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Group.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}BUTTON\_STATE.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}POP\_UP\_WINDOW\_STATE.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}CallbacksHandler.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}DCallbacksHandler.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pop_up_window}{PopUpWindow}}\{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ manager;}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_composed_i_m_g}{ComposedIMG}}*\ w\_background;}
+\DoxyCodeLine{00019\ \ \ \ \ RectangleShape*\ background;}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_label}{Label}}*\ label;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{short}\ puw\_state;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_callbacks_handler}{CallbacksHandler}}*\ callbacks\_handler;}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_d_callbacks_handler}{DCallbacksHandler}}*\ dcallbacks\_handler;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//inner\ clean\ parameters}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ width;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ height;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ Vector2f\ position;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ vector<vector<Group*>>\ groups;}
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_pop_up_window_abb7d497fb8041c19fec63717f7fa3a28}{PopUpWindow}}(\textcolor{keywordtype}{double}\ screen\_width,\ \textcolor{keywordtype}{double}\ screen\_height,\ \textcolor{keywordtype}{int}\ width\_,\ \textcolor{keywordtype}{int}\ height\_,\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager\_);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_pop_up_window_abb7d497fb8041c19fec63717f7fa3a28}{PopUpWindow}}(\textcolor{keywordtype}{double}\ screen\_width,\ \textcolor{keywordtype}{double}\ screen\_height,\ \textcolor{keywordtype}{int}\ width\_,\ \textcolor{keywordtype}{int}\ height\_,\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ positionX,\ \textcolor{keywordtype}{string}\ positionY,\ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager\_);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_pop_up_window_abb7d497fb8041c19fec63717f7fa3a28}{PopUpWindow}}(\textcolor{keywordtype}{double}\ screen\_width,\ \textcolor{keywordtype}{double}\ screen\_height,\ \textcolor{keywordtype}{int}\ width\_,\ \textcolor{keywordtype}{int}\ height\_,\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ positionX,\ \textcolor{keywordtype}{int}\ y,\ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager\_);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_pop_up_window_abb7d497fb8041c19fec63717f7fa3a28}{PopUpWindow}}(\textcolor{keywordtype}{double}\ screen\_width,\ \textcolor{keywordtype}{double}\ screen\_height,\ \textcolor{keywordtype}{int}\ width\_,\ \textcolor{keywordtype}{int}\ height\_,\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{string}\ positionY,\ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager\_);}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_pop_up_window}{\string~PopUpWindow}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_a2272361e388c7d6aa795358eafb83c69}{setBackground}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_a1f41499432fb2f54d11821aa7e1b9ab2}{setSize}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_aae018877d4efe9fd3411d57ed9d63aab}{setPUWState}}(\textcolor{keywordtype}{float}\ param1,\ \textcolor{keywordtype}{float}\ param2);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{class_pop_up_window_a145374650833505e731f28c08a70975c}{getState}}();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pop_up_window_af5f74c902b42701a023988de1b78f667}{getMaxGroupsHeight}}(\textcolor{keywordtype}{short}\ index);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_a6aea461adfbb0eef58b2bf0a9250d0c6}{createGroupLine}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_ae5af2980a7e1d4bd7ed39bca511cdce2}{addLabel}}(\textcolor{keywordtype}{double}\ screen\_width,\ \textcolor{keywordtype}{double}\ screen\_height,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ label\_text,\ \textcolor{keywordtype}{int}\ text\_size,\ \textcolor{keywordtype}{short}\ offset);}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_a0f9fbdfd8928142a61254782de1738c1}{addGroup}}(\textcolor{keywordtype}{short}\ fill\_p\_w,\ \textcolor{keywordtype}{short}\ fill\_p\_h,\ \textcolor{keywordtype}{short}\ index,\ \textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{int}\ name\_size);\textcolor{comment}{//\ fill\ percentage\ width/height}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_a0f9fbdfd8928142a61254782de1738c1}{addGroup}}(\textcolor{keywordtype}{short}\ fill\_p\_w,\ \textcolor{keywordtype}{short}\ fill\_p\_h,\ \textcolor{keywordtype}{short}\ index);}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_a0f9fbdfd8928142a61254782de1738c1}{addGroup}}(\mbox{\hyperlink{class_group}{Group}}*\ new\_group,\ \textcolor{keywordtype}{short}\ index);}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_a2ce35f803702b3d5563c6fb8c4859405}{addGroupName}}(\textcolor{keywordtype}{int}\ i,\ \textcolor{keywordtype}{int}\ j,\ \textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{int}\ name\_size);}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_a25b5e5b1053f7e94c5b22ec964c00ffd}{addBackground}}(\textcolor{keywordtype}{double}\ map\_width,\ \textcolor{keywordtype}{double}\ map\_height,\ Color\ color);}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_a079b588b4578921bf4b5e430fea95efa}{addDelimiter}}();}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pop_up_window_aa21abc2f45c2ced82382622a1827f7a6}{addCallback}}(\textcolor{keywordtype}{short}*\ b\_state,\ \textcolor{keywordtype}{short}\ a\_state,\ \textcolor{keywordtype}{float}\ param1,\ \textcolor{keywordtype}{float}\ param2,\ \textcolor{keywordtype}{void}(T::*\ l\_func)(\textcolor{keywordtype}{float},\ \textcolor{keywordtype}{float}),\ T*\ l\_instance);}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pop_up_window_a1ae5f59837b6a6e8877bcc92ba45f7c6}{addDCallback}}(\textcolor{keywordtype}{short}*\ b\_state,\ \textcolor{keywordtype}{short}\ a\_state,\ \textcolor{keywordtype}{string}*\ param1,\ \textcolor{keywordtype}{string}*\ param2,\ \textcolor{keywordtype}{void}(T::*\ l\_func)(\textcolor{keywordtype}{string}*,\ \textcolor{keywordtype}{string}*),\ T*\ l\_instance);}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00188\ \ \ \ \ \mbox{\hyperlink{class_c_rect}{CRect<float>}}*\ \mbox{\hyperlink{class_pop_up_window_a79a9b48ad83c56b2c711e7d6c39364dc}{calculatePFNG}}(\textcolor{keywordtype}{short}\ fill\_p\_w,\ \textcolor{keywordtype}{short}\ fill\_p\_h,\ \textcolor{keywordtype}{short}\ index);\textcolor{comment}{//parameters\ for\ new\ group}}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00192\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_a78ff0624c8ad348aea8c5c002460e9c7}{formInput}}(Event\ event);}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00196\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_a44026b0c499e598f7e592a6813e06935}{itemScroll}}(\textcolor{keywordtype}{float}\ delta);}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_ab2c358c7dd8886327dbd7ea38f0c29cb}{update}}();}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_a56205ff3829bf272024fba1ca67c54fc}{updateEvent}}(Event*\ event);}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00210\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pop_up_window_a0d771c6bfab10a7fb2916220587ad540}{render}}();}
+\DoxyCodeLine{00211\ \};}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00214\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pop_up_window_aa21abc2f45c2ced82382622a1827f7a6}{PopUpWindow::addCallback}}(\textcolor{keywordtype}{short}*\ b\_state,\ \textcolor{keywordtype}{short}\ a\_state,\ \textcolor{keywordtype}{float}\ param1,\ \textcolor{keywordtype}{float}\ param2,\ \textcolor{keywordtype}{void}(T::*\ l\_func)(float,\ float),\ T*\ l\_instance)\{}
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keywordflow}{return}\ callbacks\_handler-\/>\mbox{\hyperlink{class_callbacks_handler_aa463b966f994a4c09551159ed7fbbd77}{addCallback}}(b\_state,\ a\_state,\ param1,\ param2,\ l\_func,\ l\_instance);}
+\DoxyCodeLine{00216\ \}}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00219\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pop_up_window_a1ae5f59837b6a6e8877bcc92ba45f7c6}{PopUpWindow::addDCallback}}(\textcolor{keywordtype}{short}*\ b\_state,\ \textcolor{keywordtype}{short}\ a\_state,\ \textcolor{keywordtype}{string}*\ param1,\ \textcolor{keywordtype}{string}*\ param2,\ \textcolor{keywordtype}{void}(T::*\ l\_func)(string*,\ string*),\ T*\ l\_instance)\ \{}
+\DoxyCodeLine{00220\ \ \ \ \ \textcolor{keywordflow}{return}\ dcallbacks\_handler-\/>\mbox{\hyperlink{class_d_callbacks_handler_acdd6d9c1cb609bad7297dbfd5c7ee434}{addCallback}}(b\_state,\ a\_state,\ param1,\ param2,\ l\_func,\ l\_instance);}
+\DoxyCodeLine{00221\ \}}
+
+\end{DoxyCode}

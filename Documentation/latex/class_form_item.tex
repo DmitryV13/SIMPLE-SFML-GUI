@@ -1,0 +1,87 @@
+\doxysection{Form\+Item Class Reference}
+\hypertarget{class_form_item}{}\label{class_form_item}\index{FormItem@{FormItem}}
+
+
+{\ttfamily \#include $<$Form\+Item.\+h$>$}
+
+Inheritance diagram for Form\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_form_item}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+short \& \mbox{\hyperlink{class_form_item_acb1243479768ad617559405d3af602d7}{get\+FIType}} ()
+\item 
+short \& \mbox{\hyperlink{class_form_item_a44a6be13fae10dab81d02fad25528c53}{get\+FIState}} ()
+\item 
+short \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_form_item_a97593fc49cce2a7e8a93cdeac6e2f7f0}{get\+FIPState}} ()
+\item 
+void \mbox{\hyperlink{class_form_item_a386a7df5c775d81f2a538e9402d3c411}{set\+FIState}} (short state)
+\item 
+virtual void \mbox{\hyperlink{class_form_item_a1f9563b4c63ca2d9929cc69763d2fc86}{form\+EInput}} (Event event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_form_item_a88dcf1adbc47f9ae464773151d8e715f}\label{class_form_item_a88dcf1adbc47f9ae464773151d8e715f} 
+short {\bfseries fi\+\_\+state}
+\item 
+\Hypertarget{class_form_item_a3b1bcadb950b5541c0096940f4664d5d}\label{class_form_item_a3b1bcadb950b5541c0096940f4664d5d} 
+short {\bfseries fi\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Базовый класс, от которго наследуются все элементы формы. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_form_item_a1f9563b4c63ca2d9929cc69763d2fc86}\label{class_form_item_a1f9563b4c63ca2d9929cc69763d2fc86} 
+\index{FormItem@{FormItem}!formEInput@{formEInput}}
+\index{formEInput@{formEInput}!FormItem@{FormItem}}
+\doxysubsubsection{\texorpdfstring{formEInput()}{formEInput()}}
+{\footnotesize\ttfamily void Form\+Item\+::form\+EInput (\begin{DoxyParamCaption}\item[{Event}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Системный метод. 
+
+Reimplemented in \mbox{\hyperlink{class_input_field_add7ec31333b103b5f27b0ad58d6dfc8b}{Input\+Field}}.
+
+\Hypertarget{class_form_item_a97593fc49cce2a7e8a93cdeac6e2f7f0}\label{class_form_item_a97593fc49cce2a7e8a93cdeac6e2f7f0} 
+\index{FormItem@{FormItem}!getFIPState@{getFIPState}}
+\index{getFIPState@{getFIPState}!FormItem@{FormItem}}
+\doxysubsubsection{\texorpdfstring{getFIPState()}{getFIPState()}}
+{\footnotesize\ttfamily short \texorpdfstring{$\ast$}{*} Form\+Item\+::get\+FIPState (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возвращает указатель на состояние элемента формы. \Hypertarget{class_form_item_a44a6be13fae10dab81d02fad25528c53}\label{class_form_item_a44a6be13fae10dab81d02fad25528c53} 
+\index{FormItem@{FormItem}!getFIState@{getFIState}}
+\index{getFIState@{getFIState}!FormItem@{FormItem}}
+\doxysubsubsection{\texorpdfstring{getFIState()}{getFIState()}}
+{\footnotesize\ttfamily short \& Form\+Item\+::get\+FIState (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возвращает состояние элемента формы. \Hypertarget{class_form_item_acb1243479768ad617559405d3af602d7}\label{class_form_item_acb1243479768ad617559405d3af602d7} 
+\index{FormItem@{FormItem}!getFIType@{getFIType}}
+\index{getFIType@{getFIType}!FormItem@{FormItem}}
+\doxysubsubsection{\texorpdfstring{getFIType()}{getFIType()}}
+{\footnotesize\ttfamily short \& Form\+Item\+::get\+FIType (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возвращает тип элемента формы. \Hypertarget{class_form_item_a386a7df5c775d81f2a538e9402d3c411}\label{class_form_item_a386a7df5c775d81f2a538e9402d3c411} 
+\index{FormItem@{FormItem}!setFIState@{setFIState}}
+\index{setFIState@{setFIState}!FormItem@{FormItem}}
+\doxysubsubsection{\texorpdfstring{setFIState()}{setFIState()}}
+{\footnotesize\ttfamily void Form\+Item\+::set\+FIState (\begin{DoxyParamCaption}\item[{short}]{state }\end{DoxyParamCaption})}
+
+Устанавливает состояние элемента формы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & новое состояние. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Form\+Item.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Form\+Item.\+cpp\end{DoxyCompactItemize}

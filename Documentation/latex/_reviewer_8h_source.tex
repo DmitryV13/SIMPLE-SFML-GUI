@@ -1,0 +1,51 @@
+\doxysection{Reviewer.\+h}
+\hypertarget{_reviewer_8h_source}{}\label{_reviewer_8h_source}\index{D:/Applications/SFML\_GUI/Reviewer.h@{D:/Applications/SFML\_GUI/Reviewer.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}AnimatedImage.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}InterfaceItem.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}INTERFACE\_ITEM\_TYPE.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ }namespace::sf;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_reviewer}{Reviewer}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_interface_item}{InterfaceItem}}\{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{short}\ current\_image;}
+\DoxyCodeLine{00014\ \ \ \ \ vector<BasicImage*>\ images;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{float}\ scale;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{float}\ max\_width;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{float}\ max\_height;}
+\DoxyCodeLine{00018\ \ \ \ \ Vector2f\ position;}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_reviewer_a89e7513900a6482eb5f03c8b4f34a253}{Reviewer}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ width\_,\ \textcolor{keywordtype}{float}\ height\_);}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_reviewer}{\string~Reviewer}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ FloatRect\ getLocalBounds()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ \ \ \ \ FloatRect\ getGlobalBounds()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_reviewer_a36b0655707e49c056892a415352b1fca}{addAnimatedImage}}(\mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \textcolor{keywordtype}{int}\ index,\ \textcolor{keywordtype}{string}\ name,\ IntRect\ first\_frame,\ \textcolor{keywordtype}{short}\ frames\_number\_);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_reviewer_a36b0655707e49c056892a415352b1fca}{addAnimatedImage}}(\mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \mbox{\hyperlink{class_warehouse}{Warehouse}}*\ w\_object,\ \textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_reviewer_ae6664e114c33c5d42b2823518994bf17}{addStaticImage}}(\mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \textcolor{keywordtype}{int}\ index,\ \textcolor{keywordtype}{string}\ name,\ IntRect\ first\_frame);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_reviewer_ae6664e114c33c5d42b2823518994bf17}{addStaticImage}}(\mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \mbox{\hyperlink{class_warehouse}{Warehouse}}*\ w\_object,\ \textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_reviewer_a174fe9eb314de846ad84430d9dba5f20}{setPosition}}(Vector2f\ position\_);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_reviewer_ac69665a9c5fd8a45af259ba019ad5598}{setPositionX}}(\textcolor{keywordtype}{float}\ x)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_reviewer_a3d127470f6b3b684413ca32789d43387}{setPositionY}}(\textcolor{keywordtype}{float}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_reviewer_a30d32500912011e74fc75219ccb51f3b}{changePosition}}(\textcolor{keywordtype}{float}\ offset\_x,\ \textcolor{keywordtype}{float}\ offset\_y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_reviewer_ad4697f6073568bee507242ec5b95f276}{changeCurrentImage}}(\textcolor{keywordtype}{float}\ next,\ \textcolor{keywordtype}{float}\ param2);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_reviewer_a71901d7ec38644555bbca19766a4340f}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_reviewer_a8cedc9a02c3016f7878dca341247e49f}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00107\ \};}
+\DoxyCodeLine{00108\ }
+
+\end{DoxyCode}

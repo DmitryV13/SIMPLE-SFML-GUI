@@ -1,0 +1,203 @@
+\doxysection{Textarea\+Field Class Reference}
+\hypertarget{class_textarea_field}{}\label{class_textarea_field}\index{TextareaField@{TextareaField}}
+
+
+{\ttfamily \#include $<$Textarea\+Field.\+h$>$}
+
+Inheritance diagram for Textarea\+Field\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_textarea_field}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_textarea_field_a73725bb5f23082f698010127234ff608}{Textarea\+Field}} (float x, float y, float width\+\_\+, float height\+\_\+, const string \&input\+\_\+label\+\_\+, int text\+\_\+size\+\_\+, Color text\+\_\+color\+\_\+, bool has\+\_\+limit\+\_\+, int limit\+\_\+)
+\item 
+\mbox{\hyperlink{class_textarea_field_ad7881bdf722db5e86cf36ef4783269b2}{Textarea\+Field}} (float x, float y, float width\+\_\+, float height\+\_\+, const string \&input\+\_\+label\+\_\+, int text\+\_\+size\+\_\+, bool has\+\_\+limit\+\_\+, int limit\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_input_field}{Input\+Field}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_input_field_a014daa0a909cff2e161c428cb6d51016}{Input\+Field}} (float x, float y, float width\+\_\+, float height\+\_\+, const string \&input\+\_\+label\+\_\+, int text\+\_\+size\+\_\+, bool has\+\_\+limit\+\_\+, int limit\+\_\+)
+\item 
+Float\+Rect \mbox{\hyperlink{class_input_field_ab17ffca6a27e80339a545b93c0fcfe6a}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_input_field_a92366d94a4633c12a559ca3851f70a3e}{get\+Global\+Bounds}} () override
+\item 
+string \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_input_field_adf7bc91db9f081a1fdeddd48277a625b}{get\+String}} ()
+\item 
+void \mbox{\hyperlink{class_input_field_aad23710719b2553e8d8f1f25a1a4bddc}{set\+Visibility}} (bool vis)
+\item 
+void \mbox{\hyperlink{class_input_field_a90ad7a0a92dfa0a685b8a0b69cbb9436}{set\+Overflow}} (short overflow)
+\item 
+void \mbox{\hyperlink{class_input_field_adace9cbb91ae356a57689447e62153a0}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_input_field_a507c97d929a89d63fa1bc2403e36220d}{set\+PositionY}} (float y) override
+\item 
+void \mbox{\hyperlink{class_input_field_ac1624d35bc884d5276b792514996e3fb}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_input_field_ac0a1c4ae3be0722bc9ff357b82ffc57c}{change\+Visibility}} (float param1, float param2)
+\item 
+bool \mbox{\hyperlink{class_input_field_af9d4af585f0adab2edfb2f5f19c05878}{item\+Scroll}} (float delta) override
+\item 
+void \mbox{\hyperlink{class_input_field_add7ec31333b103b5f27b0ad58d6dfc8b}{form\+EInput}} (Event event) override
+\item 
+void \mbox{\hyperlink{class_input_field_aabc4beee4b33aae3aed0f5afe8b92672}{update}} () override
+\item 
+void \mbox{\hyperlink{class_input_field_a58842f5ea5c8b2f4c70dfe510d717890}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a829762a6d201271ec326ee52f6c27153}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1}{reset\+Active\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_form_item}{Form\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& \mbox{\hyperlink{class_form_item_acb1243479768ad617559405d3af602d7}{get\+FIType}} ()
+\item 
+short \& \mbox{\hyperlink{class_form_item_a44a6be13fae10dab81d02fad25528c53}{get\+FIState}} ()
+\item 
+short \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_form_item_a97593fc49cce2a7e8a93cdeac6e2f7f0}{get\+FIPState}} ()
+\item 
+void \mbox{\hyperlink{class_form_item_a386a7df5c775d81f2a538e9402d3c411}{set\+FIState}} (short state)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_input_field}{Input\+Field}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_input_field_a8ab929ea802afb0c9b4ed2cd101b88b4}{input\+Logic}} (int typed\+\_\+char)
+\item 
+void \mbox{\hyperlink{class_input_field_a92bf773923f1bcf4b1a38d2ddf7b0904}{delet\+Last\+Char}} ()
+\item 
+\mbox{\hyperlink{class_input_field_a4810d58236f1e393302eebac1b3edd17}{Input\+Field}} (float x, float y, float width\+\_\+, float height\+\_\+, const string \&input\+\_\+label\+\_\+, int text\+\_\+size\+\_\+, Color text\+\_\+color\+\_\+, bool has\+\_\+limit\+\_\+, int limit\+\_\+, bool multiline)
+\item 
+\mbox{\hyperlink{class_input_field_aeaee881c3ff58a6bf5f63c0aa9305658}{Input\+Field}} (float x, float y, float width\+\_\+, float height\+\_\+, const string \&input\+\_\+label\+\_\+, int text\+\_\+size\+\_\+)
+\item 
+\mbox{\hyperlink{class_input_field_a5c74fb1e7ed13d10341a6ec86392fa4c}{Input\+Field}} (float x, float y, float width\+\_\+, float height\+\_\+, const string \&input\+\_\+label\+\_\+, int text\+\_\+size\+\_\+, Color text\+\_\+color\+\_\+, bool has\+\_\+limit\+\_\+, int limit\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_input_field}{Input\+Field}}}
+\begin{DoxyCompactItemize}
+\item 
+Text \texorpdfstring{$\ast$}{*} {\bfseries label}
+\item 
+\mbox{\hyperlink{class_textarea}{Textarea}} \texorpdfstring{$\ast$}{*} {\bfseries textarea}
+\item 
+std\+::ostringstream {\bfseries input\+\_\+stream}
+\item 
+int {\bfseries text\+\_\+size}
+\item 
+Color {\bfseries text\+\_\+color}
+\item 
+bool {\bfseries chosen}
+\item 
+bool {\bfseries unpressed}
+\item 
+Rectangle\+Shape {\bfseries shape1}
+\item 
+bool {\bfseries has\+\_\+limit}
+\item 
+bool {\bfseries overflow\+\_\+x}
+\item 
+int {\bfseries limit}
+\item 
+float {\bfseries width}
+\item 
+float {\bfseries height}
+\item 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_form_item}{Form\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries fi\+\_\+state}
+\item 
+short {\bfseries fi\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Элемент интерфейса, элемент формы -\/ многострочное поле ввода. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_textarea_field_a73725bb5f23082f698010127234ff608}\label{class_textarea_field_a73725bb5f23082f698010127234ff608} 
+\index{TextareaField@{TextareaField}!TextareaField@{TextareaField}}
+\index{TextareaField@{TextareaField}!TextareaField@{TextareaField}}
+\doxysubsubsection{\texorpdfstring{TextareaField()}{TextareaField()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Textarea\+Field\+::\+Textarea\+Field (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width\+\_\+,  }\item[{float}]{height\+\_\+,  }\item[{const string \&}]{input\+\_\+label\+\_\+,  }\item[{int}]{text\+\_\+size\+\_\+,  }\item[{Color}]{text\+\_\+color\+\_\+,  }\item[{bool}]{has\+\_\+limit\+\_\+,  }\item[{int}]{limit\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em width\+\_\+} & ширина. \\
+\hline
+{\em height\+\_\+} & высота. \\
+\hline
+{\em input\+\_\+label\+\_\+} & имя поля ввода. \\
+\hline
+{\em text\+\_\+size\+\_\+} & размер шрифта. \\
+\hline
+{\em text\+\_\+color\+\_\+} & цвет текста ввода (по умолчанию цвет текста черный). \\
+\hline
+{\em has\+\_\+limit\+\_\+} & устанавливает/снмает ограничение по введенным символам. \\
+\hline
+{\em limit\+\_\+} & максимальное количество символов. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_textarea_field_ad7881bdf722db5e86cf36ef4783269b2}\label{class_textarea_field_ad7881bdf722db5e86cf36ef4783269b2} 
+\index{TextareaField@{TextareaField}!TextareaField@{TextareaField}}
+\index{TextareaField@{TextareaField}!TextareaField@{TextareaField}}
+\doxysubsubsection{\texorpdfstring{TextareaField()}{TextareaField()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Textarea\+Field\+::\+Textarea\+Field (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width\+\_\+,  }\item[{float}]{height\+\_\+,  }\item[{const string \&}]{input\+\_\+label\+\_\+,  }\item[{int}]{text\+\_\+size\+\_\+,  }\item[{bool}]{has\+\_\+limit\+\_\+,  }\item[{int}]{limit\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em width\+\_\+} & ширина. \\
+\hline
+{\em height\+\_\+} & высота. \\
+\hline
+{\em input\+\_\+label\+\_\+} & имя поля ввода. \\
+\hline
+{\em text\+\_\+size\+\_\+} & размер шрифта. \\
+\hline
+{\em has\+\_\+limit\+\_\+} & устанавливает/снмает ограничение по введенным символам. \\
+\hline
+{\em limit\+\_\+} & максимальное количество символов. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Textarea\+Field.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Textarea\+Field.\+cpp\end{DoxyCompactItemize}

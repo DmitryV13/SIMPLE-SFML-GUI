@@ -1,0 +1,320 @@
+\doxysection{Reviewer Class Reference}
+\hypertarget{class_reviewer}{}\label{class_reviewer}\index{Reviewer@{Reviewer}}
+
+
+{\ttfamily \#include $<$Reviewer.\+h$>$}
+
+Inheritance diagram for Reviewer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_reviewer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_reviewer_a89e7513900a6482eb5f03c8b4f34a253}{Reviewer}} (float x, float y, float width\+\_\+, float height\+\_\+)
+\item 
+Float\+Rect \mbox{\hyperlink{class_reviewer_a8da1ecbe8089ee053d22baa32750b974}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_reviewer_a193cfd0addebbad12d184830f03e64f3}{get\+Global\+Bounds}} () override
+\item 
+void \mbox{\hyperlink{class_reviewer_a36b0655707e49c056892a415352b1fca}{add\+Animated\+Image}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index, string name, Int\+Rect first\+\_\+frame, short frames\+\_\+number\+\_\+)
+\item 
+void \mbox{\hyperlink{class_reviewer_a4d3cd08a8aaee7563959394d4f4eb9fc}{add\+Animated\+Image}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}w\+\_\+object, string name)
+\item 
+void \mbox{\hyperlink{class_reviewer_ae6664e114c33c5d42b2823518994bf17}{add\+Static\+Image}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, int index, string name, Int\+Rect first\+\_\+frame)
+\item 
+void \mbox{\hyperlink{class_reviewer_a6dea06982522d71aecd779c7085cee97}{add\+Static\+Image}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}w\+\_\+object, string name)
+\item 
+void \mbox{\hyperlink{class_reviewer_a174fe9eb314de846ad84430d9dba5f20}{set\+Position}} (Vector2f position\+\_\+)
+\item 
+void \mbox{\hyperlink{class_reviewer_ac69665a9c5fd8a45af259ba019ad5598}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_reviewer_a3d127470f6b3b684413ca32789d43387}{set\+PositionY}} (float y) override
+\item 
+void \mbox{\hyperlink{class_reviewer_a30d32500912011e74fc75219ccb51f3b}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_reviewer_ad4697f6073568bee507242ec5b95f276}{change\+Current\+Image}} (float next, float param2)
+\item 
+void \mbox{\hyperlink{class_reviewer_a71901d7ec38644555bbca19766a4340f}{update}} () override
+\item 
+void \mbox{\hyperlink{class_reviewer_a8cedc9a02c3016f7878dca341247e49f}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\item 
+virtual bool \mbox{\hyperlink{class_interface_item_a85a6055772471551e54b3e6a8f85eb14}{item\+Scroll}} (float delta)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a829762a6d201271ec326ee52f6c27153}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1}{reset\+Active\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_reviewer_a3fc56d4df0153cca4436ee3591daf624}\label{class_reviewer_a3fc56d4df0153cca4436ee3591daf624} 
+short {\bfseries current\+\_\+image}
+\item 
+\Hypertarget{class_reviewer_a3cb1bfb99ee676b66d23ca1cc306ccdb}\label{class_reviewer_a3cb1bfb99ee676b66d23ca1cc306ccdb} 
+vector$<$ \mbox{\hyperlink{class_basic_image}{Basic\+Image}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries images}
+\item 
+\Hypertarget{class_reviewer_a709b1ee861822fa5bf2ed4b42ac11b5c}\label{class_reviewer_a709b1ee861822fa5bf2ed4b42ac11b5c} 
+float {\bfseries scale}
+\item 
+\Hypertarget{class_reviewer_a60a664e4595e9ad77560326bf8f538c3}\label{class_reviewer_a60a664e4595e9ad77560326bf8f538c3} 
+float {\bfseries max\+\_\+width}
+\item 
+\Hypertarget{class_reviewer_a3ee2dbb6afd61b71193fad0dc12ee69c}\label{class_reviewer_a3ee2dbb6afd61b71193fad0dc12ee69c} 
+float {\bfseries max\+\_\+height}
+\item 
+\Hypertarget{class_reviewer_a684fc5bdf3f21ffa43a7aa3085089dae}\label{class_reviewer_a684fc5bdf3f21ffa43a7aa3085089dae} 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Представляет галерею картинок. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_reviewer_a89e7513900a6482eb5f03c8b4f34a253}\label{class_reviewer_a89e7513900a6482eb5f03c8b4f34a253} 
+\index{Reviewer@{Reviewer}!Reviewer@{Reviewer}}
+\index{Reviewer@{Reviewer}!Reviewer@{Reviewer}}
+\doxysubsubsection{\texorpdfstring{Reviewer()}{Reviewer()}}
+{\footnotesize\ttfamily Reviewer\+::\+Reviewer (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width\+\_\+,  }\item[{float}]{height\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em width\+\_\+} & ширина. \\
+\hline
+{\em height\+\_\+} & высота. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_reviewer_a36b0655707e49c056892a415352b1fca}\label{class_reviewer_a36b0655707e49c056892a415352b1fca} 
+\index{Reviewer@{Reviewer}!addAnimatedImage@{addAnimatedImage}}
+\index{addAnimatedImage@{addAnimatedImage}!Reviewer@{Reviewer}}
+\doxysubsubsection{\texorpdfstring{addAnimatedImage()}{addAnimatedImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Reviewer\+::add\+Animated\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{int}]{index,  }\item[{string}]{name,  }\item[{Int\+Rect}]{first\+\_\+frame,  }\item[{short}]{frames\+\_\+number\+\_\+ }\end{DoxyParamCaption})}
+
+Добавление в галлерею анимированной картинки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em index} & индекс строки содержащей данную текстуру. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+{\em first\+\_\+frame} & координаты и размеры части текстуры, которая будет отображаться первой. \\
+\hline
+{\em frames\+\_\+number\+\_\+} & количество кадров в данной текстуре. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_reviewer_a4d3cd08a8aaee7563959394d4f4eb9fc}\label{class_reviewer_a4d3cd08a8aaee7563959394d4f4eb9fc} 
+\index{Reviewer@{Reviewer}!addAnimatedImage@{addAnimatedImage}}
+\index{addAnimatedImage@{addAnimatedImage}!Reviewer@{Reviewer}}
+\doxysubsubsection{\texorpdfstring{addAnimatedImage()}{addAnimatedImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Reviewer\+::add\+Animated\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{\mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}}]{w\+\_\+object,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+Добавление в галлерею анимированной картинки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em w\+\_\+object} & обьект склада информации о сущностях. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_reviewer_ae6664e114c33c5d42b2823518994bf17}\label{class_reviewer_ae6664e114c33c5d42b2823518994bf17} 
+\index{Reviewer@{Reviewer}!addStaticImage@{addStaticImage}}
+\index{addStaticImage@{addStaticImage}!Reviewer@{Reviewer}}
+\doxysubsubsection{\texorpdfstring{addStaticImage()}{addStaticImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Reviewer\+::add\+Static\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{int}]{index,  }\item[{string}]{name,  }\item[{Int\+Rect}]{first\+\_\+frame }\end{DoxyParamCaption})}
+
+Добавление в галлерею неанимированной картинки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em index} & индекс строки содержащей данную текстуру. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+{\em first\+\_\+frame} & координаты и размеры части текстуры, которая будет отображаться первой. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_reviewer_a6dea06982522d71aecd779c7085cee97}\label{class_reviewer_a6dea06982522d71aecd779c7085cee97} 
+\index{Reviewer@{Reviewer}!addStaticImage@{addStaticImage}}
+\index{addStaticImage@{addStaticImage}!Reviewer@{Reviewer}}
+\doxysubsubsection{\texorpdfstring{addStaticImage()}{addStaticImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Reviewer\+::add\+Static\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}}]{t\+\_\+manager,  }\item[{\mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}}]{w\+\_\+object,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+Добавление в галлерею неанимированной картинки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+manager} & менеджер текстур. \\
+\hline
+{\em w\+\_\+object} & обьект склада информации о сущностях. \\
+\hline
+{\em name} & название текстуры, сохраненной в менеджере текстур. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_reviewer_ad4697f6073568bee507242ec5b95f276}\label{class_reviewer_ad4697f6073568bee507242ec5b95f276} 
+\index{Reviewer@{Reviewer}!changeCurrentImage@{changeCurrentImage}}
+\index{changeCurrentImage@{changeCurrentImage}!Reviewer@{Reviewer}}
+\doxysubsubsection{\texorpdfstring{changeCurrentImage()}{changeCurrentImage()}}
+{\footnotesize\ttfamily void Reviewer\+::change\+Current\+Image (\begin{DoxyParamCaption}\item[{float}]{next,  }\item[{float}]{param2 }\end{DoxyParamCaption})}
+
+Изменяет картинку, которая отображается в данный момент.
+
+
+\begin{DoxyParams}{Parameters}
+{\em next} & отвечает за то, какая картинка после текущей по счету будет отображаться. \\
+\hline
+{\em param2} & параметр заглушка (не используется). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_reviewer_a30d32500912011e74fc75219ccb51f3b}\label{class_reviewer_a30d32500912011e74fc75219ccb51f3b} 
+\index{Reviewer@{Reviewer}!changePosition@{changePosition}}
+\index{changePosition@{changePosition}!Reviewer@{Reviewer}}
+\doxysubsubsection{\texorpdfstring{changePosition()}{changePosition()}}
+{\footnotesize\ttfamily void Reviewer\+::change\+Position (\begin{DoxyParamCaption}\item[{float}]{offset\+\_\+x,  }\item[{float}]{offset\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сдвигает группу и ее элементы на заданное смещение.
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset\+\_\+x} & смещение по x. \\
+\hline
+{\em offset\+\_\+y} & смещение по y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_reviewer_a193cfd0addebbad12d184830f03e64f3}\label{class_reviewer_a193cfd0addebbad12d184830f03e64f3} 
+\index{Reviewer@{Reviewer}!getGlobalBounds@{getGlobalBounds}}
+\index{getGlobalBounds@{getGlobalBounds}!Reviewer@{Reviewer}}
+\doxysubsubsection{\texorpdfstring{getGlobalBounds()}{getGlobalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Reviewer\+::get\+Global\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_reviewer_a8da1ecbe8089ee053d22baa32750b974}\label{class_reviewer_a8da1ecbe8089ee053d22baa32750b974} 
+\index{Reviewer@{Reviewer}!getLocalBounds@{getLocalBounds}}
+\index{getLocalBounds@{getLocalBounds}!Reviewer@{Reviewer}}
+\doxysubsubsection{\texorpdfstring{getLocalBounds()}{getLocalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Reviewer\+::get\+Local\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_reviewer_a8cedc9a02c3016f7878dca341247e49f}\label{class_reviewer_a8cedc9a02c3016f7878dca341247e49f} 
+\index{Reviewer@{Reviewer}!render@{render}}
+\index{render@{render}!Reviewer@{Reviewer}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Reviewer\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Отображает элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_reviewer_a174fe9eb314de846ad84430d9dba5f20}\label{class_reviewer_a174fe9eb314de846ad84430d9dba5f20} 
+\index{Reviewer@{Reviewer}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Reviewer@{Reviewer}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Reviewer\+::set\+Position (\begin{DoxyParamCaption}\item[{Vector2f}]{position\+\_\+ }\end{DoxyParamCaption})}
+
+Устанавливает новую позицию.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position\+\_\+} & координаты новой позиции. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_reviewer_ac69665a9c5fd8a45af259ba019ad5598}\label{class_reviewer_ac69665a9c5fd8a45af259ba019ad5598} 
+\index{Reviewer@{Reviewer}!setPositionX@{setPositionX}}
+\index{setPositionX@{setPositionX}!Reviewer@{Reviewer}}
+\doxysubsubsection{\texorpdfstring{setPositionX()}{setPositionX()}}
+{\footnotesize\ttfamily void Reviewer\+::set\+PositionX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату x для группы. Провоцирует изменение положения всех элементов группы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & новая координата x. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_reviewer_a3d127470f6b3b684413ca32789d43387}\label{class_reviewer_a3d127470f6b3b684413ca32789d43387} 
+\index{Reviewer@{Reviewer}!setPositionY@{setPositionY}}
+\index{setPositionY@{setPositionY}!Reviewer@{Reviewer}}
+\doxysubsubsection{\texorpdfstring{setPositionY()}{setPositionY()}}
+{\footnotesize\ttfamily void Reviewer\+::set\+PositionY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату y для группы. Провоцирует изменение положения всех элементов группы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & новая координата y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_reviewer_a71901d7ec38644555bbca19766a4340f}\label{class_reviewer_a71901d7ec38644555bbca19766a4340f} 
+\index{Reviewer@{Reviewer}!update@{update}}
+\index{update@{update}!Reviewer@{Reviewer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Reviewer\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Обновляет элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Reviewer.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Reviewer.\+cpp\end{DoxyCompactItemize}

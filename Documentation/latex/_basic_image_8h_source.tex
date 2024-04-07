@@ -1,0 +1,57 @@
+\doxysection{Basic\+Image.\+h}
+\hypertarget{_basic_image_8h_source}{}\label{_basic_image_8h_source}\index{D:/Applications/SFML\_GUI/BasicImage.h@{D:/Applications/SFML\_GUI/BasicImage.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}InterfaceItem.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}TextureManager.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Warehouse.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ }namespace::sf;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_basic_image}{BasicImage}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_interface_item}{InterfaceItem}}\{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00013\ \ \ \ \ RectangleShape\ shape;}
+\DoxyCodeLine{00014\ \ \ \ \ Sprite\ image;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{short}\ scale;}
+\DoxyCodeLine{00016\ \ \ \ \ Vector2f\ position;}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_basic_image}{BasicImage}}();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_basic_image}{BasicImage}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_basic_image}{BasicImage}}(\mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \mbox{\hyperlink{class_warehouse}{Warehouse}}*\ w\_object,\ \textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_basic_image}{BasicImage}}(\textcolor{keywordtype}{float}\ width,\ \textcolor{keywordtype}{float}\ height,\ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \mbox{\hyperlink{class_warehouse}{Warehouse}}*\ w\_object,\ \textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_basic_image}{BasicImage}}(\mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \textcolor{keywordtype}{int}\ index,\ \textcolor{keywordtype}{string}\ name,\ IntRect\ frame);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{class_basic_image}{BasicImage}}(\textcolor{keywordtype}{float}\ width,\ \textcolor{keywordtype}{float}\ height,\ \mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \textcolor{keywordtype}{int}\ index,\ \textcolor{keywordtype}{string}\ name,\ IntRect\ frame);}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{class_basic_image}{\string~BasicImage}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_basic_image_aa6ff3efbbd4b591185352ccb138e541c}{addInfo}}(\mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \mbox{\hyperlink{class_warehouse}{Warehouse}}*\ w\_object,\ \textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_basic_image_aa6ff3efbbd4b591185352ccb138e541c}{addInfo}}(\mbox{\hyperlink{class_texture_manager}{TextureManager}}*\ t\_manager,\ \mbox{\hyperlink{class_warehouse_item}{WarehouseItem}}*\ w\_item);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ FloatRect\ getLocalBounds()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00082\ \ \ \ \ FloatRect\ getGlobalBounds()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_basic_image_af42b75edc13a6ade4d68855c040d08d8}{changePosition}}(\textcolor{keywordtype}{float}\ offset\_x,\ \textcolor{keywordtype}{float}\ offset\_y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_basic_image_ac4a56af71e0ff229cc0a825bc5ab053c}{setPositionX}}(\textcolor{keywordtype}{float}\ x)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_basic_image_a6a419d676db36238a585f3dc5c67e4c0}{setPositionY}}(\textcolor{keywordtype}{float}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_basic_image_acbff740096a44e4e07df2751b80a1b47}{setPosition}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_basic_image_a8c5eaf9a2c39bb3d85ecc82a39e5dd86}{setScale}}(\textcolor{keywordtype}{float}\ scale\_);}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_basic_image_aa0920b41119c51b678916a2746e47364}{setBColor}}(Color\ color);}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_basic_image_ad4ff7e93156b4d508ee538971b372ae1}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_basic_image_a5310fdebc703b6e758e16a7aaa1398ce}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00131\ \};}
+\DoxyCodeLine{00132\ }
+
+\end{DoxyCode}

@@ -1,0 +1,61 @@
+\doxysection{Slider\+Control.\+h}
+\hypertarget{_slider_control_8h_source}{}\label{_slider_control_8h_source}\index{D:/Applications/SFML\_GUI/SliderControl.h@{D:/Applications/SFML\_GUI/SliderControl.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}InterfaceItem.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}FormItem.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}FORM\_ITEM\_STATE.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}FORM\_ITEM\_TYPE.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_slider_control}{SliderControl}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_interface_item}{InterfaceItem}},\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_form_item}{FormItem}}\{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ Text*\ label;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{string}*\ s\_value;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{float}*\ f\_value;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{bool}\ isStatic;}
+\DoxyCodeLine{00015\ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ RectangleShape\ shape1;}
+\DoxyCodeLine{00017\ \ \ \ \ RectangleShape\ scale;}
+\DoxyCodeLine{00018\ \ \ \ \ CircleShape\ slider;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{float}\ slider\_offset\_x;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{float}\ mouse\_pressed\_pos\_x;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ chosen;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{float}\ min;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{float}\ max;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{float}\ width;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{float}\ height;}
+\DoxyCodeLine{00029\ \ \ \ \ Vector2f\ position;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ changeValue();}
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_slider_control_ae03299a2b990a649de269417c89a4459}{SliderControl}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ width\_,\ \textcolor{keywordtype}{float}\ height\_,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ input\_label\_);}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_slider_control}{\string~SliderControl}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ FloatRect\ getLocalBounds()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ \ \ \ \ FloatRect\ getGlobalBounds()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_slider_control_ac453b6eeb1e32aede46f9d14aed307da}{setMinMaxType}}(\textcolor{keywordtype}{float}\ min\_,\ \textcolor{keywordtype}{float}\ max\_);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_slider_control_a78cc34639f17b2d0b5767228bbc790f9}{setValueType}}(\textcolor{keywordtype}{float}*\ value\_,\ \textcolor{keywordtype}{bool}\ isStatic\_);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_slider_control_a688cb976fafd70ce5cfa8b5ad1561c09}{setPositionX}}(\textcolor{keywordtype}{float}\ x)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_slider_control_a3095b9fb7e2bd1a0eed9b8c3ad6b02b2}{setPositionY}}(\textcolor{keywordtype}{float}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_slider_control_aa6797e1fbdddbd82c0bd7c991e7f33a8}{changePosition}}(\textcolor{keywordtype}{float}\ offset\_x,\ \textcolor{keywordtype}{float}\ offset\_y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{string}*\ \mbox{\hyperlink{class_slider_control_ae7bdb2949d5839c0c76403ac38c98ecf}{getValue}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_slider_control_a05769c4f35bfcd62e950db214be06bbd}{scrollSlider}}(\textcolor{keywordtype}{float}\ mouse\_pos\_x);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_slider_control_ae2f3fd6030ecc8399389965f08d4ee60}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_slider_control_a2a20a2ab82c3dea9872fc8ae14129bb8}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00099\ \};}
+\DoxyCodeLine{00100\ }
+
+\end{DoxyCode}

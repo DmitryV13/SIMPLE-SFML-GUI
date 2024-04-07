@@ -1,0 +1,46 @@
+\doxysection{Tab\+Container.\+h}
+\hypertarget{_tab_container_8h_source}{}\label{_tab_container_8h_source}\index{D:/Applications/SFML\_GUI/TabContainer.h@{D:/Applications/SFML\_GUI/TabContainer.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}INTERFACE\_ITEM\_TYPE.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}InterfaceItem.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Group.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Button.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ }namespace::sf;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tab_container}{TabContainer}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_interface_item}{InterfaceItem}}\{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{short}\ current\_tab;}
+\DoxyCodeLine{00014\ \ \ \ \ vector<Group*>\ tabs;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{float}\ width;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{float}\ height;}
+\DoxyCodeLine{00018\ \ \ \ \ Vector2f\ position;}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_tab_container_a91dc227b02e73153d003c405e745a96b}{TabContainer}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ width\_,\ \textcolor{keywordtype}{float}\ height\_);}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_tab_container}{\string~TabContainer}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ FloatRect\ getLocalBounds()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ \ \ \ \ FloatRect\ getGlobalBounds()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tab_container_aad46facd9e4d7284f0ae8b5ee4976c43}{setPosition}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tab_container_abeea484260ad94440f74d4e6fc7df022}{setPositionX}}(\textcolor{keywordtype}{float}\ x)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tab_container_ab5a4398d89d4fcbe6e6e3164613658e2}{setPositionY}}(\textcolor{keywordtype}{float}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tab_container_a796097cc0b57d8c2ae5de1cea0ccc330}{addTab}}(\mbox{\hyperlink{class_group}{Group}}*\ tab);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tab_container_a790800fa4931df90438463dda39492d7}{changePosition}}(\textcolor{keywordtype}{float}\ offset\_x,\ \textcolor{keywordtype}{float}\ offset\_y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tab_container_ab03da39e16b94ef6bbc92795e15dd1c4}{changeCurrentTab}}(\textcolor{keywordtype}{float}\ tab\_index,\ \textcolor{keywordtype}{float}\ param2);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tab_container_ae307d7e4c9f4183868caf332b8652201}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tab_container_a00438db555adcea16eeb1595ccee36d7}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+
+\end{DoxyCode}

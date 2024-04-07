@@ -1,0 +1,252 @@
+\doxysection{Tab\+Container Class Reference}
+\hypertarget{class_tab_container}{}\label{class_tab_container}\index{TabContainer@{TabContainer}}
+
+
+{\ttfamily \#include $<$Tab\+Container.\+h$>$}
+
+Inheritance diagram for Tab\+Container\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tab_container}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tab_container_a91dc227b02e73153d003c405e745a96b}{Tab\+Container}} (float x, float y, float width\+\_\+, float height\+\_\+)
+\item 
+Float\+Rect \mbox{\hyperlink{class_tab_container_a8d639a7380e870153479479858e736d0}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_tab_container_ac1de13934016db5989affa80e6ced095}{get\+Global\+Bounds}} () override
+\item 
+void \mbox{\hyperlink{class_tab_container_aad46facd9e4d7284f0ae8b5ee4976c43}{set\+Position}} (float x, float y)
+\item 
+void \mbox{\hyperlink{class_tab_container_abeea484260ad94440f74d4e6fc7df022}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_tab_container_ab5a4398d89d4fcbe6e6e3164613658e2}{set\+PositionY}} (float y) override
+\item 
+void \mbox{\hyperlink{class_tab_container_a796097cc0b57d8c2ae5de1cea0ccc330}{add\+Tab}} (\mbox{\hyperlink{class_group}{Group}} \texorpdfstring{$\ast$}{*}tab)
+\item 
+void \mbox{\hyperlink{class_tab_container_a790800fa4931df90438463dda39492d7}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_tab_container_ab03da39e16b94ef6bbc92795e15dd1c4}{change\+Current\+Tab}} (float tab\+\_\+index, float param2)
+\item 
+void \mbox{\hyperlink{class_tab_container_ae307d7e4c9f4183868caf332b8652201}{update}} () override
+\item 
+void \mbox{\hyperlink{class_tab_container_a00438db555adcea16eeb1595ccee36d7}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\item 
+virtual bool \mbox{\hyperlink{class_interface_item_a85a6055772471551e54b3e6a8f85eb14}{item\+Scroll}} (float delta)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a829762a6d201271ec326ee52f6c27153}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1}{reset\+Active\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_tab_container_afca87accc71657847f76ae817318a76d}\label{class_tab_container_afca87accc71657847f76ae817318a76d} 
+short {\bfseries current\+\_\+tab}
+\item 
+\Hypertarget{class_tab_container_a95d5ce7939460da1e5adc8eed227a132}\label{class_tab_container_a95d5ce7939460da1e5adc8eed227a132} 
+vector$<$ \mbox{\hyperlink{class_group}{Group}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries tabs}
+\item 
+\Hypertarget{class_tab_container_aa97344011f4e0432c2bde5d444848297}\label{class_tab_container_aa97344011f4e0432c2bde5d444848297} 
+float {\bfseries width}
+\item 
+\Hypertarget{class_tab_container_a00876bb3856e28c3e5cdc162ba86429a}\label{class_tab_container_a00876bb3856e28c3e5cdc162ba86429a} 
+float {\bfseries height}
+\item 
+\Hypertarget{class_tab_container_a8ecff41ca22a202bca91587ec6905e86}\label{class_tab_container_a8ecff41ca22a202bca91587ec6905e86} 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Элемент интерфейса -\/ многовкладочная группа (в любой момент времени отображается только одна группа). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_tab_container_a91dc227b02e73153d003c405e745a96b}\label{class_tab_container_a91dc227b02e73153d003c405e745a96b} 
+\index{TabContainer@{TabContainer}!TabContainer@{TabContainer}}
+\index{TabContainer@{TabContainer}!TabContainer@{TabContainer}}
+\doxysubsubsection{\texorpdfstring{TabContainer()}{TabContainer()}}
+{\footnotesize\ttfamily Tab\+Container\+::\+Tab\+Container (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width\+\_\+,  }\item[{float}]{height\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+{\em width\+\_\+} & ширина. \\
+\hline
+{\em height\+\_\+} & высота. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_tab_container_a796097cc0b57d8c2ae5de1cea0ccc330}\label{class_tab_container_a796097cc0b57d8c2ae5de1cea0ccc330} 
+\index{TabContainer@{TabContainer}!addTab@{addTab}}
+\index{addTab@{addTab}!TabContainer@{TabContainer}}
+\doxysubsubsection{\texorpdfstring{addTab()}{addTab()}}
+{\footnotesize\ttfamily void Tab\+Container\+::add\+Tab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_group}{Group}} \texorpdfstring{$\ast$}{*}}]{tab }\end{DoxyParamCaption})}
+
+Добавление новой группы. Все добавляемые группы должны быть размерами аналогичными данному элементу
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & новая группа \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_tab_container_ab03da39e16b94ef6bbc92795e15dd1c4}\label{class_tab_container_ab03da39e16b94ef6bbc92795e15dd1c4} 
+\index{TabContainer@{TabContainer}!changeCurrentTab@{changeCurrentTab}}
+\index{changeCurrentTab@{changeCurrentTab}!TabContainer@{TabContainer}}
+\doxysubsubsection{\texorpdfstring{changeCurrentTab()}{changeCurrentTab()}}
+{\footnotesize\ttfamily void Tab\+Container\+::change\+Current\+Tab (\begin{DoxyParamCaption}\item[{float}]{tab\+\_\+index,  }\item[{float}]{param2 }\end{DoxyParamCaption})}
+
+Меняет группу, которая будет отображаться.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab\+\_\+index} & индекс новой группы для отображения. \\
+\hline
+{\em param2} & параметр заглушка (не используется). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_tab_container_a790800fa4931df90438463dda39492d7}\label{class_tab_container_a790800fa4931df90438463dda39492d7} 
+\index{TabContainer@{TabContainer}!changePosition@{changePosition}}
+\index{changePosition@{changePosition}!TabContainer@{TabContainer}}
+\doxysubsubsection{\texorpdfstring{changePosition()}{changePosition()}}
+{\footnotesize\ttfamily void Tab\+Container\+::change\+Position (\begin{DoxyParamCaption}\item[{float}]{offset\+\_\+x,  }\item[{float}]{offset\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сдвигает группу и ее элементы на заданное смещение.
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset\+\_\+x} & смещение по x. \\
+\hline
+{\em offset\+\_\+y} & смещение по y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_tab_container_ac1de13934016db5989affa80e6ced095}\label{class_tab_container_ac1de13934016db5989affa80e6ced095} 
+\index{TabContainer@{TabContainer}!getGlobalBounds@{getGlobalBounds}}
+\index{getGlobalBounds@{getGlobalBounds}!TabContainer@{TabContainer}}
+\doxysubsubsection{\texorpdfstring{getGlobalBounds()}{getGlobalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Tab\+Container\+::get\+Global\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_tab_container_a8d639a7380e870153479479858e736d0}\label{class_tab_container_a8d639a7380e870153479479858e736d0} 
+\index{TabContainer@{TabContainer}!getLocalBounds@{getLocalBounds}}
+\index{getLocalBounds@{getLocalBounds}!TabContainer@{TabContainer}}
+\doxysubsubsection{\texorpdfstring{getLocalBounds()}{getLocalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Tab\+Container\+::get\+Local\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_tab_container_a00438db555adcea16eeb1595ccee36d7}\label{class_tab_container_a00438db555adcea16eeb1595ccee36d7} 
+\index{TabContainer@{TabContainer}!render@{render}}
+\index{render@{render}!TabContainer@{TabContainer}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Tab\+Container\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Отображает элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_tab_container_aad46facd9e4d7284f0ae8b5ee4976c43}\label{class_tab_container_aad46facd9e4d7284f0ae8b5ee4976c43} 
+\index{TabContainer@{TabContainer}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!TabContainer@{TabContainer}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Tab\+Container\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Устанавливает новую позицию неанимированной картинке.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & координата. \\
+\hline
+{\em y} & координата. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_tab_container_abeea484260ad94440f74d4e6fc7df022}\label{class_tab_container_abeea484260ad94440f74d4e6fc7df022} 
+\index{TabContainer@{TabContainer}!setPositionX@{setPositionX}}
+\index{setPositionX@{setPositionX}!TabContainer@{TabContainer}}
+\doxysubsubsection{\texorpdfstring{setPositionX()}{setPositionX()}}
+{\footnotesize\ttfamily void Tab\+Container\+::set\+PositionX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату x для группы. Провоцирует изменение положения всех элементов группы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & новая координата x. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_tab_container_ab5a4398d89d4fcbe6e6e3164613658e2}\label{class_tab_container_ab5a4398d89d4fcbe6e6e3164613658e2} 
+\index{TabContainer@{TabContainer}!setPositionY@{setPositionY}}
+\index{setPositionY@{setPositionY}!TabContainer@{TabContainer}}
+\doxysubsubsection{\texorpdfstring{setPositionY()}{setPositionY()}}
+{\footnotesize\ttfamily void Tab\+Container\+::set\+PositionY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Устанавливает новую координату y для группы. Провоцирует изменение положения всех элементов группы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & новая координата y. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_tab_container_ae307d7e4c9f4183868caf332b8652201}\label{class_tab_container_ae307d7e4c9f4183868caf332b8652201} 
+\index{TabContainer@{TabContainer}!update@{update}}
+\index{update@{update}!TabContainer@{TabContainer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Tab\+Container\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Обновляет элемент. 
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Tab\+Container.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Tab\+Container.\+cpp\end{DoxyCompactItemize}

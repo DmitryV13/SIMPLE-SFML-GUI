@@ -1,0 +1,187 @@
+\doxysection{Inventory\+Item Class Reference}
+\hypertarget{class_inventory_item}{}\label{class_inventory_item}\index{InventoryItem@{InventoryItem}}
+
+
+{\ttfamily \#include $<$Inventory\+Item.\+h$>$}
+
+Inheritance diagram for Inventory\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_inventory_item}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inventory_item_a69ad5599617aef64d82be2734ae8d878}\label{class_inventory_item_a69ad5599617aef64d82be2734ae8d878} 
+{\bfseries Inventory\+Item} (float x, float y, float width\+\_\+, float height\+\_\+, int text\+\_\+size\+\_\+)
+\item 
+\Hypertarget{class_inventory_item_a2e9fdfaed03385e5ab6aa69de28e477a}\label{class_inventory_item_a2e9fdfaed03385e5ab6aa69de28e477a} 
+void {\bfseries add\+Item\+Info} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse}{Warehouse}} \texorpdfstring{$\ast$}{*}w\+\_\+object, string name)
+\item 
+\Hypertarget{class_inventory_item_ac722b84ae53f200d00fce515d6cb2951}\label{class_inventory_item_ac722b84ae53f200d00fce515d6cb2951} 
+void {\bfseries add\+Item\+Info} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*}t\+\_\+manager, \mbox{\hyperlink{class_warehouse_item}{Warehouse\+Item}} \texorpdfstring{$\ast$}{*}w\+\_\+item)
+\item 
+\Hypertarget{class_inventory_item_a455af96f9b92295b63d47cbad2a6dfb2}\label{class_inventory_item_a455af96f9b92295b63d47cbad2a6dfb2} 
+void {\bfseries clear\+Info} ()
+\item 
+Float\+Rect \mbox{\hyperlink{class_inventory_item_a0344f22c033fcdf5cd91a041e7af2a35}{get\+Local\+Bounds}} () override
+\item 
+Float\+Rect \mbox{\hyperlink{class_inventory_item_ac9277aa6f2a5a8c3c64e9e7c52ddcd96}{get\+Global\+Bounds}} () override
+\item 
+\Hypertarget{class_inventory_item_ad4ff2e79b3ef583663fbd1abc79db340}\label{class_inventory_item_ad4ff2e79b3ef583663fbd1abc79db340} 
+void {\bfseries set\+Position} (Vector2f new\+\_\+position)
+\item 
+void \mbox{\hyperlink{class_inventory_item_a5fbc682bd22e9fbf0872622924a3801d}{set\+PositionX}} (float x) override
+\item 
+void \mbox{\hyperlink{class_inventory_item_ae2212a7485071db338da2a9dd04f6737}{set\+PositionY}} (float y) override
+\item 
+\Hypertarget{class_inventory_item_ae981330b54697c50c7a313d11426bb2e}\label{class_inventory_item_ae981330b54697c50c7a313d11426bb2e} 
+void {\bfseries set\+BColor} (Color color)
+\item 
+void \mbox{\hyperlink{class_inventory_item_a0a26c41c026ecd95d4502a128c73b43f}{change\+Position}} (float offset\+\_\+x, float offset\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_inventory_item_a09c2e610b3130bfb478c42a522e446b7}{update}} () override
+\item 
+void \mbox{\hyperlink{class_inventory_item_afa44046422d62fc9216411dfb82bbeb0}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short \& {\bfseries get\+IIType} ()
+\item 
+const int \& {\bfseries get\+Id} () const
+\item 
+View {\bfseries create\+Local\+View} (Float\+Rect rect, Render\+Target \texorpdfstring{$\ast$}{*}target) const
+\item 
+virtual bool \mbox{\hyperlink{class_interface_item_a85a6055772471551e54b3e6a8f85eb14}{item\+Scroll}} (float delta)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a829762a6d201271ec326ee52f6c27153}{change\+Children\+Position}} (float offset\+\_\+x, float offset\+\_\+y)
+\item 
+virtual void \mbox{\hyperlink{class_interface_item_a2d42a2bc37e3d86499546b10a35dfdc1}{reset\+Active\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inventory_item_a3fcdb528c673729e923ad21a73f0172d}\label{class_inventory_item_a3fcdb528c673729e923ad21a73f0172d} 
+Rectangle\+Shape {\bfseries background}
+\item 
+\Hypertarget{class_inventory_item_a5823492d6983a18d87880ca40862d38f}\label{class_inventory_item_a5823492d6983a18d87880ca40862d38f} 
+Rectangle\+Shape {\bfseries shape}
+\item 
+\Hypertarget{class_inventory_item_a70e64b3ee5a649adf657498f4d48a080}\label{class_inventory_item_a70e64b3ee5a649adf657498f4d48a080} 
+\mbox{\hyperlink{class_basic_image}{Basic\+Image}} \texorpdfstring{$\ast$}{*} {\bfseries image}
+\item 
+\Hypertarget{class_inventory_item_ac282f3090ebdda97d63baafdd3dfc11d}\label{class_inventory_item_ac282f3090ebdda97d63baafdd3dfc11d} 
+\mbox{\hyperlink{class_resource_info}{Resource\+Info}} \texorpdfstring{$\ast$}{*} {\bfseries r\+\_\+info}
+\item 
+\Hypertarget{class_inventory_item_a1922e1ec50087259dc4a2ad9bbb9b518}\label{class_inventory_item_a1922e1ec50087259dc4a2ad9bbb9b518} 
+Text {\bfseries text}
+\item 
+\Hypertarget{class_inventory_item_ae2cecff588b8b09c0e61a9c7cc1cd814}\label{class_inventory_item_ae2cecff588b8b09c0e61a9c7cc1cd814} 
+int {\bfseries text\+\_\+size}
+\item 
+\Hypertarget{class_inventory_item_ade194041c3c1571b662f5ed3786da06a}\label{class_inventory_item_ade194041c3c1571b662f5ed3786da06a} 
+float {\bfseries width}
+\item 
+\Hypertarget{class_inventory_item_a65cfada2032aa5218fab51376f0fdf3f}\label{class_inventory_item_a65cfada2032aa5218fab51376f0fdf3f} 
+float {\bfseries height}
+\item 
+\Hypertarget{class_inventory_item_a0d612864e8c75773047b93c81eace667}\label{class_inventory_item_a0d612864e8c75773047b93c81eace667} 
+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+short {\bfseries ii\+\_\+type}
+\item 
+bool {\bfseries is\+\_\+scrollable} = false
+\item 
+bool {\bfseries overflow\+\_\+x} = false
+\item 
+bool {\bfseries overflow\+\_\+y} = false
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Составной элемент интерфейса, описание не добавлено, так как прчмого отношения к базовым компонентам GUI этот элемент не имеет, но вы всегда можете посмотреть код и разобраться сами. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inventory_item_a0a26c41c026ecd95d4502a128c73b43f}\label{class_inventory_item_a0a26c41c026ecd95d4502a128c73b43f} 
+\index{InventoryItem@{InventoryItem}!changePosition@{changePosition}}
+\index{changePosition@{changePosition}!InventoryItem@{InventoryItem}}
+\doxysubsubsection{\texorpdfstring{changePosition()}{changePosition()}}
+{\footnotesize\ttfamily void Inventory\+Item\+::change\+Position (\begin{DoxyParamCaption}\item[{float}]{offset\+\_\+x,  }\item[{float}]{offset\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_inventory_item_ac9277aa6f2a5a8c3c64e9e7c52ddcd96}\label{class_inventory_item_ac9277aa6f2a5a8c3c64e9e7c52ddcd96} 
+\index{InventoryItem@{InventoryItem}!getGlobalBounds@{getGlobalBounds}}
+\index{getGlobalBounds@{getGlobalBounds}!InventoryItem@{InventoryItem}}
+\doxysubsubsection{\texorpdfstring{getGlobalBounds()}{getGlobalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Inventory\+Item\+::get\+Global\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_inventory_item_a0344f22c033fcdf5cd91a041e7af2a35}\label{class_inventory_item_a0344f22c033fcdf5cd91a041e7af2a35} 
+\index{InventoryItem@{InventoryItem}!getLocalBounds@{getLocalBounds}}
+\index{getLocalBounds@{getLocalBounds}!InventoryItem@{InventoryItem}}
+\doxysubsubsection{\texorpdfstring{getLocalBounds()}{getLocalBounds()}}
+{\footnotesize\ttfamily Float\+Rect Inventory\+Item\+::get\+Local\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_inventory_item_afa44046422d62fc9216411dfb82bbeb0}\label{class_inventory_item_afa44046422d62fc9216411dfb82bbeb0} 
+\index{InventoryItem@{InventoryItem}!render@{render}}
+\index{render@{render}!InventoryItem@{InventoryItem}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Inventory\+Item\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_inventory_item_a5fbc682bd22e9fbf0872622924a3801d}\label{class_inventory_item_a5fbc682bd22e9fbf0872622924a3801d} 
+\index{InventoryItem@{InventoryItem}!setPositionX@{setPositionX}}
+\index{setPositionX@{setPositionX}!InventoryItem@{InventoryItem}}
+\doxysubsubsection{\texorpdfstring{setPositionX()}{setPositionX()}}
+{\footnotesize\ttfamily void Inventory\+Item\+::set\+PositionX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_inventory_item_ae2212a7485071db338da2a9dd04f6737}\label{class_inventory_item_ae2212a7485071db338da2a9dd04f6737} 
+\index{InventoryItem@{InventoryItem}!setPositionY@{setPositionY}}
+\index{setPositionY@{setPositionY}!InventoryItem@{InventoryItem}}
+\doxysubsubsection{\texorpdfstring{setPositionY()}{setPositionY()}}
+{\footnotesize\ttfamily void Inventory\+Item\+::set\+PositionY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+\Hypertarget{class_inventory_item_a09c2e610b3130bfb478c42a522e446b7}\label{class_inventory_item_a09c2e610b3130bfb478c42a522e446b7} 
+\index{InventoryItem@{InventoryItem}!update@{update}}
+\index{update@{update}!InventoryItem@{InventoryItem}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Inventory\+Item\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interface_item}{Interface\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Inventory\+Item.\+h\item 
+D\+:/\+Applications/\+SFML\+\_\+\+GUI/Inventory\+Item.\+cpp\end{DoxyCompactItemize}
