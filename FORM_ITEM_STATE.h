@@ -1,8 +1,0 @@
-#pragma once
-enum FORM_ITEM_STATE { 
-	FORM_ITEM_IDLE = 0, 
-	FORM_ITEM_HOVERED, 
-	FORM_ITEM_ACTIVE_1, 
-	FORM_ITEM_ACTIVE_2
-};
-
