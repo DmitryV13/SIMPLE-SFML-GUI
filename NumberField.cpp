@@ -7,6 +7,9 @@
 		fi_type = FORM_ITEM_TYPE::NUMBER_FIELD;
 
 		textarea->setOverflow(ITEM_OVERFLOW::HIDDEN);
+        min = FLT_MIN;
+        max = FLT_MAX;
+        isFloat=true;
 	}
 	
 	NumberField::NumberField(float x, float y, float width_, float height_, const string& input_label_, 
@@ -15,6 +18,9 @@
 		fi_type = FORM_ITEM_TYPE::NUMBER_FIELD;
 
 		textarea->setOverflow(ITEM_OVERFLOW::HIDDEN);
+        min = FLT_MIN;
+        max = FLT_MAX;
+        isFloat=true;
 	}
 
 	NumberField::~NumberField(){
