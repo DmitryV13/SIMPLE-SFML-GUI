@@ -215,7 +215,8 @@ public:
         @param fill_p_h процент заполнения(указывается от 0 до 100) высоты для нового
         элемента на основе текущей группы.
         @param index индекс строки.
-        @return возвращает CRect<float> с посчитанными параметрами.
+        @return возвращает CRect<float> с посчитанными параметрами. В нем первый параметр - x,
+        второй параметр -y, третий параметр - width, четвертый параметр - height.
     */
 	CRect<float>* calculatePFNII(short fill_p_w, short fill_p_h, short index);
 

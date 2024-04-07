@@ -5,7 +5,6 @@
 #include "FORM_ITEM_TYPE.h"
 
 /** Элемент интерфейса, элемент формы - slider.
-
  */
 class SliderControl: public InterfaceItem, public FormItem{
 private:

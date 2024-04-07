@@ -9,6 +9,9 @@
 
 using namespace::sf;
 
+/** Составной элемент интерфейса, описание не добавлено, так как прчмого отношения к базовым компонентам
+ * GUI этот элемент не имеет, но вы всегда можете посмотреть код и разобраться сами.
+ */
 class InventoryItem : public InterfaceItem{
 protected:
 	RectangleShape background;
